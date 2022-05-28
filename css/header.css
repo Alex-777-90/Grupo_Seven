@@ -15,7 +15,7 @@
    /*justify-content:space-around; */
   background-color: rgb(213, 33, 33);
   padding: 0em;
-  gap: 100% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
+  gap: 50% 2% /* o primeiro alinha a linha o segundo alinha a coluna   */
 
 }
 
@@ -23,11 +23,37 @@
 
   border:1px solid whitesmoke;
   border-radius: 0.3em;
-  padding: 0.3em;
-  width: 40%;
+  padding: 1%;
+  width: 38%;
+  border:none
  
 
 }
+
+.form_primeiro_cabecalho2{
+  width: 11%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  color: whitesmoke;
+  justify-content:left;
+  gap: 0% 4%
+}
+
+.form_primeiro_cabecalho3{
+  width: 9%;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  color: whitesmoke;
+  gap: 5% 4%
+
+}
+
+.text_botao2{
+  width: 100%;
+}
+
 
 .caixa_texto , .botao{
 
@@ -43,7 +69,7 @@
   cursor: pointer;
   background-color: rgb(192, 242, 29);
   color: rgb(243, 18, 18);
-  width:1.5em;
+  width:13.5%;
 
 }
 
@@ -57,15 +83,15 @@
 
 .botao2{
 
-  font-size: 1.2em;
+  font-size: 1.3em;
   cursor: pointer;
   background-color: rgb(192, 242, 29);
   color: rgb(243, 18, 18);
-  width:2em;
+  width:55%;
   border:none;
   height: 30px;
   border-radius: 0.2em;
-
+  
 }
 
 .botao2:hover{
@@ -75,7 +101,7 @@
 }
 
 .caixa_texto{
-  width: 93%;
+  width: 75%;
 
 }
 
@@ -90,6 +116,69 @@
   width: 100%;
   height: 45px;
   background-color: rgb(233, 64, 64);
+  display: flex;
+  align-items:center ; /*alinha os elementos no centro   */
+   justify-content:space-around; 
+   padding: 0em;
+   gap: 100% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
+  
+}
 
+.link{
+
+  font-size: 1.1em;
+  width: 20%;
+  height: 45px;
+  background-color: rgb(237, 35, 35);
+  color: rgb(240, 242, 234);
+  display: flex;
+  align-items:center ; /*alinha os elementos no centro   */
+   justify-content:left; 
+   padding: 0em;
+   gap: 5% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
+   
 
 }
+
+.abas{
+
+  font-size: 1.1em;
+  width: 90%;
+  height: 45px;
+  color: rgb(240, 242, 234);
+  display: flex;
+  align-items:center ; /*alinha os elementos no centro   */
+   justify-content:space-evenly; 
+   padding: 0em;
+   gap: 50% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
+   
+}
+
+.mercado,.pet,.farmacia{
+  cursor: pointer;
+
+}
+
+.mercado:hover{
+  color: rgb(199, 233, 64);
+
+}
+
+.pet:hover{
+  color: rgb(199, 233, 64);
+
+}
+
+.farmacia:hover{
+  color: rgb(199, 233, 64);
+
+}
+
+.oferta:hover{
+  color: rgb(199, 233, 64);
+
+}
+
+
+/*  Segunda parte do header   */
+/* ------------------------------------------------------------------------------------ */
