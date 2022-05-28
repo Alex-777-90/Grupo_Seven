@@ -8,29 +8,28 @@
 /*  Primeiro parte do header   */
 .primeiro_cabecalho{
 
+  width: 100%;
+  height: 98px;
   display: flex;
   align-items:center ; /*alinha os elementos no centro   */
-  justify-content:left;
-  background-color: rgb(203, 47, 47);
+   /*justify-content:space-around; */
+  background-color: rgb(213, 33, 33);
   padding: 0em;
-  column-gap: 10em;
-  float: left;
-  width: 100%;
-  height: 120px;
+  gap: 100% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
 
 }
 
-form{
+.form_primeiro_cabecalho{
 
   border:1px solid whitesmoke;
   border-radius: 0.3em;
   padding: 0.3em;
   width: 40%;
-  
+ 
 
 }
 
-form input , form button{
+.caixa_texto , .botao{
 
    font-size: 1.2em;
    border-radius: 0.2em;
@@ -54,10 +53,43 @@ form input , form button{
   color: whitesmoke;
 }
 
+
+
+.botao2{
+
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: rgb(192, 242, 29);
+  color: rgb(243, 18, 18);
+  width:2em;
+  border:none;
+  height: 30px;
+  border-radius: 0.2em;
+
+}
+
+.botao2:hover{
+
+  background-color: red;
+  color: whitesmoke;
+}
+
 .caixa_texto{
   width: 93%;
 
 }
 
+
 /*  Primeiro parte do header   */
 /* ------------------------------------------------------------------------------------ */
+
+
+/*  Segunda parte do header   */
+.segunda_cabecalho{
+ 
+  width: 100%;
+  height: 45px;
+  background-color: rgb(233, 64, 64);
+
+
+}
