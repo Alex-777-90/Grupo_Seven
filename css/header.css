@@ -7,16 +7,16 @@
 /* -----------------------------------------------------------------------------------*/
 /*  Primeiro parte do header   */
 .primeiro_cabecalho{
-
-  width: 100%;
+  max-width: 1280px;
+  min-width: 500px;
   height: 98px;
   display: flex;
   align-items:center ; /*alinha os elementos no centro   */
-   /*justify-content:space-around; */
+  /*justify-content:space-around;*/
   background-color: rgb(213, 33, 33);
-  padding: 0em;
-  gap: 50% 2% /* o primeiro alinha a linha o segundo alinha a coluna   */
-
+  padding: 1%;
+  gap: 0% 5% /* o primeiro alinha a linha o segundo alinha a coluna   */
+  
 }
 
 .form_primeiro_cabecalho{
@@ -24,8 +24,10 @@
   border:1px solid whitesmoke;
   border-radius: 0.3em;
   padding: 1%;
-  width: 38%;
+  padding-left: -15%;
+  width: 47%;
   border:none
+  
  
 
 }
@@ -38,15 +40,17 @@
   color: whitesmoke;
   justify-content:left;
   gap: 0% 4%
+ 
 }
 
-.form_primeiro_cabecalho3{
+ .form_primeiro_cabecalho3{
   width: 9%;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content:left;
   color: whitesmoke;
-  gap: 5% 4%
+  gap: 5% 4% 
+
 
 }
 
@@ -69,7 +73,8 @@
   cursor: pointer;
   background-color: rgb(192, 242, 29);
   color: rgb(243, 18, 18);
-  width:13.5%;
+  width: 14%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
 
 }
 
@@ -90,7 +95,8 @@
   width:55%;
   border:none;
   height: 30px;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
   
 }
 
@@ -102,18 +108,24 @@
 
 .caixa_texto{
   width: 75%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
 
 }
 
+.correcao{
+  color: rgb(213, 33, 33);
+}
 
 /*  Primeiro parte do header   */
-/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------FIM */
 
 
 /*  Segunda parte do header   */
 .segunda_cabecalho{
  
-  width: 100%;
+  max-width: 1280px;
+  min-width: 500px;
+  overflow-x:auto;
   height: 45px;
   background-color: rgb(233, 64, 64);
   display: flex;
@@ -127,7 +139,7 @@
 .link{
 
   font-size: 1.1em;
-  width: 20%;
+  width: 25%;
   height: 45px;
   background-color: rgb(237, 35, 35);
   color: rgb(240, 242, 234);
@@ -154,6 +166,19 @@
    
 }
 
+/* Altera a configuração padrão dos links  */
+.tagA_segundo_cabecalho:link{
+  text-decoration: none;
+
+}
+
+.tagA_segundo_cabecalho:visited{
+  color: rgb(235, 236, 230);
+  text-decoration: none;
+
+}
+/* Altera a configuração padrão dos links  */
+
 .mercado,.pet,.farmacia{
   cursor: pointer;
 
@@ -179,6 +204,32 @@
 
 }
 
+#pag_mercado{
+  background-color: rgb(199, 233, 64);
+  color: rgb(237, 35, 35);
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
+
+}
+
+#pag_pet{
+  background-color: rgb(199, 233, 64);
+  color: rgb(237, 35, 35);
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
+
+}
+
+#pag_farmacia{
+  background-color: rgb(199, 233, 64);
+  color: rgb(237, 35, 35);
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
+
+}
 
 /*  Segunda parte do header   */
-/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------FIM */
