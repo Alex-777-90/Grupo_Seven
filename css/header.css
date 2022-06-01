@@ -96,7 +96,10 @@
   height: 30px;
   border-radius: 0.3em;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
-  
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 20%;
+
 }
 
 .botao2:hover{
