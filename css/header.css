@@ -53,6 +53,17 @@
 
 }
 
+.form_primeiro_cabecalho4{
+  width: 9%;
+  display: flex;
+  align-items:center;
+  justify-content:left;
+  color: whitesmoke;
+  gap: 5% 4% 
+
+
+}
+
 .text_botao2{
   width: 100%;
 }
@@ -108,6 +119,33 @@
   color: whitesmoke;
 }
 
+.botao4{
+
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: rgb(192, 242, 29);
+  color: rgb(243, 18, 18);
+  width:110%;
+  border:none;
+  height: 30px;
+  border-radius: 0.3em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 20%;
+  margin-left: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
+
+}
+
+
+.botao4:hover{
+
+  background-color: red;
+  color: whitesmoke;
+}
+
 .caixa_texto{
   width: 75%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
@@ -115,8 +153,10 @@
 }
 
 .correcao{
+  display: none;
   color: rgb(213, 33, 33);
 }
+
 
 /*  Primeiro parte do header   */
 /* ------------------------------------------------------------------------------------FIM */
@@ -234,3 +274,125 @@
 
 /*  Segunda parte do header   */
 /* ------------------------------------------------------------------------------------FIM */
+
+
+
+@media (max-width:732px) and (min-width:666px) {
+
+  .link{
+  
+    font-size: 1.0em;
+
+  }
+
+
+}
+
+@media (max-width:665px) and (min-width:100px) {
+
+  .texto_nav{
+  display: none;
+
+  }
+
+.link{
+
+  width: 7%;
+  align-items:center
+  
+}
+
+}
+
+@media (max-width:392px)and (min-width:280px){
+
+  .abas{
+    font-size: 0.80em;
+  }
+
+
+}
+
+@media (max-width:1083px)and (min-width:10px){
+
+ .text_botao2 , .text_botao3 {
+  
+  display: none;
+  width: -1%;
+
+ }
+
+
+}
+
+@media (max-width:500px)and (min-width:250px){
+
+  .form_primeiro_cabecalho2 {
+
+    width: 36%;
+    margin-right:-10%;
+    
+  }
+
+  .form_primeiro_cabecalho3{
+   
+    display: none;
+
+  }
+
+  .form_primeiro_cabecalho{
+
+    width: 70%;
+  }
+
+  .caixa_texto{
+   
+    font-size: 120%;
+
+  }
+
+  .botao{
+   
+    width: 18%;
+
+  }
+
+  .imagem {
+   
+    width: 130%;
+    height:10vh
+
+  }
+
+
+}
+
+@media (max-width:1280px)and (min-width:800px){
+
+.botao4{
+
+  margin-left: 680%;
+}
+
+}
+
+@media (max-width:799px)and (min-width:600px){
+
+  .botao4{
+  
+    margin-left: 580%;
+  }
+  
+  }
+
+  @media (max-width:599px)and (min-width:300px){
+
+    .botao4{
+    
+      margin-left: 380%;
+    }
+    
+    }
+
+
+

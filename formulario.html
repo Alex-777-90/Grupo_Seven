@@ -27,6 +27,12 @@
           </a>
       </div>
 
+      <form class="form_primeiro_cabecalho4" action="#" method="post">
+
+        <a class="botao4"  href="/formulario.html">  <i class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
+       <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+
+     </form>
             
 
             <p class="correcao">cc</p>
@@ -37,7 +43,7 @@
       <section class="segunda_cabecalho">
 
         <article class="link">
-          <i class="fa-solid fa-list"></i>  <p>Navegue pelo site</p>
+          <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue pelo site</p> 
         </article>
 
          <article class="abas">
@@ -65,46 +71,84 @@
 
   </header>
 
-  <main>
-    <form action="">
+   <main>
 
-      <section class="body_form">
-        <div >
-            <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
+    <div class="container">
+      <div class="header">
+        <h2>Crie uma conta </h2>
+      </div>
+
+    <form action="" id ="form" class="form">
+
+
+        <div class="form-control">
+
+          <label for="username">Nome de usuário</label>
+          <input type="text" id="username" placeholder="Digite seu nome de usuário..."/>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+
+        </div>
+
+
+        <div class="form-control">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+
+        </div>
+
+
+        <div class="form-control">
+
+          <label for="email">CPF</label>
+          <input type="text" id="email" placeholder="Digite seu CPF.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+          
+        </div>
+
+        <div class="form-control">
+
+          <label for="email">Telefone</label>
+          <input type="text" id="email" placeholder="Digite seu número.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+          
         </div>
         
-        <div >
-            <input type="email" name="email" id="email" placeholder ="Digite aqui seu e-mail">
+        <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha..."/>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
         </div>
 
-      <div>
-          <input type="text" name="CPF" id="CPF" placeholder="Digite aqui seu CPF">
-      </div>
 
-      <div>
-          <input type="date" name="data" id="data" >
-      </div>
+        <div class="form-control">
+          <label for="password-confirmation">Confirmação de senha</label>
+          <input type="password"  id="password-confirmation" placeholder="Digite sua senha novamente..."/>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
 
-      <div>
-        <input type="tel" name="tele" id="tele" placeholder="Digite aqui seu telefone">
-      </div>
-
-      <div>
-        <p>Crie sua senha <input type="password" name="" id=""></p>
-      </div>
-
-    <div>
-      <p>Confirme a senha <input type="password" name="" id=""></p>
-    </div>
-    
-  </section>
-
-</form>
-
-    
+        <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
 
 
-   
+        <button type="submit">Enviar</button>  <!-- botão de  confirmação do cadastro -->    
+
+    </form>
+
+  </div>
     
 
 
@@ -123,5 +167,6 @@
 
 </body>
 
+<script src="/js/formulario.js"></script>
 
 </html>
