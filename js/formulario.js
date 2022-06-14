@@ -2,6 +2,8 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const cpf = document.getElementById("cpf");
+const telefone = document.getElementById("telefone");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
 form.addEventListener("submit", (e) => {
@@ -15,6 +17,8 @@ function checkInputs() {
   const emailValue = email.value;
   const passwordValue = password.value;
   const passwordConfirmationValue = passwordConfirmation.value;
+  const cpfValue = cpf.value;
+  const telefoneValue = telefone.value;
 
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
@@ -30,6 +34,7 @@ function checkInputs() {
     setSuccessFor(email);
   }
 
+
   if (passwordValue === "") {
     setErrorFor(password, "A senha é obrigatória.");
   } else if (passwordValue.length < 7) {
@@ -44,6 +49,22 @@ function checkInputs() {
     setErrorFor(passwordConfirmation, "As senhas não conferem.");
   } else {
     setSuccessFor(passwordConfirmation);
+  }
+
+  if (cpfValue === "") {
+    setErrorFor(cpf, "Por favor, insira um CPF válido.");
+  } else if (cpfValue.length < 11) {
+    setErrorFor(cpf, "O CPF é no minímo 11 números .");
+  } else {
+    setSuccessFor(cpf);
+  }
+  
+  if (telefoneValue === "") {
+    setErrorFor(telefone, "Por favor, insira um telefone válido.");
+  } else if (telefoneValue.length < 11) {
+    setErrorFor(telefone, "O telefone é no minímo 9 números .");
+  } else {
+    setSuccessFor(telefone);
   }
 
   const formControls = form.querySelectorAll(".form-control");
