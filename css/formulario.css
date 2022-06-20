@@ -1,9 +1,91 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
 }
 
+/* inicio Block Login----------------------------------------------------------------------------------------------------- */
+.header{
+  position: relative;
+}
+
+.body_login{
+  display: none;
+  position:absolute;
+  background-color: rgba(128, 128, 128, 0.6);
+  width: 100vw;
+  padding: 100%;
+  right:0%;
+  z-index:2;
+ 
+  
+}
+
+.login{
+  display: none;
+  background-color: #f39696;
+  border-radius: 5%;
+  padding-top: 1%;
+  padding-left: 2.5%;
+  padding-right: 20%;
+  padding-bottom: 150px;
+  position: absolute;
+  top:80px;
+  left: 65%;
+  width: 11%;
+  z-index:2;
+ 
+}
+
+.botao_login{
+  text-align: center;
+  background-color: #f71212;
+  border: 2px solid #ff0000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  padding-left: 32%;
+  padding-right: 32.5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  top:125px;
+  margin-top: 1%;
+}
+
+.botao_login:hover{
+  background-color: #d3e40d;
+  border: 2px solid #ff0000;
+  color: rgb(222, 20, 20);
+}
+
+#email_login {
+  position: absolute;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+  top:50px
+}
+
+ #username_login{
+  position: absolute;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  top:90px
+}
+
+.botao4{
+  z-index: 10;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------fim Block Login */
 main {
   width: 100%;
   min-height: 800px;
@@ -165,3 +247,106 @@ main {
 
 }
 
+@media only screen and  (max-width:1000px) and (min-width:768px)  {
+
+  /* inicio Block Login----------------------------------------------------------------------------------------------------- */
+
+.body_login{
+  width: 100vw;
+  height: 175vh;
+  padding: 100%;
+  right:0%;
+
+}
+
+.login{
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 30%;
+  padding-bottom: 150px;
+  top:80px;
+  left: 55%;
+  width: 11%;
+
+}
+
+.botao_login{
+  padding-left: 32%;
+  padding-right: 32.5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  top:125px;
+  margin-top: 1%;
+}
+
+#email_login {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  top:50px
+}
+
+ #username_login{
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  top:90px
+}
+/* --------------------------------------------------------------------------------------------------------fim Block Login */
+
+
+}
+
+@media only screen and  (max-width:767px) and (min-width:280px)  {
+
+  /* inicio Block Login----------------------------------------------------------------------------------------------------- */
+
+.body_login{
+  width: 100vw;
+  height: 265vh;
+  padding: 100%;
+  right:0%;
+
+}
+
+.login{
+  padding-top: 2%;
+  padding-left: 22%;
+  padding-right: 58%;
+  padding-bottom: 150px;
+  top:80px;
+  left: 7%;
+  width: 11%;
+
+
+}
+
+.botao_login{
+  padding-left: 33%;
+  padding-right: 33.5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  top:125px;
+  margin-top: 1%;
+  margin-left: -17%;
+}
+
+#email_login {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  top:50px;
+  margin-left: -17%;
+}
+
+ #username_login{
+  padding-top: 2%;
+  padding-bottom: 1%;
+  width: 80%;
+  top:90px;
+  margin-left: -17%;
+}
+/* --------------------------------------------------------------------------------------------------------fim Block Login */
+
+
+}

@@ -10,28 +10,39 @@
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
     <!--esse script é gerado pelo fontawesome.com que gera icones -->
 
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
    
 </head>
 
 <body>
   
+ 
   <header>
 
     <section class="primeiro_cabecalho">
 
       <div class="imagem_logo">
-          <a href="/home.html">
-              <img class="imagem" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  width="105%" height="100px" >
+          <a href="home.html">
+              <img class="imagem" src="imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  width="105%" height="100px" >
           </a>
       </div>
 
       <form class="form_primeiro_cabecalho4" action="#" method="post">
 
-        <a class="botao4"  href="/formulario.html">  <i class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
+        <a class="botao4" id="button_entry"  href="#login">  <i class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
        <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-
+       <br>
+       <section class="body_login" ></section>
+       <div class="login">
+         <h2>Login</h2>
+         <form class="form_login"action="">
+          <input type="email" name="email_login" id="email_login" placeholder="E-mail"/>
+          <input type="password" id="username_login" placeholder="Senha"/>
+          <button class ="botao_login" type="submit"> <strong> Entrar </strong></button>
+         </form>
+       </div>
+  
      </form>
             
      
@@ -51,7 +62,7 @@
          <article class="abas">
 
           
-            <a class="tagA_segundo_cabecalho"  href="/variedades.html">
+            <a class="tagA_segundo_cabecalho"  href="variedades.html">
                    <p class="mercado"><strong>Variedades</strong>  </p> 
             </a>
 
@@ -59,7 +70,7 @@
                     <p class="pet"><strong>Espaço pet</strong> </p>
             </a>
 
-            <a class="tagA_segundo_cabecalho"  href="/farmacia.html">
+            <a class="tagA_segundo_cabecalho"  href="farmacia.html">
               <p class="farmacia"><strong>Farmácia </strong> </p>
             </a>
 
@@ -171,8 +182,8 @@
 
 </body>
 
-<script src="/js/formulario.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/login.js"></script>
 
 </html>
-
 

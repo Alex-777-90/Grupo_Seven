@@ -285,6 +285,10 @@
 
   }
 
+  .oferta{
+    display: none;
+  }
+
 
 }
 
@@ -302,6 +306,10 @@
   
 }
 
+.oferta{
+  display: none;
+}
+
 }
 
 @media (max-width:392px)and (min-width:280px){
@@ -310,6 +318,10 @@
     font-size: 0.80em;
   }
 
+
+  .oferta{
+    display: none;
+  }
 
 }
 
@@ -364,6 +376,9 @@
 
   }
 
+  .oferta{
+    display: none;
+  }
 
 }
 
@@ -382,6 +397,10 @@
   
     margin-left: 580%;
   }
+
+  .oferta{
+    display: none;
+  }
   
   }
 
@@ -390,6 +409,10 @@
     .botao4{
     
       margin-left: 380%;
+    }
+
+    .oferta{
+      display: none;
     }
     
     }
