@@ -79,27 +79,68 @@
 
 
   <main>
+    <section class="slider"> <!--carrosel de imagens do site parte superior --------------------------------------------->
+        
+      <article class="slides"> 
 
-   
-        <section class="banner">
-          <div class="caesegatos_com_br">
-            <div class="box-banner">
-              <img id="caminhaPet" alt="" src="imagens\caesegatos_com_br.jpg" complete="complete">
-              </div>
-            </div>
+          <!--inicio Radio buttons--------------------------------------------------------------------------------->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--fim Radio buttons------------------------------------------------------------------------------------->
+
+
+          <!--inicio slide imagens---------------------------------------------------------------------------------->
+          <div class="slide first">
+              <img width="100%" height="500" src="imagens\carrosel-pet1.webp" alt="imagem 1">
+          </div>
+
+          <div class="slide">
+            <img  src="imagens\carrosel-pet5.webp" alt="imagem 2">
+          </div>
+
+          <div class="slide">
+            <img  src="imagens\carrosel-pet4.webp" alt="imagem 3">
+          </div>
+
+          <div class="slide">
+            <img src="imagens\carrosel-pet2.webp" alt="imagem 4">
+          </div>
+          <!--fim slide imagens--------------------------------------------------------------------------------------->
+
+
+          <!-- inicio navegação automatica---------------------------------------------------------------------------->
+          <div class="nav_auto">
+
+            <div class="auto_btn1"></div>
+            <div class="auto_btn2"></div>
+            <div class="auto_btn3"></div>
+            <div class="auto_btn4"></div>
+          </div>
+          <!-- fim navegação automatica---------------------------------------------------------------------------->
+
+      </article>
+            
+          <div class="label_nav">
+            <label for="radio1" class="label_btn"></label>
+            <label for="radio2" class="label_btn"></label>
+            <label for="radio3" class="label_btn"></label>
+            <label for="radio4" class="label_btn"></label>
+          </div>
 
       
-        </section>
+    </section> <!-- fim carrosel de imagens do site parte superior ---------------------------------------------------->
 
 
-
-        <section>
+        <section class="elementoUm">
 
           <link rel="stylesheet" href="imagens\caesegatos_com_br.jpg">
         <div class="elementoUm">
-            <div class="">
+
               <div class="bolsaPet">
                 <img width="350" height="350"id="bolsaPet" alt="" src="imagens\bolsaPet.jpg" complete="complete">
+                <span>Bolsa Pet</span>
                 <button>Comprar</button>
               </div>
             </div>
