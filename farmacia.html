@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Seven / Farmácia</title>
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/header.css">
-
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body_farmacia.css">
 </head>
 
 <body>
@@ -80,12 +80,58 @@
   <main>
 
    
-      <section>
+      <section class="slider"> <!--carrosel de imagens do site parte superior --------------------------------------------->
+        
+        <article class="slides"> 
 
-        <!--carrosel de imagens do site parte superior -->
+            <!--inicio Radio buttons--------------------------------------------------------------------------------->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--fim Radio buttons------------------------------------------------------------------------------------->
 
 
-      </section>
+            <!--inicio slide imagens---------------------------------------------------------------------------------->
+            <div class="slide first">
+                <img src="/imagens/carrossell_imagem1_farmacia.png" alt="imagem 1">
+            </div>
+
+            <div class="slide">
+              <img src="imagens/carrossell_imagem2_farmacia.webp" alt="imagem 2">
+            </div>
+
+            <div class="slide">
+              <img src="imagens/carrossel_imagem3_farmacia.png" alt="imagem 3">
+            </div>
+
+            <div class="slide">
+              <img src="/imagens/carrossell_imagem4_farmacia.png" alt="imagem 4">
+            </div>
+            <!--fim slide imagens--------------------------------------------------------------------------------------->
+
+
+            <!-- inicio navegação automatica---------------------------------------------------------------------------->
+            <div class="nav_auto">
+
+              <div class="auto_btn1"></div>
+              <div class="auto_btn2"></div>
+              <div class="auto_btn3"></div>
+              <div class="auto_btn4"></div>
+            </div>
+            <!-- fim navegação automatica---------------------------------------------------------------------------->
+
+        </article>
+              
+            <div class="label_nav">
+              <label for="radio1" class="label_btn"></label>
+              <label for="radio2" class="label_btn"></label>
+              <label for="radio3" class="label_btn"></label>
+              <label for="radio4" class="label_btn"></label>
+            </div>
+
+        
+      </section> <!-- fim carrosel de imagens do site parte superior ---------------------------------------------------->
 
 
 
@@ -108,6 +154,7 @@
 
  </footer>
 
+<script src="js/farmacia.js"></script>
 
 </body>
 
