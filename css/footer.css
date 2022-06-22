@@ -1,1 +1,38 @@
-qual
+footer{
+
+  position: absolute;
+  left: 0%;
+  right:0%;
+  bottom: 0%;
+  background-color: rgb(213, 33, 33);
+}
+
+footer img{
+
+  width: 11%;
+  float: left;
+
+}
+
+.footer_all{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.icones{
+  float: right;
+
+}
+
+.lista:link{
+
+  text-decoration: none;
+}
+
+.lista:visited{
+
+  text-decoration: none;
+  color: rgb(235, 236, 230);
+}
