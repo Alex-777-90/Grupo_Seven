@@ -5,20 +5,20 @@ footer{
 
 footer img{
 
-  width: 11%;
-  float: left;
+  width: 100%;
+  
 
 }
 
 .footer_all{
   display: flex;
   justify-content: space-around;
-
+  align-items: center;
 
 }
 
 .icones{
-  float: right;
+
 
 }
 
