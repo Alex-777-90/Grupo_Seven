@@ -1,139 +1,89 @@
-body{
+*{
   margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-
-}
-
-
-main{
-  margin-top: 2%;
-  width: 100vw;
+  padding:0 ;
   box-sizing: border-box;
+} /* zera todas as configurações padroes do html */
+
+/* inicio primeiro block de imagens-------------------------------------------------------------------------------------------- */
+.elementoUm_section{
+  background-color: #f2aeae;
+  margin-top: -12%;
+  padding-top:2% ;
+  padding-bottom: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   
 }
 
-
-.slider{
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slides{
-  width: 400%;
-  display:flex;
-
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25%;
-  position: relative;
-  transition: 2s;
-}
-
-.slide img{
-  width: 100%;
-  height: 349px;
-
-}
-
-.label_nav{
-  position: absolute;
-  width: 100%;
-  margin-top: 0.30%;
+.elementoUm_article{
   display: flex;
-  justify-content:center;
+  column-gap: 2%;
+  align-items: center;
+  
+
 }
 
-.label_btn{
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
+.elementoUm_article_div{
+  background-color: white;
   border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
+ 
 }
 
-.label_btn:not(:last-child){
-  margin-right: 20px;
+.elementoUm_article_div  p {
+  
 
-}
-
-.label_btn:hover{
-  background-color: rgb(237, 35, 35);
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0%;
 
 }
 
-#radio2:checked ~ .first{
-  margin-left: -25%;
-
-}
-
-#radio3:checked ~ .first{
-  margin-left: -50%;
-
-}
-
-#radio4:checked ~ .first{
-  margin-left: -75%;
-
-}
-
-.nav_auto div {
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-
-}
-
-.nav_auto{
-  position: absolute;
+.elementoUm_article_div img{
   width: 100%;
-  margin-top: 26.3%;
-  display: flex;
-  justify-content: center;
+  height: 40vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+/*--fim primeiro block de imagens------------------------------------------------------------------------------------*/
 
-.nav_auto div:not(:last-child){
-  margin-right: 20px;
-
-}
-
-#radio1:checked ~ .nav_auto .auto_btn1{
-  background-color: rgb(237, 35, 35);
-}
-
-#radio2:checked ~ .nav_auto .auto_btn2{
-  background-color: rgb(237, 35, 35);
-}
-
-#radio3:checked ~ .nav_auto .auto_btn3{
-  background-color: rgb(237, 35, 35);
-}
-
-#radio4:checked ~ .nav_auto .auto_btn4{
-  background-color: rgb(237, 35, 35);
-}
-
-/* ============================================================================ */
-
-.elementoUm{
+/* inicio segundo block de imagens-------------------------------------------------------------------------------------------- */
+.elementoDois_section{
+  background-color: #f2aeae;
+  margin-top: 0%;
+  padding-top:2% ;
+  padding-bottom: 2%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.elementoDois{
+
+.elementoDois_article{
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  column-gap: 2%;
+  align-items: center;
+  
+
 }
+
+.elementoDois_article_div{
+  background-color: white;
+  border-radius: 10px;
+ 
+}
+
+.elementoUm_article_div  p {
+  
+
+
+}
+
+.elementoDois_article_div img{
+  width: 100%;
+  height: 40vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+/*--fim segundo block de imagens------------------------------------------------------------------------------------*/
