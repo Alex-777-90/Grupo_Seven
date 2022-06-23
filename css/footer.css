@@ -1,28 +1,39 @@
 footer{
   margin-top: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
   background-color: rgb(213, 33, 33);
 }
 
 footer img{
 
-  width: 11%;
-  float: left;
-
+  width: 100%;
+ 
 }
 
 .footer_all{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  
+}
+
+.icones a{
+  color: rgb(192, 242, 29);
 
 }
 
-.icones{
-  float: right;
+.icones a i{
+  font-size: 1.7rem;
+  padding: 20%;
+  margin-left: -40%;
+}
 
+.icones a i:hover{
+  font-size: 2.7rem;
 }
 
 .lista:link{
-
   text-decoration: none;
 }
 
@@ -30,4 +41,14 @@ footer img{
 
   text-decoration: none;
   color: rgb(235, 236, 230);
+}
+
+.lista:hover{
+  color: rgb(192, 242, 29);
+}
+
+.label_footer{
+  color: rgb(192, 242, 29);
+  font-weight: 900;
+  font-size: 120% ;
 }
