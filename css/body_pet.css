@@ -131,9 +131,66 @@ main{
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  background-color: #f39595;
+  padding-top:2% ;
+  padding-bottom: 2%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 20px;
 }
+.bolsaPet{
+	border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	bottom: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+.caminhaPet{
+  border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+.casinhaPet{
+  border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+
 .elementoDois{
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  background-color: #f39595;
+  padding-top:2% ;
+  padding-bottom: 2%;
+  margin: 20px;
+}
+.tigela{
+  border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+  padding-bottom: 2%;
+}
+.racao-gato{
+  border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+  padding-bottom: 2%;
+}
+.racaoDog{
+  border-bottom: #c23939;
+  box-shadow: 0px 1px 20px #a81e1e ;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+  padding-bottom: 2%;
 }
