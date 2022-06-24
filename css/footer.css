@@ -1,28 +1,24 @@
 footer{
-
-  position: absolute;
-  left: 0%;
-  right:0%;
-  bottom: 0%;
+  margin-top: 3%;
   background-color: rgb(213, 33, 33);
 }
 
 footer img{
 
-  width: 11%;
-  float: left;
+  width: 100%;
+  
 
 }
 
 .footer_all{
   display: flex;
   justify-content: space-around;
-
+  align-items: center;
 
 }
 
 .icones{
-  float: right;
+
 
 }
 
