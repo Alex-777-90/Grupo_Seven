@@ -28,6 +28,7 @@
 
 .elementoUm_article_div{
   background-color: rgb(247, 243, 180);
+  box-shadow: 10px 10px 10px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
  
 }
@@ -93,6 +94,7 @@
 
 .elementoDois_article_div{
   background-color: rgb(247, 243, 180);
+  box-shadow: 10px 10px 10px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
  
 }
