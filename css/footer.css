@@ -52,3 +52,41 @@ footer img{
   font-weight: 900;
   font-size: 120% ;
 }
+
+@media  (max-width:700px) {
+
+  .lista{
+    font-size: 80%;
+  }
+
+  .label_footer{
+    font-size: 90%;
+  }
+  
+  .icones a i{
+    font-size: 1.4rem;
+}
+
+}
+
+
+@media  (max-width:560px){
+
+  .lista{
+    font-size: 65%;
+  }
+
+  .label_footer{
+    font-size: 75%;
+  }
+  
+  .icones a i{
+    font-size: 1.4rem;
+}
+
+}
+
+
+
+
+
