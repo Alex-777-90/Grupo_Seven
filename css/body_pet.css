@@ -30,7 +30,15 @@
   background-color: rgb(247, 243, 180);
   box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
+  transition: background-color 1000ms;
+  transition-delay:all 45ms
  
+}
+
+.elementoUm_article_div:hover{
+  background-color: rgb(247, 180, 185);
+  border:solid 2px rgb(238, 9, 9);
+
 }
 
 .elementoUm_article_div  p {
@@ -96,7 +104,15 @@
   background-color: rgb(247, 243, 180);
   box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
+  transition: background-color 1000ms;
+  transition-delay:all 45ms
  
+}
+
+.elementoDois_article_div:hover{
+  background-color: rgb(247, 180, 185);
+  border:solid 2px rgb(238, 9, 9);
+
 }
 
 .elementoDois_article_div  p {
