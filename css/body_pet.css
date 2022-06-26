@@ -3,6 +3,7 @@ body{
   padding: 0;
   width: 100%;
   height: 100vh;
+  font-family: sans-serif;
 
 }
 
@@ -44,7 +45,6 @@ main{
 }
 
 .label_nav{
-  position: absolute;
   width: 100%;
   margin-top: 0.30%;
   display: flex;
@@ -100,8 +100,8 @@ main{
   position: absolute;
   width: 100%;
   margin-top: 26.3%;
-  display: flex;
   justify-content: center;
+  display: none;
 }
 
 .nav_auto div:not(:last-child){
@@ -125,72 +125,74 @@ main{
   background-color: rgb(237, 35, 35);
 }
 
+
 /* ============================================================================ */
 
-.elementoUm{
+main{
+  width: 1200px;
+  margin: 0 auto;
+}
+.container{
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
-  background-color: #f39595;
+  background-color: #e2abab;
   padding-top:2% ;
   padding-bottom: 2%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin: 20px;
+  border-radius: 10px;
+  margin: 1.5% 1%;
+  width: 100%;
+  height: 40%;
 }
-.bolsaPet{
-	border-bottom: #c23939;
-  box-shadow: 0px 1px 20px #a81e1e ;
-	bottom: 20px;
-	padding-bottom: 20px;
-	color: #ffffff;
-	text-align: center;
-	font-weight: 700;
+.container img{
+  width: 100%;
+  height: 22em;
+
 }
-.caminhaPet{
-  border-bottom: #c23939;
-  box-shadow: 0px 1px 20px #a81e1e ;
-	color: #ffffff;
+.card{
+	color: black;
 	text-align: center;
-	font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #c23939; 
+  background-color: #ffffff;
+  padding-bottom: 2%;
+  width: 30%;
+  height: 90%;
 }
-.casinhaPet{
-  border-bottom: #c23939;
+.card:hover{
   box-shadow: 0px 1px 20px #a81e1e ;
-	color: #ffffff;
-	text-align: center;
-	font-weight: 700;
+}
+.descricao{
+  margin: 4.5% 0%;
+
+}
+.comprar{
+  padding: 2%;
+  background-color: rgb(86, 92, 94);
+  border: none;
+  border-radius: 5px;
+  cursor: grabbing;
+  color: white;
+  border: 0.7px solid white;
+  font-weight: bold;
+}
+.comprar:hover{
+  background-color: white;
+  color: rgb(86, 92, 94);
+  border:0.7px solid rgb(86, 92, 94);
 }
 
-.elementoDois{
-  display: flex;
-  justify-content: space-around;
-  background-color: #f39595;
-  padding-top:2% ;
-  padding-bottom: 2%;
-  margin: 20px;
+.carrinho{
+  padding: 2%;
+  background-color: rgb(59, 92, 79);
+  border: none;
+  border-radius: 5px;
+  cursor: grabbing;
+  color: white;
+  border: 0.7px solid white;
+  font-weight: bold;
 }
-.tigela{
-  border-bottom: #c23939;
-  box-shadow: 0px 1px 20px #a81e1e ;
-	color: #ffffff;
-	text-align: center;
-	font-weight: 700;
-  padding-bottom: 2%;
-}
-.racao-gato{
-  border-bottom: #c23939;
-  box-shadow: 0px 1px 20px #a81e1e ;
-	color: #ffffff;
-	text-align: center;
-	font-weight: 700;
-  padding-bottom: 2%;
-}
-.racaoDog{
-  border-bottom: #c23939;
-  box-shadow: 0px 1px 20px #a81e1e ;
-	color: #ffffff;
-	text-align: center;
-	font-weight: 700;
-  padding-bottom: 2%;
+.carrinho:hover{
+  background-color: white;
+  color: rgb(59, 92, 79);
+  border: 0.7px solid rgb(59, 92, 79);
 }
