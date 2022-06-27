@@ -243,10 +243,43 @@ header{
 
 }
 
-
-
 /*  Segunda parte do header   */
 /* ------------------------------------------------------------------------------------FIM */
 
+@media (max-width:795px){
 
+  .oferta{
+    display: none;
+  }
+  
+  .texto_nav{
+    display: none;
+  }
+  
+  .text_botao2 ,
+  .text_botao3 {
+    display: none;
+  }
+  
+  
+  #bota3_i{
+   
+    padding-left: 30%;
+    padding-right: 30%;
+    
+  }
+  
+  #bota2_i{
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top:15%;
+    padding-bottom: 15%;
+  
+  }
 
+  .imagem_logo  {
+    width: 25%;
+   
+  }
+  
+  }
