@@ -1,47 +1,84 @@
+
 footer{
   margin-top: 3%;
-  padding-bottom: 3%;
   padding-top: 3%;
+  padding-bottom: 3%;
   background-color: rgb(213, 33, 33);
-}
-
-footer img{
-
   width: 100%;
- 
+
 }
 
 .footer_all{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  /* background-color: aqua; */
+  width: 100%;
+
 }
 
-.icones a{
+footer section article{
+/* background-color: blueviolet;*/
+}
+
+.imagem_logo2{
+  width: 20%;
+  margin-right: -10%;
+}
+
+footer img{
+  width: 70%;
+ 
+}
+
+.icones_footer{
+  /* background-color: rgb(201, 155, 15); */
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 4%;
+  margin-right: 1%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.lista_footer1{
+  margin-left: 10%;
+}
+
+.lista_footer1 li ,
+.lista_footer2 li {
+  padding-bottom: 2%;
+}
+
+.lista_footer1 ul ,
+.lista_footer2 ul {
+  padding-top: 2%;
+}
+
+
+#icone_footer_img{
+  font-size:240%;
   color: rgb(192, 242, 29);
+}
+
+#icone_footer_img:hover{
+  font-size: 400%;
 
 }
 
-.icones a i{
-  font-size: 1.7rem;
-  padding: 20%;
-  margin-left: -40%;
-}
-
-.icones a i:hover{
-  font-size: 2.7rem;
-}
 
 .lista:link{
   text-decoration: none;
 }
 
 .lista:visited{
-
   text-decoration: none;
   color: rgb(235, 236, 230);
 }
+
 
 .lista:hover{
   color: rgb(192, 242, 29);
@@ -53,22 +90,30 @@ footer img{
   font-size: 120% ;
 }
 
-@media  (max-width:700px) {
+@media (max-width:870px){
+
+  .icones_footer{
+    flex-direction: column;
+    padding-top: 4%;
+    font-size: 70%;
+    padding-left: 5%;
+  }
+
+  #icone_footer_img{
+    padding-bottom: 10%;
+  }
+}
+
+@media  (max-width:770px) {
 
   .lista{
     font-size: 80%;
   }
 
   .label_footer{
-    font-size: 90%;
+    font-size: 90% ;
   }
-  
-  .icones a i{
-    font-size: 1.4rem;
 }
-
-}
-
 
 @media  (max-width:560px){
 
@@ -80,11 +125,18 @@ footer img{
     font-size: 75%;
   }
   
-  .icones a i{
-    font-size: 1.4rem;
+  #icone_footer_img{
+    font-size: 160%;
+}
+
+footer img{
+  width: 90%;
+ 
 }
 
 }
+
+
 
 
 

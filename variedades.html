@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Seven / Mercado</title>
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body_variedades.css">
     <link rel="stylesheet" href="css/body_variedades_carrossel.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/header.css">
+    
 </head>
 
 <body>
@@ -20,40 +20,52 @@
 
     <section class="primeiro_cabecalho">
       
-        <div class="imagem_logo">
+        <article class="imagem_logo">
             <a href="/home.html">
-                <img src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa" width="95%" height="100px">
+                <img class="imagem_logo_img" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa" >
             </a>
-        </div>
+        </article>
      
-          <form class="form_primeiro_cabecalho" action="#" method="post">
+        <article class="article_form1">
+            <form class="form_primeiro_cabecalho" action="#" method="post">
+                
+                <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
+                <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
               
-              <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
-              <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            
-          </form>
+            </form>
+        </article>
+        
+        <div class="all_button">
+        <article class="article_form2">
+         
+            <form class="form_primeiro_cabecalho2" action="#" method="post">
+              
+              <a class="botao2"  href="/formulario.html">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+                <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+      
+            </form>
+            <p class="text_botao2">Cadastro</p>
 
-          <form class="form_primeiro_cabecalho2" action="#" method="post">
+        </article>
+         
+        <article class="article_form3">
+            <form class="form_primeiro_cabecalho3" action="#" method="post">
 
-            <a class="botao2"  href="/formulario.html">  <i class="fa-solid fa-user"></i></a> <p class="text_botao2">Cadastro</p>
-              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-  
-          </form>
+                <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
+                <!--a tag "i" estou utilizando o icone do fontawesome.com -->
 
-          <form class="form_primeiro_cabecalho3" action="#" method="post">
-
-              <button class="botao2" type="submit"> <i class="fa-solid fa-cart-plus"></i> </button> <p class="text_botao3" >Carrinho</p>
-              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-
-          </form>
-                  <p class="correcao">cc</p>
+            </form>
+            <p class="text_botao3" >Carrinho</p>
+        </article> 
+      </div>  
+                  
     </section>
 
 
     <section class="segunda_cabecalho">
 
       <article class="link">
-        <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue pelo site</p> 
+        <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue aqui</p> 
       </article>
 
        <article class="abas">
@@ -144,13 +156,13 @@
                 <P>R$ 1.799,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
             </div>
 
-            <div class="elementoUm_article_div" id="imagem2" >
+            <div class="elementoUm_article_div" id="div2" >
                 <img class = "img_elementoUm_article_div"  src="imagens/imagem_variedades3.png" alt="">
                 <p>Aspirador Xiaomi mi robot Vacuum</p>
                 <P>R$ 2.910,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
             </div>
 
-            <div class="elementoUm_article_div" id="imagem3">
+            <div class="elementoUm_article_div" id="div3">
                 <img class = "img_elementoUm_article_div" src="imagens/imagem_variedades5.png" alt="">
                 <p>Headphone Sony WH-1000XM4</p>
                 <P>R$ 1.799,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
@@ -172,13 +184,13 @@
               <P>R$ 299,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
-          <div class="elementoDois_article_div" id="imagem2">
+          <div class="elementoDois_article_div" id="div2">
               <img class = "img_elementoDois_article_div" id="imagem2"src="imagens/imagem_variedades4.png" alt="">
               <p>Tênis Adidas Response SR</p>
               <P>R$ 399,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
-          <div class="elementoDois_article_div" id="imagem3">
+          <div class="elementoDois_article_div" id="div3">
               <img class = "img_elementoDois_article_div" src="imagens/imagem_variedades2.png" alt="">
               <p>Mochila Hang Loose</p>
               <P>R$ 159,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
@@ -197,14 +209,15 @@
 
     <section class="footer_all">
   
-      <div class="imagem_logo2">
+      <article class="imagem_logo2">
           <a href="/home.html">
-              <img class="imagem2" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  width="95%" height="100px" >
+              <img class="imagem2" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  >
           </a>
-      </div>
+      </article>
   
     <!--Primeiro Artico---------------------------------------------------------------------------------------------->
-    <article>
+    <article class="lista_footer1">
+
         <label class="label_footer" for="">Sobre o Grupo Seven </label>
         <ul>
             <li type = "none">
@@ -228,7 +241,8 @@
     <!--Fim Primeiro Artico---------------------------------------------------------------------------------------------->
   
     <!--Segundo Artico---------------------------------------------------------------------------------------------->
-    <article>
+    <article class="lista_footer2">
+
       <label class="label_footer" for="">Central de Atendimento </label>
       <ul>
           <li type = "none">
@@ -251,11 +265,13 @@
     </article>
   <!--Segundo Artico---------------------------------------------------------------------------------------------->
   
-    <div class="icones">
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-    </div>
+    <article class="icones_footer">
+
+      <a href=""><i id="icone_footer_img" class="fa-brands fa-facebook"></i></a>
+      <a href=""><i id="icone_footer_img" class="fa-brands fa-instagram"></i></a>
+      <a href=""><i id="icone_footer_img" class="fa-brands fa-twitter"></i></a>
+
+    </article>
     
   </section>
   

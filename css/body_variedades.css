@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding:0 ;
-    box-sizing: border-box;
-  } /* zera todas as configurações padroes do html */
-  
+
   /* inicio primeiro block de imagens-------------------------------------------------------------------------------------------- */
 
   .elementoUm_article{
@@ -162,34 +157,28 @@
     color: rgb(16, 123, 17);
   }
 
-  @media  (max-width:767px){
-   
-    #imagem3{
-      display: none;
-    }
 
-    .elementoUm_article_div{
-      width: 40%;
-    }
+  @media  (max-width:741px){
+    
 
-    .elementoDois_article_div{
-      width: 40%;
-    }
+  .elementoUm_article{
+  flex-direction: column;
 
   }
 
-  @media  (max-width:461px){
-
-    #imagem2{
-      display: none;
+  .elementoDois_article{
+    flex-direction: column;
+  
     }
 
     .elementoUm_article_div{
-      width: 70%;
+      width: 55%;
+      margin-bottom: 4%;
     }
 
     .elementoDois_article_div{
-      width: 70%;
+      width: 55%;
+      margin-bottom: 4%;
     }
 
   }
