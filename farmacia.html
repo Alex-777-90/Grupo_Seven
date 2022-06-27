@@ -9,6 +9,9 @@
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body_farmacia.css">
+    <link rel="stylesheet" href="css/body_farmacia_carrossell.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 
 <body>
@@ -16,42 +19,54 @@
   <header>
 
     <section class="primeiro_cabecalho">
-
-      <div class="imagem_logo">
-        
+      
+      <article class="imagem_logo">
           <a href="/home.html">
-              <img src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa" width="95%" height="100px">
+              <img class="imagem_logo_img" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa" >
           </a>
-      </div>
-
+      </article>
+   
+      <article class="article_form1">
           <form class="form_primeiro_cabecalho" action="#" method="post">
               
               <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
               <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
             
           </form>
-
+      </article>
+      
+      <div class="all_button">
+      <article class="article_form2">
+       
           <form class="form_primeiro_cabecalho2" action="#" method="post">
-
-            <a class="botao2"  href="/formulario.html">  <i class="fa-solid fa-user"></i></a> <p class="text_botao2">Cadastro</p>
+            
+            <a class="botao2"  href="/formulario.html">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
               <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-  
+    
           </form>
+          <p class="text_botao2">Cadastro</p>
 
+      </article>
+       
+      <article class="article_form3">
           <form class="form_primeiro_cabecalho3" action="#" method="post">
 
-              <button class="botao2" type="submit"> <i class="fa-solid fa-cart-plus"></i> </button> <p class="text_botao3">Carrinho</p>
+              <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
               <!--a tag "i" estou utilizando o icone do fontawesome.com -->
 
           </form>
-          <p class="correcao">cc</p>
-    </section>
+          <p class="text_botao3" >Carrinho</p>
+      </article> 
+    </div>  
+                
+  </section>
+
 
 
     <section class="segunda_cabecalho">
 
       <article class="link">
-        <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue pelo site</p> 
+        <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue aqui</p> 
       </article>
 
        <article class="abas">
@@ -135,24 +150,141 @@
 
 
 
-      <section>
+      <!-- inicio primeiro block de imagens---------------------------------------------------------------------------->
+    
+      <section class="elementoUm_article" >
 
-          <!--corpo com imagens e detalhes com texto etc...-->
+        <div class="elementoUm_article_div" >
+            <img class = "img_elementoUm_article_div" src="imagens/imagem_farmacia1.jpg" alt="">
+            <p>Dipirona 500mg ,240 comprimidos</p>
+            <P>R$ 17,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+        </div>
 
+        <div class="elementoUm_article_div" >
+            <img class = "img_elementoUm_article_div" src="imagens/imagem_farmacia2.jpg" alt="">
+            <p>Paracetamol 750mg ,20 comprimidos</p>
+            <P>R$ 19,70</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+        </div>
 
-      </section>
+        <div class="elementoUm_article_div" id="block_4_imagens_space">
+            <img class = "img_elementoUm_article_div" src="imagens/imagem_farmacia3.jpg" alt="">
+            <p>Novanoite 320mg , 10 comprimidos</p>
+            <P>R$ 25,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+        </div>
+
+    </section>
+
+<!-- fim primeiro block de imagens---------------------------------------------------------------------------->
+
+<!-- inicio segundo block de imagens---------------------------------------------------------------------------->
+
+  <section class="elementoDois_article" >
+
+      <div class="elementoDois_article_div" >
+          <img class = "img_elementoDois_article_div" src="imagens/imagem_farmacia4.jpg" alt="">
+          <p>Imecap hair max , 30 cápsulas</p>
+          <P>R$ 79,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+      </div>
+
+      <div class="elementoDois_article_div" >
+          <img class = "img_elementoDois_article_div" src="imagens/imagem_farmacia5.jpg" alt="">
+          <p>Natucor preto</p>
+          <P>R$ 16,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+      </div>
+
+      <div class="elementoDois_article_div" id="block_4_imagens_space">
+          <img class = "img_elementoDois_article_div" src="imagens/imagem_farmacia6.jpg" alt="">
+          <p>Tio Nacho engrossador</p>
+          <P>R$ 19,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+      </div>
+
+  </section>
+
+<!-- fim segundo block de imagens---------------------------------------------------------------------------->
 
 
 
 </main>
 
 
- <footer>
+<footer>
 
+  <section class="footer_all">
+  
+    <article class="imagem_logo2">
+        <a href="/home.html">
+            <img class="imagem2" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  >
+        </a>
+    </article>
 
+  <!--Primeiro Artico---------------------------------------------------------------------------------------------->
+  <article class="lista_footer1">
 
+      <label class="label_footer" for="">Sobre o Grupo Seven </label>
+      <ul>
+          <li type = "none">
+            <a class="lista" href="">Quem Somos </a>
+          </li>
+
+          <li type = "none">
+            <a class="lista" class="Lista" href="">Nossas Lojas </a>
+          </li>
+
+          <li type = "none">
+            <a class="lista" class="Lista" href="">Trabalhe Conosco </a>
+          </li>
+
+          <li type = "none">
+            <a class="lista" href="">Dúvidas </a>
+          </li>
+      </ul>
+
+  </article>
+  <!--Fim Primeiro Artico---------------------------------------------------------------------------------------------->
+
+  <!--Segundo Artico---------------------------------------------------------------------------------------------->
+  <article class="lista_footer2">
+
+    <label class="label_footer" for="">Central de Atendimento </label>
+    <ul>
+        <li type = "none">
+          <a class="lista"href="">Anucie Seu Produto Aqui </a>
+        </li>
+
+        <li type = "none">
+          <a class="lista" href="">Política de Vendas </a>
+        </li>
+
+        <li type = "none">
+          <a class="lista" href="">Troca e Devolução </a>
+        </li>
+
+        <li type = "none">
+          <a class="lista" href="">Prazo e Entrega </a>
+        </li>
+    </ul>
+
+  </article>
+<!--Segundo Artico---------------------------------------------------------------------------------------------->
+
+  <article class="icones_footer">
+
+    <a href=""><i id="icone_footer_img" class="fa-brands fa-facebook"></i></a>
+    <a href=""><i id="icone_footer_img" class="fa-brands fa-instagram"></i></a>
+    <a href=""><i id="icone_footer_img" class="fa-brands fa-twitter"></i></a>
+
+  </article>
+  
+</section>
 
  </footer>
+ 
+
+   <!--<div class="whatsapp">
+  <p>Duvidas ?</p>
+  <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
+  </div>-->
+
 
 <script src="js/farmacia.js"></script>
 
