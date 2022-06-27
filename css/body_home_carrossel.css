@@ -124,3 +124,22 @@ main{
 #radio4:checked ~ .nav_auto .auto_btn4{
   background-color: rgb(237, 35, 35);
 }
+
+@media  (max-width:741px){
+
+  .slide{
+    width: 25%;
+    height: 26vh;
+    position: relative;
+    transition: 2s;
+  }
+ 
+  .nav_auto div {
+    display: none;
+  
+  }
+
+  .label_nav{
+    display: none;
+  }
+}

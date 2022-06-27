@@ -128,5 +128,22 @@ main{
 /* ============================================================================ */
 
 
+@media  (max-width:741px){
 
+  .slide{
+    width: 25%;
+    height: 22vh;
+    position: relative;
+    transition: 2s;
+  }
+ 
+  .nav_auto div {
+    display: none;
+  
+  }
+
+  .label_nav{
+    display: none;
+  }
+}
 

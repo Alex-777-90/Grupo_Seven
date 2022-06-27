@@ -155,3 +155,31 @@
   font-size: 300%;
   color: rgb(16, 123, 17);
 }
+
+
+@media  (max-width:741px){
+    
+
+  .elementoUm_article{
+  flex-direction: column;
+
+  }
+
+  .elementoDois_article{
+    flex-direction: column;
+  
+    }
+
+    .elementoUm_article_div{
+      width: 80%;
+      margin-top:3%;
+      margin-bottom: 7%;
+    }
+
+    .elementoDois_article_div{
+      width: 80%;
+      margin-top:3%;
+      margin-bottom: 7%;
+    }
+
+  }

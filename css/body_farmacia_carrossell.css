@@ -124,3 +124,21 @@ main{
   background-color: rgb(237, 35, 35);
 }
 
+@media  (max-width:741px){
+
+  .slide{
+    width: 25%;
+    height: 20vh;
+    position: relative;
+    transition: 2s;
+  }
+ 
+  .nav_auto div {
+    display: none;
+  
+  }
+
+  .label_nav{
+    display: none;
+  }
+}
