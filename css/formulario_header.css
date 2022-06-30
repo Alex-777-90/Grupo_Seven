@@ -196,10 +196,6 @@ header{
    
 }
 
-.link i{
-  font-size: 110%;
-}
-
 .abas{
   display: flex;
   width:80%;
@@ -253,11 +249,6 @@ header{
 
 @media (max-width:795px){
 
-header{
-  position: fixed;
-  top:0vh;
-}
-
 .oferta{
   display: none;
 }
@@ -306,23 +297,10 @@ header{
   height: 35px;
 }
 
-
+.imagem_logo4{
+  width: 20%;
+  
 }
 
-@media (max-width:795px) and (min-width:587px){
-
-  .imagem_logo  {
-    width: 20%;
-    margin-right: 10%;
-  
-  }
-  
-  .imagem_logo_img{
-    width: 80%;
-  }
- 
-  .link i{
-    font-size: 150%;
-  }
 
 }
