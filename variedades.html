@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/body_variedades.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/body_variedades_carrossel.css">
 
 </head>
 
@@ -93,12 +94,58 @@
   <main>
 
    
-        <section>
+    <section class="slider"> <!--carrosel de imagens do site parte superior --------------------------------------------->
+        
+      <article class="slides"> 
 
-          <!--carrosel de imagens do site parte superior -->
+          <!--inicio Radio buttons--------------------------------------------------------------------------------->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--fim Radio buttons------------------------------------------------------------------------------------->
 
 
-        </section>
+          <!--inicio slide imagens---------------------------------------------------------------------------------->
+          <div class="slide first">
+              <img src="/imagens/carrossell_imagem1_farmacia.png" alt="imagem 1">
+          </div>
+
+          <div class="slide">
+            <img src="imagens/carrossell_imagem2_farmacia.webp" alt="imagem 2">
+          </div>
+
+          <div class="slide">
+            <img src="imagens/carrossel_imagem3_farmacia.png" alt="imagem 3">
+          </div>
+
+          <div class="slide">
+            <img src="/imagens/carrossell_imagem4_farmacia.png" alt="imagem 4">
+          </div>
+          <!--fim slide imagens--------------------------------------------------------------------------------------->
+
+
+          <!-- inicio navegação automatica---------------------------------------------------------------------------->
+          <div class="nav_auto">
+
+            <div class="auto_btn1"></div>
+            <div class="auto_btn2"></div>
+            <div class="auto_btn3"></div>
+            <div class="auto_btn4"></div>
+          </div>
+          <!-- fim navegação automatica---------------------------------------------------------------------------->
+
+      </article>
+            
+          <div class="label_nav">
+            <label for="radio1" class="label_btn"></label>
+            <label for="radio2" class="label_btn"></label>
+            <label for="radio3" class="label_btn"></label>
+            <label for="radio4" class="label_btn"></label>
+          </div>
+
+      
+    </section> <!-- fim carrosel de imagens do site parte superior ---------------------------------------------------->
 
 
 
@@ -114,6 +161,19 @@
                       <li>Nome do produto</li>
                       <li>Preço</li>
                       <li>Pré descrição do produto</li>
+                      <button type="submit">Comprar</button>
+                      <button type="submit">Carrinho</button>
+                    </ul>
+                    
+                  </div>
+                  <div>
+                    <img id="imgsize" src="/imagens/variedades.png" alt="">
+                    <ul>
+                      <li>Nome do produto</li>
+                      <li>Preço</li>
+                      <li>Pré descrição do produto</li>
+                      <button type="submit">Comprar</button>
+                      <button type="submit">Carrinho</button>
                     </ul>
                   </div>
                   <div>
@@ -122,14 +182,8 @@
                       <li>Nome do produto</li>
                       <li>Preço</li>
                       <li>Pré descrição do produto</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <img id="imgsize" src="/imagens/variedades.png" alt="">
-                    <ul>
-                      <li>Nome do produto</li>
-                      <li>Preço</li>
-                      <li>Pré descrição do produto</li>
+                      <button type="submit">Comprar</button>
+                      <button type="submit">Carrinho</button>
                     </ul>
                   </div>
               </div>
@@ -141,6 +195,8 @@
                     <li>Nome do produto</li>
                     <li>Preço</li>
                     <li>Pré descrição do produto</li>
+                    <button type="submit">Comprar</button>
+                    <button type="submit">Carrinho</button>
                   </ul>
                 </div>
     
@@ -150,6 +206,8 @@
                     <li>Nome do produto</li>
                     <li>Preço</li>
                     <li>Pré descrição do produto</li>
+                    <button type="submit">Comprar</button>
+                    <button type="submit">Carrinho</button>
                   </ul>
                 </div>
     
@@ -159,6 +217,8 @@
                     <li>Nome do produto</li>
                     <li>Preço</li>
                     <li>Pré descrição do produto</li>
+                    <button type="submit">Comprar</button>
+                    <button type="submit">Carrinho</button>
                   </ul>
                 </div>
               </div>
@@ -245,7 +305,8 @@
 
  </footer>
  
-
+ <script src="/js/variedades.js"></script>
+ 
    <!--<div class="whatsapp">
   <p>Duvidas ?</p>
   <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
