@@ -146,4 +146,15 @@ main{
     margin-top: 155px;
     
   }
+
+
+}
+
+@media (max-width:795px) and (min-width:742px){
+ 
+  main{
+    margin-top: 155px;
+    
+  }
+
 }
