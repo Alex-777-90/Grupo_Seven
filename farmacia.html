@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/body_farmacia_carrossell.css">
     <link rel="stylesheet" href="css/body_farmacia.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/menu_hamburguer.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
     <section class="segunda_cabecalho">
 
       <article class="link">
-        <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue aqui</p> 
+        <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p> 
       </article>
 
        <article class="abas">
@@ -88,7 +89,39 @@
     </section>
 
   </header>
+   
+  <section class="body_menu_hamburguer" ></section>
+  <div class="menu_hamburguer" id="menu_hamburguer">
+    
+    <ul>
+        <li class="lista_label_hambuerguer">
+          Variedades
+           <ul >
+            <a href="/variedades.html"> <li>Eletrônicos</li></a>
+            <a href="/variedades.html"> <li>Móveis</li></a>
+            <a href="/variedades.html"><li>Roupas</li></a>
+           </ul>
+        </li>
 
+        <li class="lista_label_hambuerguer" >Espaço pet
+            <ul >
+              <a href="pet.html"> <li>Gatos</li></a>
+              <a href="pet.html"><li>Cachorros</li></a>
+              <a href="pet.html"><li>Diversos</li></a> 
+            </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Farmácia
+            <ul >
+              <a href="farmacia.html"><li>Remédios</li></a>
+              <a href="farmacia.html"><li>Beleza</li></a>
+              <a href="farmacia.html"><li>Diversos</li></a>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
 
   <main>
 
@@ -284,6 +317,7 @@
   </div>-->
 
 <script src="js/farmacia.js"></script>
+<script src="js/menu_hamburguer.js"></script>
 
 </body>
 

@@ -33,7 +33,7 @@ main{
 
 .slide{
   width: 25%;
-  position: relative;
+  /* position: relative;*/
   transition: 2s;
 }
 
@@ -133,7 +133,7 @@ main{
   .slide{
     width: 25%;
     height: 20vh;
-    position: relative;
+     /* position: relative;*/
     transition: 2s;
   }
  
@@ -144,5 +144,10 @@ main{
 
   .label_nav{
     display: none;
+  }
+
+  main{
+    margin-top: 155px;
+    
   }
 }
