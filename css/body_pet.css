@@ -34,7 +34,7 @@ main{
 
 .slide{
   width: 25%;
-  position: relative;
+ /* position: relative;*/
   transition: 2s;
 }
 
@@ -195,4 +195,36 @@ main{
   background-color: white;
   color: rgb(59, 92, 79);
   border: 0.7px solid rgb(59, 92, 79);
+}
+
+@media  (max-width:741px){
+
+  .slide{
+    width: 25%;
+    height: 22vh;
+     /* position: relative;*/
+    transition: 2s;
+  }
+ 
+  .nav_auto div {
+    display: none;
+  
+  }
+
+  .label_nav{
+    display: none;
+  }
+  main{
+    margin-top: 155px;
+    
+  }
+}
+
+@media (max-width:795px) and (min-width:742px){
+ 
+  main{
+    margin-top: 155px;
+    
+  }
+
 }
