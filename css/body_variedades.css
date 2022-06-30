@@ -111,7 +111,7 @@ body{
 /* ============================ FIM PRODUCTS 2 ============================ */
 ul{
     list-style: none;
-    position: relative;
+   /* position: relative;*/
     align-items:center;
     justify-content: center;
     background-color: rgba(172, 164, 164, 0.329);
