@@ -49,6 +49,7 @@ main{
   margin-top: 0.30%;
   display: flex;
   justify-content:center;
+  margin-bottom: 1%;
 }
 
 .label_btn{
@@ -93,7 +94,6 @@ main{
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
-
 }
 
 .nav_auto{
@@ -106,7 +106,6 @@ main{
 
 .nav_auto div:not(:last-child){
   margin-right: 20px;
-
 }
 
 #radio1:checked ~ .nav_auto .auto_btn1{
@@ -128,10 +127,6 @@ main{
 
 /* ============================================================================ */
 
-main{
-  width: 1200px;
-  margin: 0 auto;
-}
 .container{
   display: flex;
   justify-content: space-around;
@@ -139,9 +134,9 @@ main{
   padding-top:2% ;
   padding-bottom: 2%;
   border-radius: 10px;
-  margin: 1.5% 1%;
   width: 100%;
   height: 40%;
+ 
 }
 .container img{
   width: 100%;
