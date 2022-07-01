@@ -1,0 +1,99 @@
+
+.body_menu_hamburguer{
+  display: none;
+  
+}
+
+.menu_hamburguer{
+  position: absolute;
+  width: 15.5%;
+  display: none;
+  background-color: rgb(213, 33, 33);
+  margin-left: 1%;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+
+
+.menu_hamburguer ul li {
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 120%;
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+
+}
+
+.menu_hamburguer ul li:hover{
+
+  color: rgb(244, 239, 239);
+  
+
+}
+
+.menu_hamburguer ul {
+  padding: 0;
+}
+
+.menu_hamburguer ul ul li{
+  background-color: rgb(233, 64, 64);
+  font-size: 100%;
+}
+
+.menu_hamburguer ul ul li{
+  background-color: rgb(199, 233, 64);
+  color: rgb(243, 18, 18);
+}
+
+.menu_hamburguer ul ul {
+  display: none;
+  
+}
+
+.menu_hamburguer ul li:hover > ul {
+  display: block;
+
+}
+.menu_hamburguer a{
+  text-decoration: none;
+}
+
+
+@media (max-width:796px){
+
+.menu_hamburguer  {
+  margin-top: 40px;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 90%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+
+}
+
+.menu_hamburguer ul li {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.body_menu_hamburguer{
+  position: absolute;
+  background-color: #eb6a6a;
+  margin-top: -14px;
+  width: 100%;
+  height: 100vh;
+
+}
+.menu_hamburguer ul li:focus > ul {
+  display: block;
+
+}
+
+
+}
+
+
+

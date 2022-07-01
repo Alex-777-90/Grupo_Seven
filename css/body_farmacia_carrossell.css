@@ -3,10 +3,8 @@ body{
   padding: 0;
   width: 100%;
   height: 100vh;
-  font-family: sans-serif;
 
 }
-
 
 main{
   margin-top: 2%;
@@ -34,27 +32,27 @@ main{
 
 .slide{
   width: 25%;
- /* position: relative;*/
+  /* position: relative;*/
   transition: 2s;
 }
 
 .slide img{
   width: 100%;
-  height: 349px;
+  height: 110%;
 
 }
 
 .label_nav{
+  position: absolute;
   width: 100%;
   margin-top: 0.30%;
   display: flex;
   justify-content:center;
-  margin-bottom: 1%;
 }
 
 .label_btn{
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
+  border: 2px solid rgb(237, 35, 35);
+  padding: 0.42%;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
@@ -90,22 +88,24 @@ main{
 }
 
 .nav_auto div {
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
+  border: 2px solid rgb(237, 35, 35);
+  padding: 0.42%;
   border-radius: 10px;
   transition: 1s;
+
 }
 
 .nav_auto{
   position: absolute;
   width: 100%;
   margin-top: 26.3%;
+  display: flex;
   justify-content: center;
-  display: none;
 }
 
 .nav_auto div:not(:last-child){
   margin-right: 20px;
+
 }
 
 #radio1:checked ~ .nav_auto .auto_btn1{
@@ -124,80 +124,12 @@ main{
   background-color: rgb(237, 35, 35);
 }
 
-
-/* ============================================================================ */
-
-.container{
-  display: flex;
-  justify-content: space-around;
-  background-color: #e2abab;
-  padding-top:2% ;
-  padding-bottom: 2%;
-  border-radius: 10px;
-  width: 100%;
-  height: 40%;
- 
-}
-.container img{
-  width: 100%;
-  height: 22em;
-
-}
-.card{
-	color: black;
-	text-align: center;
-  cursor: pointer;
-  border: 1px solid #c23939; 
-  background-color: #ffffff;
-  padding-bottom: 2%;
-  width: 30%;
-  height: 90%;
-}
-.card:hover{
-  box-shadow: 0px 1px 20px #a81e1e ;
-}
-.descricao{
-  margin: 4.5% 0%;
-
-}
-.comprar{
-  padding: 2%;
-  background-color: rgb(86, 92, 94);
-  border: none;
-  border-radius: 5px;
-  cursor: grabbing;
-  color: white;
-  border: 0.7px solid white;
-  font-weight: bold;
-}
-.comprar:hover{
-  background-color: white;
-  color: rgb(86, 92, 94);
-  border:0.7px solid rgb(86, 92, 94);
-}
-
-.carrinho{
-  padding: 2%;
-  background-color: rgb(59, 92, 79);
-  border: none;
-  border-radius: 5px;
-  cursor: grabbing;
-  color: white;
-  border: 0.7px solid white;
-  font-weight: bold;
-}
-.carrinho:hover{
-  background-color: white;
-  color: rgb(59, 92, 79);
-  border: 0.7px solid rgb(59, 92, 79);
-}
-
 @media  (max-width:741px){
 
   .slide{
     width: 25%;
-    height: 22vh;
-     /* position: relative;*/
+    height: 20vh;
+    /* position: relative;*/
     transition: 2s;
   }
  
@@ -209,6 +141,7 @@ main{
   .label_nav{
     display: none;
   }
+
   main{
     margin-top: 155px;
     

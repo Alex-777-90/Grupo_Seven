@@ -1,127 +1,183 @@
-body{
-  margin: 0;
-  padding: 0;
+
+/* inicio primeiro block de imagens-------------------------------------------------------------------------------------------- */
+
+.elementoUm_article{
+  display: flex;
+  background-color: #f39595;
+  margin-top: 2.6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   width: 100%;
-  height: 100vh;
-
-}
-
-
-main{
-  margin-top: 2%;
-  width: 100vw;
-  box-sizing: border-box;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: space-around;  
+  flex-wrap: wrap;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   
 }
 
-
-.slider{
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slides{
-  width: 400%;
-  display:flex;
-
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25%;
-  position: relative;
-  transition: 2s;
-}
-
-.slide img{
-  width: 100%;
-  height: 110%;
-
-}
-
-.label_nav{
-  position: absolute;
-  width: 100%;
-  margin-top: 0.30%;
-  display: flex;
-  justify-content:center;
-}
-
-.label_btn{
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
+.elementoUm_article_div{
+  background-color: rgb(247, 243, 180);
+  box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
+  transition: background-color 1000ms;
+  transition-delay:all 100000s;
+  width:30%;
+ 
+}
+
+.elementoUm_article_div:hover{
+  background-color: rgb(247, 180, 185);
+  border:solid 2px rgb(238, 9, 9);
+
+}
+
+.elementoUm_article_div  p {
+  margin-left: 5%;
+  font-size: 100%;
+
+}
+
+.elementoUm_article_div  button{
+  padding-right:5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 5%;
+  background-color: #ef8d8d;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-weight: 800;
+  color:white;
   cursor: pointer;
-  transition: 1s;
 }
 
-.label_btn:not(:last-child){
-  margin-right: 20px;
-
-}
-
-.label_btn:hover{
-  background-color: rgb(237, 35, 35);
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0%;
+.elementoUm_article_div  button:hover{
+  background-color: rgb(213, 33, 33);
 
 }
 
-#radio2:checked ~ .first{
-  margin-left: -25%;
 
-}
-
-#radio3:checked ~ .first{
-  margin-left: -50%;
-
-}
-
-#radio4:checked ~ .first{
-  margin-left: -75%;
-
-}
-
-.nav_auto div {
-  border: 2px solid rgb(156, 8, 8);
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-
-}
-
-.nav_auto{
-  position: absolute;
+.elementoUm_article_div img{
   width: 100%;
-  margin-top: 26.3%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/*--fim primeiro block de imagens------------------------------------------------------------------------------------*/
+
+/* inicio segundo block de imagens-------------------------------------------------------------------------------------------- */
+
+.elementoDois_article{
   display: flex;
-  justify-content: center;
+  background-color: #eca7a7;
+  margin-top: 0px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: space-around; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
 }
 
-.nav_auto div:not(:last-child){
-  margin-right: 20px;
+.elementoDois_article_div{
+  background-color: rgb(247, 243, 180);
+  box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+  border-radius: 10px;
+  transition: background-color 1000ms;
+  width:30%;
+}
+
+.elementoDois_article_div:hover{
+  background-color: rgb(247, 180, 185);
+  border:solid 2px rgb(238, 9, 9);
 
 }
 
-#radio1:checked ~ .nav_auto .auto_btn1{
-  background-color: rgb(237, 35, 35);
+.elementoDois_article_div  p {
+  margin-left: 5%;
+  font-size: 100%;
+
 }
 
-#radio2:checked ~ .nav_auto .auto_btn2{
-  background-color: rgb(237, 35, 35);
+.elementoDois_article_div  button{
+  padding-right:5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 5%;
+  background-color: #ef8d8d;
+  border-radius: 10px;
+  border: none;
+  font-weight: 800;
+  color:white;
+  cursor: pointer;
 }
 
-#radio3:checked ~ .nav_auto .auto_btn3{
-  background-color: rgb(237, 35, 35);
+.elementoDois_article_div  button:hover{
+  background-color: rgb(213, 33, 33);
+
 }
 
-#radio4:checked ~ .nav_auto .auto_btn4{
-  background-color: rgb(237, 35, 35);
+.elementoDois_article_div img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+/*--fim segundo block de imagens------------------------------------------------------------------------------------*/
+
+.whatsapp{
+  position: fixed;
+  top: 90%;
+  left:95%;
 }
 
+.whatsapp p {
+  font-size: 80%;
+  font-weight: 800;
+}
+
+#whats{
+  font-size: 300%;
+  color: rgb(16, 123, 17);
+}
+
+@media  (max-width:741px){
+    
+
+  .elementoUm_article{
+  flex-direction: column;
+
+  }
+
+  .elementoDois_article{
+    flex-direction: column;
+  
+    }
+
+    .elementoUm_article_div{
+      width: 80%;
+      margin-top:3%;
+      margin-bottom: 7%;
+    }
+
+    .elementoDois_article_div{
+      width: 80%;
+      margin-top:3%;
+      margin-bottom: 7%;
+    }
+
+  }
