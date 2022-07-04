@@ -49,6 +49,7 @@ main{
   margin-top: 0.30%;
   display: flex;
   justify-content:center;
+  margin-bottom: 1%;
 }
 
 .label_btn{
@@ -93,7 +94,6 @@ main{
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
-
 }
 
 .nav_auto{
@@ -106,7 +106,6 @@ main{
 
 .nav_auto div:not(:last-child){
   margin-right: 20px;
-
 }
 
 #radio1:checked ~ .nav_auto .auto_btn1{
@@ -128,7 +127,6 @@ main{
 
 /* ============================================================================ */
 
-
 .container{
   display: flex;
   justify-content: space-around;
@@ -136,15 +134,10 @@ main{
   padding-top:2% ;
   padding-bottom: 2%;
   border-radius: 10px;
-  margin-top: 2%;
   width: 100%;
-  height: 40%;
-  
 }
 .container img{
   width: 100%;
-  height: 22em;
-
 }
 .card{
 	color: black;
@@ -154,7 +147,6 @@ main{
   background-color: #ffffff;
   padding-bottom: 2%;
   width: 30%;
-  height: 90%;
 }
 .card:hover{
   box-shadow: 0px 1px 20px #a81e1e ;
@@ -200,10 +192,21 @@ main{
   .slide{
     width: 25%;
     height: 22vh;
-     /* position: relative;*/
     transition: 2s;
   }
- 
+  .container{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .container img{
+    width: 100%;
+  }
+ .card{
+  width: 80%;
+  margin-top:3%;
+  margin-bottom: 7%;
+ }
   .nav_auto div {
     display: none;
   
