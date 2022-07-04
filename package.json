@@ -1,0 +1,24 @@
+{
+  "name": "grupo_seven_alex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-777-90/Grupo_Seven.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-777-90/Grupo_Seven/issues"
+  },
+  "homepage": "https://github.com/Alex-777-90/Grupo_Seven#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}
