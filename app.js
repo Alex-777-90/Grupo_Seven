@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 
-app.set("view engine",ejs); // informa ao servidor que será utilizado o ejs.
+app.set("view engine","ejs"); // informa ao servidor que será utilizado o ejs.
 
 
 
