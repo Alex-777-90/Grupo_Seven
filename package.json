@@ -2,9 +2,10 @@
   "name": "grupo_seven_alex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,12 @@
   },
   "homepage": "https://github.com/Alex-777-90/Grupo_Seven#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.18"
   }
 }
