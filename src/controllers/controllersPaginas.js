@@ -21,7 +21,6 @@ const controlePaginas = {
    return res.render("formulario");
  }
 
-
 };
 
 module.exports = controlePaginas;
