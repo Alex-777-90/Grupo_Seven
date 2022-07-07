@@ -211,8 +211,10 @@ header{
 }
 
 /* Altera a configuração padrão dos links  */
+/* link que ainda não foi visitado */
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
+  color: rgb(235, 236, 230);
 
 }
 
