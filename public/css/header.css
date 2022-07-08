@@ -213,7 +213,7 @@ header{
 /* Altera a configuração padrão dos links  */
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
-
+  color: rgb(235, 236, 230);
 }
 
 .tagA_segundo_cabecalho:visited{
@@ -326,3 +326,4 @@ header{
   }
 
 }
+
