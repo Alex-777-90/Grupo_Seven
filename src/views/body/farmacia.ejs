@@ -181,58 +181,42 @@
 
 
 
-        <!-- inicio primeiro block de imagens---------------------------------------------------------------------------->
-    
+     <!-- inicio primeiro block de imagens---------------------------------------------------------------------------->
+         
       <section class="elementoUm_article" >
 
-          <div class="elementoUm_article_div" >
-              <img class = "img_elementoUm_article_div" src="/img/imagem_farmacia1.jpg" alt="">
-              <p>Dipirona 500mg ,240 comprimidos</p>
-              <P>R$ 17,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
+        <% productsFarmacia.forEach(element1 => { %>
 
           <div class="elementoUm_article_div" >
-              <img class = "img_elementoUm_article_div" src="/img/imagem_farmacia2.jpg" alt="">
-              <p>Paracetamol 750mg,20 comprimidos</p>
-              <P>R$ 19,70</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+              <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
+              <p><%= element1.description %> </p>
+              <P> R$ <%= toThousand(element1.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
-          <div class="elementoUm_article_div" id="block_4_imagens_space">
-              <img class = "img_elementoUm_article_div" src="/img/imagem_farmacia3.jpg" alt="">
-              <p>Novanoite 320mg , 10 comprimidos</p>
-              <P>R$ 25,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
+        <% }) %>
 
       </section>
 
+ 
 <!-- fim primeiro block de imagens---------------------------------------------------------------------------->
 
 <!-- inicio segundo block de imagens---------------------------------------------------------------------------->
 
     <section class="elementoDois_article" >
 
+      <% productsFarmacia2.forEach(element2 => { %>
+       
         <div class="elementoDois_article_div" >
-            <img class = "img_elementoDois_article_div" src="/img/imagem_farmacia4.jpg" alt="">
-            <p>Imecap hair max , 30 cápsulas</p>
-            <P>R$ 79,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+            <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
+            <p><%= element2.description %></p>
+            <P>R$ <%= toThousand(element2.price) %></P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
         </div>
 
-        <div class="elementoDois_article_div" >
-            <img class = "img_elementoDois_article_div" src="/img/imagem_farmacia5.jpg" alt="">
-            <p>Natucor preto</p>
-            <P>R$ 16,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-        </div>
-
-        <div class="elementoDois_article_div" id="block_4_imagens_space">
-            <img class = "img_elementoDois_article_div" src="/img/imagem_farmacia6.jpg" alt="">
-            <p>Tio Nacho engrossador</p>
-            <P>R$ 19,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-        </div>
+      <% }) %>
 
     </section>
 
 <!-- fim segundo block de imagens---------------------------------------------------------------------------->
-
 
 </main>
 
