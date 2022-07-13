@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const express = require("express");
 const app = express();
+const methodOverride = require("method-override");// const pra habilitar os metodos put e delete
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
@@ -17,10 +18,11 @@ app.set('views', path.join(__dirname, './src/views/body'));
 app.set("view engine","ejs"); // informa ao servidor que será utilizado o ejs.
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json());// ajuda a processar o dados vindo de form pelo method post e tranformar o arguivo em json 
+app.use(express.urlencoded({ extended: false })); // ajuda a processar o dados vindo de form pelo method post
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///

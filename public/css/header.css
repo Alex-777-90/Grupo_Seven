@@ -46,10 +46,11 @@ header{
 .caixa_texto{
  /* background-color: aquamarine;*/
   width: 90%;
-  font-size: 100%;
+  font-size: 90%;
   height: 36px;
   border-radius: 7px;
   border: none;
+  padding-left: 2%;
 
 }
 
