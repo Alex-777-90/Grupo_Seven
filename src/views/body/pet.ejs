@@ -182,23 +182,16 @@
    
         <section class="elementoUm_article" >
 
+        <% productsPet.forEach(element1 => { %>
+           
             <div class="elementoUm_article_div" >
-                <img class = "img_elementoUm_article_div" src="/img\bolsaPet.jpg" alt="">
-                <p>Bolsa pet</p>
-                <P>R$ 140,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+                <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
+                <p><%= element1.description %></p>
+                <P> R$ <%= toThousand(element1.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
             </div>
 
-            <div class="elementoUm_article_div" >
-                <img class = "img_elementoUm_article_div" src="/img\caminhaPet.webp" alt="">
-                <p>Caminha pet</p>
-                <P>R$ 190,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-            </div>
 
-            <div class="elementoUm_article_div" id="block_4_imagens_space">
-                <img class = "img_elementoUm_article_div" src="/img\casinhaPet.jpg" alt="">
-                <p>Casinha pet</p>
-                <P>R$ 200,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-            </div>
+        <% }) %>
 
         </section>
 
@@ -209,23 +202,15 @@
  
       <section class="elementoDois_article" >
 
+      <% productsPet2.forEach(element2 => { %>
+         
           <div class="elementoDois_article_div" >
-              <img class = "img_elementoDois_article_div" src="/img\tigela_gato.webp" alt="">
-              <p>Tigela para gato</p>
-              <P>R$ 20,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+              <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
+              <p><%= element2.description %></p>
+              <P>R$ <%= toThousand(element2.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
-          <div class="elementoDois_article_div" >
-              <img class = "img_elementoDois_article_div" src="/img\racao-gato.jpg" alt="">
-              <p>Ração para Gato</p>
-              <P>R$ 50,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
-
-          <div class="elementoDois_article_div" id="block_4_imagens_space">
-              <img class = "img_elementoDois_article_div" src="/img\racao-premier-caes-adultos.webp" alt="">
-              <p>Ração premium</p>
-              <P>R$ 80,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
+      <% }) %>
 
       </section>
 
@@ -234,80 +219,7 @@
 
 </main>
 
-
-
-<footer>
-
-  <section class="footer_all">
-  
-    <article class="imagem_logo2">
-        <a href="/home">
-            <img class="imagem2" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"  >
-        </a>
-    </article>
-
-  <!--Primeiro Artico---------------------------------------------------------------------------------------------->
-  <article class="lista_footer1">
-
-      <label class="label_footer" for="">Sobre o Grupo Seven </label>
-      <ul>
-          <li type = "none">
-            <a class="lista" href="">Quem Somos </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" class="Lista" href="">Nossas Lojas </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" class="Lista" href="">Trabalhe Conosco </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" href="">Dúvidas </a>
-          </li>
-      </ul>
-
-  </article>
-  <!--Fim Primeiro Artico---------------------------------------------------------------------------------------------->
-
-  <!--Segundo Artico---------------------------------------------------------------------------------------------->
-  <article class="lista_footer2">
-
-    <label class="label_footer" for="">Central de Atendimento </label>
-    <ul>
-        <li type = "none">
-          <a class="lista"href="">Anucie Seu Produto Aqui </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Política de Vendas </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Troca e Devolução </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Prazo e Entrega </a>
-        </li>
-    </ul>
-
-  </article>
-<!--Segundo Artico---------------------------------------------------------------------------------------------->
-
-  <article class="icones_footer">
-
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-facebook"></i></a>
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-instagram"></i></a>
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-twitter"></i></a>
-
-  </article>
-  
-</section>
-
- </footer>
- 
+<%- include("../partials/footer") %> 
 
    <!--<div class="whatsapp">
   <p>Duvidas ?</p>

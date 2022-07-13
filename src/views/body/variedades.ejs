@@ -183,26 +183,16 @@
    <!-- inicio primeiro block de imagens---------------------------------------------------------------------------->
   
         <section class="elementoUm_article" >
-
+          
+      <% productsVariedades.forEach(element1 => { %>
+       
             <div class="elementoUm_article_div" >
-                <img class = "img_elementoUm_article_div" src="/img/imagem_variedades1.png" alt="">
-                <p> Galaxy S20 ,Samsung 128GB</p>
-                <P>R$ 1.799,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-            </div>
-
-            <div class="elementoUm_article_div" id="div2" >
-                <img class = "img_elementoUm_article_div"  src="/img/imagem_variedades3.png" alt="">
-                <p>Aspirador Xiaomi mi robot Vacuum</p>
-                <P>R$ 2.910,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-            </div>
-
-            <div class="elementoUm_article_div" id="div3">
-                <img class = "img_elementoUm_article_div" src="/img/imagem_variedades5.png" alt="">
-                <p>Headphone Sony WH-1000XM4</p>
-                <P>R$ 1.799,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+                <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
+                <p> <%= element1.description %> </p>
+                <P> R$ <%= toThousand(element1.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
             </div>
        
-  
+      <% }) %>
         </section>
 
 <!-- fim primeiro block de imagens---------------------------------------------------------------------------->
@@ -212,105 +202,23 @@
      
       <section class="elementoDois_article" >
 
+    <% productsVariedades2.forEach(element2 => { %>
+    
           <div class="elementoDois_article_div" >
-              <img class = "img_elementoDois_article_div" src="/img/imagem_variedades6png.jpg" alt="">
-              <p>Camisa Liverpool II 21/22</p>
-              <P>R$ 299,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+              <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
+              <p><%= element2.description %></p>
+              <P>R$ <%= toThousand(element2.price) %></P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
-          <div class="elementoDois_article_div" id="div2">
-              <img class = "img_elementoDois_article_div" id="imagem2"src="/img/imagem_variedades4.png" alt="">
-              <p>Tênis Adidas Response SR</p>
-              <P>R$ 399,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
-
-          <div class="elementoDois_article_div" id="div3">
-              <img class = "img_elementoDois_article_div" src="/img/imagem_variedades2.png" alt="">
-              <p>Mochila Hang Loose</p>
-              <P>R$ 159,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
-          </div>
-
-       
+    <% }) %>
       </section>
 <!-- fim segundo block de imagens---------------------------------------------------------------------------->
      
 
   </main>
 
+  <%- include("../partials/footer") %> 
 
-
-  <footer>
-
-    <section class="footer_all">
-  
-      <article class="imagem_logo2">
-          <a href="/home">
-              <img class="imagem2" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"  >
-          </a>
-      </article>
-  
-    <!--Primeiro Artico---------------------------------------------------------------------------------------------->
-    <article class="lista_footer1">
-
-        <label class="label_footer" for="">Sobre o Grupo Seven </label>
-        <ul>
-            <li type = "none">
-              <a class="lista" href="">Quem Somos </a>
-            </li>
-  
-            <li type = "none">
-              <a class="lista" class="Lista" href="">Nossas Lojas </a>
-            </li>
-  
-            <li type = "none">
-              <a class="lista" class="Lista" href="">Trabalhe Conosco </a>
-            </li>
-  
-            <li type = "none">
-              <a class="lista" href="">Dúvidas </a>
-            </li>
-        </ul>
-  
-    </article>
-    <!--Fim Primeiro Artico---------------------------------------------------------------------------------------------->
-  
-    <!--Segundo Artico---------------------------------------------------------------------------------------------->
-    <article class="lista_footer2">
-
-      <label class="label_footer" for="">Central de Atendimento </label>
-      <ul>
-          <li type = "none">
-            <a class="lista"href="">Anucie Seu Produto Aqui </a>
-          </li>
-  
-          <li type = "none">
-            <a class="lista" href="">Política de Vendas </a>
-          </li>
-  
-          <li type = "none">
-            <a class="lista" href="">Troca e Devolução </a>
-          </li>
-  
-          <li type = "none">
-            <a class="lista" href="">Prazo e Entrega </a>
-          </li>
-      </ul>
-  
-    </article>
-  <!--Segundo Artico---------------------------------------------------------------------------------------------->
-  
-    <article class="icones_footer">
-
-      <a href=""><i id="icone_footer_img" class="fa-brands fa-facebook"></i></a>
-      <a href=""><i id="icone_footer_img" class="fa-brands fa-instagram"></i></a>
-      <a href=""><i id="icone_footer_img" class="fa-brands fa-twitter"></i></a>
-
-    </article>
-    
-  </section>
-  
-   </footer>
-   
 
      <!--<div class="whatsapp">
     <p>Duvidas ?</p>
