@@ -1,0 +1,190 @@
+[
+
+  {
+   "id":1,
+   "description":"Dipirona 500mg ,240 comprimidos",
+   "price":17.99,
+   "image":"imagem_farmacia1.jpg" ,
+   "sector":"farmacia",
+   "item":1
+
+  
+  },
+  
+  {
+  
+    "id":2,
+    "description":"Paracetamol 750mg,20 comprimidos",
+    "price":19.79,
+    "image":"imagem_farmacia2.jpg" ,
+    "sector":"farmacia",
+    "item":2
+  
+  },
+  
+  {
+  
+    "id":3,
+    "description":"Novanoite 320mg , 10 comprimidos",
+    "price":25.99,
+    "image":"imagem_farmacia3.jpg" ,
+    "sector":"farmacia",
+    "item":3
+  },
+
+  {
+
+    "id":4,
+    "description":"Imecap hair max , 30 cápsulas",
+    "price":79.99,
+    "image":"imagem_farmacia4.jpg" ,
+    "sector":"farmacia",
+    "item":4
+  },
+  
+  {
+  
+    "id":5,
+    "description":"Natucor preto",
+    "price":16.99,
+    "image":"imagem_farmacia5.jpg" ,
+    "sector":"farmacia",
+    "item":5
+
+  },
+  
+  {
+  
+    "id":6,
+    "description":"Tio Nacho engrossador",
+    "price":19.99,
+    "image":"imagem_farmacia6.jpg" ,
+    "sector":"farmacia",
+    "item":6
+  },
+
+  {
+    "id":7,
+    "description":"Bolsa pet",
+    "price":140.99,
+    "image":"bolsaPet.jpg" ,
+    "sector":"pet",
+    "item":1
+   },
+   
+   {
+   
+     "id":8,
+     "description":"Caminha pet",
+     "price":190.99,
+     "image":"caminhaPet.webp" ,
+     "sector":"pet",
+     "item":2
+   },
+   
+   {
+   
+     "id":9,
+     "description":"Casinha pet",
+     "price":198.99,
+     "image":"casinhaPet.jpg" ,
+     "sector":"pet",
+     "item":3
+   },
+
+   {
+    "id":10,
+    "description":"Tigela para gato",
+    "price":17.99,
+    "image":"tigela_gato.webp" ,
+    "sector":"pet",
+    "item":4
+   
+   },
+   
+   {
+   
+     "id":11,
+     "description":"Ração para Gato",
+     "price":49.79,
+     "image":"racao-gato.jpg" ,
+     "sector":"pet",
+     "item":5
+   
+   },
+   
+   {
+   
+     "id":12,
+     "description":"Ração premium",
+     "price":75.99,
+     "image":"racao-premier-caes-adultos.webp",
+     "sector":"pet",
+     "item":6
+
+   },
+
+   {
+    "id":13,
+    "description":"Galaxy S20 ,Samsung 128GB",
+    "price":1.799,
+    "image":"imagem_variedades1.png" ,
+    "sector":"variedades",
+    "item":1
+   
+   },
+   
+   {
+   
+     "id":14,
+     "description":"Aspirador Xiaomi mi robot Vacuum",
+     "price":2.918,
+     "image":"imagem_variedades3.png" ,
+     "sector":"variedades",
+     "item":2
+   
+   },
+   
+   {
+   
+     "id":15,
+     "description":"Headphone Sony WH-1000XM4",
+     "price":1.799,
+     "image":"imagem_variedades5.png" ,
+     "sector":"variedades",
+     "item":3
+   },
+
+   {
+    "id":16,
+    "description":"Camisa Liverpool II 21/22",
+    "price":299.99,
+    "image":"imagem_variedades6png.jpg" ,
+    "sector":"variedades",
+    "item":4
+   
+   },
+   
+   {
+   
+     "id":17,
+     "description":"Tênis Adidas Response SR",
+     "price":399.99,
+     "image":"imagem_variedades4.png" ,
+     "sector":"variedades",
+     "item":5
+   
+   },
+   
+   {
+   
+     "id":18,
+     "description":"Mochila Hang Loose",
+     "price":159.99,
+     "image":"imagem_variedades2.png" ,
+     "sector":"variedades",
+     "item":6
+   }
+   
+
+  ]
