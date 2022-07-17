@@ -7,119 +7,140 @@ body{
 #imgsize{
     width: 100%;
     height: 72%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .produtcts{
     flex-direction: column;
     display: flex;
+    background-color: rgb(247, 243, 180);    
 }
 
 /* ============================ INÍCIO PRODUCTS 1 ============================ */
 .products1{
     display: flex;
-    background-color: #f39595;
-    margin-top: 2.6%;
-    padding-top: 1%;
+    width: 90%;
+    margin: 5%;
+    padding-top: 2%;
     padding-bottom: 2%;
-    width: 100%;
-    padding-right: 5%;
-    padding-left: 5%;
-    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: #eca7a7;
+    border-radius: 10px;
 }
 
 .products1 div{
     display: inline-block;
     margin: 15px;
-    border: 2px solid rgb(213, 33, 33);
-    width: 250px;
-    height: 350px;
+    width: 340px;
+    height: 510px;
     justify-content: center;
+
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
 }
 
-.products1 button:hover{
+.products1 div:hover{
     background-color: rgb(247, 180, 185);
     border:solid 2px rgb(238, 9, 9);
 }
 
+.products1 button:hover{
+    background-color: white;
+    color: rgb(86, 92, 94);
+    border:0.7px solid rgb(86, 92, 94);
+}
+
 .products1 button{
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    margin-top: 5%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 5%;
-    background-color: #ef8d8d;
-    border-radius: 10px;
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 19%;
+    padding: 2%;
+    background-color: rgb(86, 92, 94);
     border: none;
-    text-align: center;
-    font-weight: 800;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
+    color: white;
+    border: 0.7px solid white;
+    font-weight: bold;
+}
+
+#buttonCarrinho{
+    background-color: rgb(59, 92, 79);
 }
 /* ============================ FIM PRODUCTS 1 ============================ */
 
 /* ============================ INÍCIO PRODUCTS 2 ============================ */
 .products2{
     display: flex;
-    background-color: #eca7a7;
-    padding: 2% 5%;
-    width: 100%;
-    align-items: center;
+    width: 90%;
+    margin: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: #eca7a7;
+    border-radius: 10px;
 }
 
 .products2 div{
     display: inline-block;
     margin: 15px;
-    border: 2px solid rgb(213, 33, 33);
-    width: 250px;
-    height: 350px;
+    width: 340px;
+    height: 510px;
     justify-content: center;
+
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
 }
 
-.products2 button:hover{
+.products2 div:hover{
     background-color: rgb(247, 180, 185);
     border:solid 2px rgb(238, 9, 9);
 }
 
-.products2 button{
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    margin-top: 5%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 5%;
-    background-color: #ef8d8d;
-    border-radius: 10px;
-    border: none;
-    text-align: center;
-    font-weight: 800;
-    color: white;
-    cursor: pointer;
-}
-/* ============================ FIM PRODUCTS 2 ============================ */
-ul{
-    list-style: none;
-    position: relative;
-    align-items:center;
-    justify-content: center;
-    background-color: rgba(172, 164, 164, 0.329);
-    padding: 2.6%;
-    
+.products2 button:hover{
+    background-color: white;
+    color: rgb(86, 92, 94);
+    border:0.7px solid rgb(86, 92, 94);
 }
 
-@media  (max-width:846){
+.products2 button{
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 19%;
+    padding: 2%;
+    background-color: rgb(86, 92, 94);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 0.7px solid white;
+    font-weight: bold;
+}
+
+/* ============================ FIM PRODUCTS 2 ============================ */
+.description{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    align-items:center;
+    justify-content: center;
+    padding: 2.6%;
+}
+
+.buttonCarrinho{
+    background-color: rgb(59, 92, 79);
+}
+
+@media (max-width:846){
 
     .products1 div{
         flex-direction: column;
