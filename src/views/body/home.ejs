@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/body_home.css">
     <link rel="stylesheet" href="/css/body_home_carrossel.css">
+    <link rel="stylesheet" href="/css/menu_hamburguer.css">
 
 </head>
 
@@ -24,8 +25,8 @@
     <section class="primeiro_cabecalho">
       
       <article class="imagem_logo">
-          <a href="/home.html">
-              <img class="imagem_logo_img" src="imagens/Grupo Seven 2.PNG" alt="Logo da empresa" >
+          <a href="/home">
+              <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
           </a>
       </article>
    
@@ -43,7 +44,7 @@
        
           <form class="form_primeiro_cabecalho2" action="#" method="post">
             
-            <a class="botao2"  href="/formulario.html">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+            <a class="botao2"  href="/home/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
               <!--a tag "i" estou utilizando o icone do fontawesome.com -->
     
           </form>
@@ -68,7 +69,7 @@
 
         <article class="link">
 
-          <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue aqui</p> 
+          <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p>  
 
 
         </article>
@@ -76,15 +77,15 @@
          <article class="abas">
 
           
-            <a class="tagA_segundo_cabecalho"  href="/variedades.html">
+            <a class="tagA_segundo_cabecalho"  href="/home/variedades">
                    <p class="mercado"><strong>Variedades</strong>  </p> 
             </a>
 
-            <a class="tagA_segundo_cabecalho"  href="pet.html">
+            <a class="tagA_segundo_cabecalho"  href="/home/pet">
                     <p class="pet"><strong>Espaço pet</strong> </p>
             </a>
 
-            <a class="tagA_segundo_cabecalho"  href="/farmacia.html">
+            <a class="tagA_segundo_cabecalho"  href="/home/farmacia">
               <p class="farmacia"><strong>Farmácia </strong> </p>
             </a>
 
@@ -97,6 +98,40 @@
 
 
   </header>
+
+
+  <section class="body_menu_hamburguer" ></section>
+  <div class="menu_hamburguer" id="menu_hamburguer">
+    
+    <ul>
+        <li class="lista_label_hambuerguer">
+          Variedades
+           <ul >
+            <a href="variedades.html"> <li>Eletrônicos</li></a>
+            <a href="variedades.html"> <li>Móveis</li></a>
+            <a href="variedades.html"><li>Roupas</li></a>
+           </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Espaço pet
+            <ul >
+              <a href="pet.html"> <li>Gatos</li></a>
+              <a href="pet.html"><li>Cachorros</li></a>
+              <a href="pet.html"><li>Diversos</li></a> 
+            </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Farmácia
+            <ul >
+              <a href="farmacia.html"><li>Remédios</li></a>
+              <a href="farmacia.html"><li>Beleza</li></a>
+              <a href="farmacia.html"><li>Diversos</li></a>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
 
   <main>
 
@@ -116,19 +151,19 @@
 
           <!--inicio slide imagens---------------------------------------------------------------------------------->
           <div class="slide first">
-              <img src="imagens/imagem_carrossel_home.webp" alt="imagem 1">
+              <img src="/img/imagem_carrossel_home.webp" alt="imagem 1">
           </div>
 
           <div class="slide">
-            <img src="imagens\carrosel-pet5.webp" alt="imagem 2">
+            <img src="/img/carrosel-pet5.webp" alt="imagem 2">
           </div>
 
           <div class="slide">
-            <img src="imagens/carrossel_imagem3_farmacia.png" alt="imagem 3">
+            <img src="/img/carrossel_imagem3_farmacia.png" alt="imagem 3">
           </div>
 
           <div class="slide">
-            <img src="imagens/carrossell_imagem4_farmacia.png" alt="imagem 4">
+            <img src="/img/carrossell_imagem4_farmacia.png" alt="imagem 4">
           </div>
           <!--fim slide imagens--------------------------------------------------------------------------------------->
 
@@ -165,19 +200,19 @@
       <section class="elementoUm_article" >
 
           <div class="elementoUm_article_div" >
-              <img class = "img_elementoUm_article_div" src="imagens/imagem_variedades1.png" alt="">
+              <img class = "img_elementoUm_article_div" src="/img/imagem_variedades1.png" alt="">
               <p> Samsung S20 128GB</p>
               <P>R$ 1.799,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
           <div class="elementoUm_article_div" >
-              <img class = "img_elementoUm_article_div" src="imagens/imagem_variedades2.png" alt="">
+              <img class = "img_elementoUm_article_div" src="/img/imagem_variedades2.png" alt="">
               <p>Mochila Hang Loose</p>
               <P>R$ 159,90</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
           <div class="elementoUm_article_div" id="block_4_imagens_space">
-              <img class = "img_elementoUm_article_div" src="imagens/imagem_variedades3.png" alt="">
+              <img class = "img_elementoUm_article_div" src="/img/imagem_variedades3.png" alt="">
               <p>Xiaomi mi robot Vacuum</p>
               <P>R$ 2.910,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
@@ -197,19 +232,19 @@
       <section class="elementoDois_article" >
 
           <div class="elementoDois_article_div" >
-              <img class = "img_elementoDois_article_div" src="/imagens/tigela_gato.webp" alt="">
+              <img class = "img_elementoDois_article_div" src="/img/tigela_gato.webp" alt="">
               <p>Tigela para gato</p>
               <P>R$ 20,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
           <div class="elementoDois_article_div" >
-              <img class = "img_elementoDois_article_div" src="imagens/casinhaPet.jpg" alt="">
+              <img class = "img_elementoDois_article_div" src="/img/casinhaPet.jpg" alt="">
               <p>Casinha pet</p>
               <P>R$ 200,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
 
           <div class="elementoDois_article_div" id="block_4_imagens_space">
-              <img class = "img_elementoDois_article_div" src="imagens/caminhaPet.webp" alt="">
+              <img class = "img_elementoDois_article_div" src="/img/caminhaPet.webp" alt="">
               <p>Caminha pet</p>
               <P>R$ 190,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
           </div>
@@ -229,19 +264,19 @@
   <section class="elementoTres_article" >
 
       <div class="elementoTres_article_div" >
-          <img class = "img_elementoTres_article_div" src="imagens/imagem_farmacia1.jpg" alt="">
+          <img class = "img_elementoTres_article_div" src="/img/imagem_farmacia1.jpg" alt="">
           <p>Dipirona 500mg ,240 comprimidos</p>
           <P>R$ 17,00</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
       </div>
 
       <div class="elementoTres_article_div" >
-          <img class = "img_elementoTres_article_div" src="imagens/imagem_farmacia2.jpg" alt="">
+          <img class = "img_elementoTres_article_div" src="/img/imagem_farmacia2.jpg" alt="">
           <p>Paracetamol 750mg ,20 comprimidos</p>
           <P>R$ 19,70</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
       </div>
 
       <div class="elementoTres_article_div" id="block_4_imagens_space">
-          <img class = "img_elementoTres_article_div" src="imagens/imagem_farmacia3.jpg" alt="">
+          <img class = "img_elementoTres_article_div" src="/img/imagem_farmacia3.jpg" alt="">
           <p>Novanoite 320mg , 10 comprimidos</p>
           <P>R$ 25,99</P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
       </div>
@@ -254,79 +289,7 @@
 
   </main>
 
-
- <footer>
-   
-  <section class="footer_all">
-  
-    <article class="imagem_logo2">
-        <a href="/home.html">
-            <img class="imagem2" src="/imagens/Grupo Seven 2.PNG" alt="Logo da empresa"  >
-        </a>
-    </article>
-
-  <!--Primeiro Artico---------------------------------------------------------------------------------------------->
-  <article class="lista_footer1">
-
-      <label class="label_footer" for="">Sobre o Grupo Seven </label>
-      <ul>
-          <li type = "none">
-            <a class="lista" href="">Quem Somos </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" class="Lista" href="">Nossas Lojas </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" class="Lista" href="">Trabalhe Conosco </a>
-          </li>
-
-          <li type = "none">
-            <a class="lista" href="">Dúvidas </a>
-          </li>
-      </ul>
-
-  </article>
-  <!--Fim Primeiro Artico---------------------------------------------------------------------------------------------->
-
-  <!--Segundo Artico---------------------------------------------------------------------------------------------->
-  <article class="lista_footer2">
-
-    <label class="label_footer" for="">Central de Atendimento </label>
-    <ul>
-        <li type = "none">
-          <a class="lista"href="">Anucie Seu Produto Aqui </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Política de Vendas </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Troca e Devolução </a>
-        </li>
-
-        <li type = "none">
-          <a class="lista" href="">Prazo e Entrega </a>
-        </li>
-    </ul>
-
-  </article>
-<!--Segundo Artico---------------------------------------------------------------------------------------------->
-
-  <article class="icones_footer">
-
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-facebook"></i></a>
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-instagram"></i></a>
-    <a href=""><i id="icone_footer_img" class="fa-brands fa-twitter"></i></a>
-
-  </article>
-  
-</section>
-
- </footer>
- 
+  <%- include("../partials/footer") %>
 
    <!--<div class="whatsapp">
   <p>Duvidas ?</p>
@@ -335,9 +298,8 @@
 
      
 
- </footer>
-
-
+ <script src="/js/home.js"></script>
+ <script src="/js/menu_hamburguer.js"></script>
 </body>
 
 

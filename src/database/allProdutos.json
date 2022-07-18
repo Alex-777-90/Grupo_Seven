@@ -1,0 +1,210 @@
+[
+
+  {
+   "id":1,
+   "description":"Dipirona 500mg ,240 comprimidos",
+   "price":17.99,
+   "image":"imagem_farmacia1.jpg" ,
+   "sector":"farmacia",
+   "item":1,
+   "texto":"Para que serve: Este medicamento é indicado como analgésico (para dor) e antitérmico (para febre). Modo de usar: Dipirona monoidratada comprimidos 500 mg: adultos e adolescentes acima de 15 anos: 1 a 2 comprimidos até 4 vezes ao dia. Siga corretamente o modo de usar."
+  
+  },
+  
+  {
+  
+    "id":2,
+    "description":"Paracetamol 750mg,20 comprimidos",
+    "price":19.79,
+    "image":"imagem_farmacia2.jpg" ,
+    "sector":"farmacia",
+    "item":2,
+    "texto":"Paracetamol é um medicamento indicado para o tratamento de febre e também colabora com auxílio temporário a dores leves e moderadas. Pode ser utilizado na redução de dores relacionadas à resfriados, como dor de cabeça e dor de garganta."
+  
+  },
+  
+  {
+  
+    "id":3,
+    "description":"Novanoite 320mg , 10 comprimidos",
+    "price":25.99,
+    "image":"imagem_farmacia3.jpg" ,
+    "sector":"farmacia",
+    "item":3,
+    "texto":"NOVANOITE (Passiflora Incarnata L. 320mg) Indicação: tratamento da ansiedade leve, como estados de irritabilidade, agitação nervosa, tratamento de insônia e desordens da ansiedade. MS 1.8326.0481."
+  },
+
+  {
+
+    "id":4,
+    "description":"Imecap hair max , 30 cápsulas",
+    "price":79.99,
+    "image":"imagem_farmacia4.jpg" ,
+    "sector":"farmacia",
+    "item":4,
+    "texto":"Imecap Hair Max possui a formula mais completa do mercado de nutraceuticos para o tratamento da queda capilar. Além da Biotina (vit. B7), Piridoxina (vit. B6), Selênio, Cromo e Zinco, contém colágeno hidrolisado e a presença de dois aminoácidos responsáveis pela formação da queratina do cabelo, que são a L-cistina e a Cisteína. Isso possibilita mais força, brilho, resistência e vitalidade aos fios.alem de fortalecer as unhas."
+    
+
+  },
+  
+  {
+  
+    "id":5,
+    "description":"Natucor preto",
+    "price":16.99,
+    "image":"imagem_farmacia5.jpg" ,
+    "sector":"farmacia",
+    "item":5,
+    "texto":"A Tintura Em Pó Natucor Embeleze é uma coloração natural que proporciona uma coloração maravilhosa aos cabelos sem danificá-los, deixa as cores da natureza em seus cabelos. AÇÃO/ATIVOS: Natucor utiliza nutrientes de ervas, flores e frutas da flora mundial, principalmente da Amazônia para proporcionar cores incríveis e duradouras aos fios capilares, cores radiantes, brilho intenso, hidratação profunda e uniformidade aos cabelos."
+
+  },
+  
+  {
+  
+    "id":6,
+    "description":"Tio Nacho engrossador",
+    "price":19.99,
+    "image":"imagem_farmacia6.jpg" ,
+    "sector":"farmacia",
+    "item":6,
+    "texto":"Tio Nacho Engrossador Antiqueda é um shampoo que foi especialmente desenvolvido para quem possui os cabelos finos, quebradiços ou sem volume. Com uma fórmula exclusiva que combina a Geleia Real com um composto de ingredientes de origem natural, aumenta a espessura dos cabelos e tem ação antiqueda, para um cabelo mais forte, com menos quebras, mais volumoso e saudável."
+
+  },
+
+  {
+    "id":7,
+    "description":"Bolsa pet",
+    "price":140.99,
+    "image":"bolsaPet.jpg" ,
+    "sector":"pet",
+    "item":1,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":8,
+     "description":"Caminha pet",
+     "price":190.99,
+     "image":"caminhaPet.webp" ,
+     "sector":"pet",
+     "item":2,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":9,
+     "description":"Casinha pet",
+     "price":198.99,
+     "image":"casinhaPet.jpg" ,
+     "sector":"pet",
+     "item":3,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+
+   {
+    "id":10,
+    "description":"Tigela para gato",
+    "price":17.99,
+    "image":"tigela_gato.webp" ,
+    "sector":"pet",
+    "item":4,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":11,
+     "description":"Ração para Gato",
+     "price":49.79,
+     "image":"racao-gato.jpg" ,
+     "sector":"pet",
+     "item":5,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":12,
+     "description":"Ração premium",
+     "price":75.99,
+     "image":"racao-premier-caes-adultos.webp",
+     "sector":"pet",
+     "item":6,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+
+   },
+
+   {
+    "id":13,
+    "description":"Galaxy S20 ,Samsung 128GB",
+    "price":1.799,
+    "image":"imagem_variedades1.png" ,
+    "sector":"variedades",
+    "item":1,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":14,
+     "description":"Aspirador Xiaomi mi robot Vacuum",
+     "price":2.918,
+     "image":"imagem_variedades3.png" ,
+     "sector":"variedades",
+     "item":2,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":15,
+     "description":"Headphone Sony WH-1000XM4",
+     "price":1.799,
+     "image":"imagem_variedades5.png" ,
+     "sector":"variedades",
+     "item":3,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+
+   {
+    "id":16,
+    "description":"Camisa Liverpool II 21/22",
+    "price":299.99,
+    "image":"imagem_variedades6png.jpg" ,
+    "sector":"variedades",
+    "item":4,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":17,
+     "description":"Tênis Adidas Response SR",
+     "price":399.99,
+     "image":"imagem_variedades4.png" ,
+     "sector":"variedades",
+     "item":5,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":18,
+     "description":"Mochila Hang Loose",
+     "price":159.99,
+     "image":"imagem_variedades2.png" ,
+     "sector":"variedades",
+     "item":6,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   }
+   
+
+  ]

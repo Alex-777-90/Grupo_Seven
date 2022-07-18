@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Seven / Farmácia</title>
+    <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/body_farmacia_carrossell.css">
+    <link rel="stylesheet" href="/css/body_farmacia.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/menu_hamburguer.css">
+</head>
+
+<body>
+  
+  <header>
+
+    <section class="primeiro_cabecalho">
+      
+      <article class="imagem_logo">
+        <a href="/home">
+              <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
+          </a>
+      </article>
+   
+      <article class="article_form1">
+          <form class="form_primeiro_cabecalho" action="#" method="post">
+              
+              <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
+              <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            
+          </form>
+      </article>
+      
+      <div class="all_button">
+      <article class="article_form2">
+       
+          <form class="form_primeiro_cabecalho2" action="#" method="post">
+            
+            <a class="botao2"  href="/home/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+    
+          </form>
+          <p class="text_botao2">Cadastro</p>
+
+      </article>
+       
+      <article class="article_form3">
+          <form class="form_primeiro_cabecalho3" action="#" method="post">
+
+              <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+
+          </form>
+          <p class="text_botao3" >Carrinho</p>
+      </article> 
+    </div>  
+                
+  </section>
+
+
+    <section class="segunda_cabecalho">
+
+      <article class="link">
+        <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p> 
+      </article>
+
+       <article class="abas">
+
+        <a class="tagA_segundo_cabecalho"  href="/home/variedades">
+             <p class="mercado"><strong>Variedades</strong>  </p> 
+        </a>
+
+        <a class="tagA_segundo_cabecalho"  href="/home/pet">
+             <p class="pet"><strong>Espaço pet</strong> </p>
+        </a>
+
+            <p class="farmacia" id ="pag_farmacia"><strong>Farmácia </strong> </p>
+
+            <p class="oferta"><strong>Ofertas </strong> </p>
+
+       </article>
+
+
+
+    </section>
+
+  </header>
+   
+  <section class="body_menu_hamburguer" ></section>
+  <div class="menu_hamburguer" id="menu_hamburguer">
+    
+    <ul>
+        <li class="lista_label_hambuerguer">
+          Variedades
+           <ul >
+            <a href="/variedades.html"> <li>Eletrônicos</li></a>
+            <a href="/variedades.html"> <li>Móveis</li></a>
+            <a href="/variedades.html"><li>Roupas</li></a>
+           </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Espaço pet
+            <ul >
+              <a href="pet.html"> <li>Gatos</li></a>
+              <a href="pet.html"><li>Cachorros</li></a>
+              <a href="pet.html"><li>Diversos</li></a> 
+            </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Farmácia
+            <ul >
+              <a href="farmacia.html"><li>Remédios</li></a>
+              <a href="farmacia.html"><li>Beleza</li></a>
+              <a href="farmacia.html"><li>Diversos</li></a>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
+
+  <main>
+
+   
+      <section class="slider"> <!--carrosel de imagens do site parte superior --------------------------------------------->
+        
+        <article class="slides"> 
+
+            <!--inicio Radio buttons--------------------------------------------------------------------------------->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--fim Radio buttons------------------------------------------------------------------------------------->
+
+
+            <!--inicio slide imagens---------------------------------------------------------------------------------->
+            <div class="slide first">
+                <img src="/img/carrossell_imagem1_farmacia.png" alt="imagem 1">
+            </div>
+
+            <div class="slide">
+              <img src="/img/carrossell_imagem2_farmacia.webp" alt="imagem 2">
+            </div>
+
+            <div class="slide">
+              <img src="/img/carrossel_imagem3_farmacia.png" alt="imagem 3">
+            </div>
+
+            <div class="slide">
+              <img src="/img/carrossell_imagem4_farmacia.png" alt="imagem 4">
+            </div>
+            <!--fim slide imagens--------------------------------------------------------------------------------------->
+
+
+            <!-- inicio navegação automatica-deixa a bolinha fixa-------------------------------------------------------->
+            <div class="nav_auto">
+
+              <div class="auto_btn1"></div>
+              <div class="auto_btn2"></div>
+              <div class="auto_btn3"></div>
+              <div class="auto_btn4"></div>
+            </div>
+            <!-- fim navegação automatica---------------------------------------------------------------------------->
+
+        </article>
+              
+            <div class="label_nav">
+              <label for="radio1" class="label_btn"></label>
+              <label for="radio2" class="label_btn"></label>
+              <label for="radio3" class="label_btn"></label>
+              <label for="radio4" class="label_btn"></label>
+            </div>
+
+        
+      </section> <!-- fim carrosel de imagens do site parte superior ---------------------------------------------------->
+
+
+
+     <!-- inicio primeiro block de imagens---------------------------------------------------------------------------->
+         
+      <section class="elementoUm_article" >
+
+        <% productsFarmacia.forEach(element1 => { %>
+
+          <div class="elementoUm_article_div" >
+              <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
+              <p><%= element1.description %> </p>
+              <P> R$ <%= toThousand(element1.price) %> </P>
+              <a target="_blank" href="/area_compras_farmacia/<%= element1.item %> ">
+                <button type="submit">Comprar</button></a>
+              <button type="submit">Carrinho</button>
+          </div>
+
+        <% }) %>
+
+      </section>
+
+ 
+<!-- fim primeiro block de imagens---------------------------------------------------------------------------->
+
+<!-- inicio segundo block de imagens---------------------------------------------------------------------------->
+
+    <section class="elementoDois_article" >
+
+      <% productsFarmacia2.forEach(element2 => { %>
+       
+        <div class="elementoDois_article_div" >
+            <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
+            <p><%= element2.description %></p>
+            <P>R$ <%= toThousand(element2.price) %></P>
+            <a  target="_blank" href="/area_compras_farmacia/<%= element2.item %>">
+              <button type="submit">Comprar</button></a>
+            <button type="submit">Carrinho</button>
+        </div>
+
+      <% }) %>
+
+    </section>
+
+<!-- fim segundo block de imagens---------------------------------------------------------------------------->
+
+</main>
+
+<%- include("../partials/footer") %>
+
+   <!--<div class="whatsapp">
+  <p>Duvidas ?</p>
+  <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
+  </div>-->
+
+<script src="/js/farmacia.js"></script>
+<script src="/js/menu_hamburguer.js"></script>
+
+</body>
+
+
+</html>
+

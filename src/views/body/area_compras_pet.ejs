@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
+  <title><%= //produtoDetalhe3.description %></title>
+  <link rel="stylesheet" href="/css/menu_hamburguer.css">
+  <link rel="stylesheet" href="/css/area_compras_header.css">
+  <link rel="stylesheet" href="/css/area_compras.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <section class="primeiro_cabecalho">
+      
+      <article class="imagem_logo">
+          <a href="/home">
+              <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
+          </a>
+      </article>
+   
+      <article class="article_form1">
+          <form class="form_primeiro_cabecalho" action="#" method="post">
+              
+              <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
+              <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            
+          </form>
+      </article>
+      
+      <div class="all_button">
+      <article class="article_form2">
+       
+          <form class="form_primeiro_cabecalho2" action="#" method="post">
+            
+            <a class="botao2"  href="/home/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+    
+          </form>
+          <p class="text_botao2">Cadastro</p>
+
+      </article>
+       
+      <article class="article_form3">
+          <form class="form_primeiro_cabecalho3" action="#" method="post">
+
+              <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+
+          </form>
+          <p class="text_botao3" >Carrinho</p>
+      </article> 
+    </div>  
+                
+  </section>
+
+
+
+      <section class="segunda_cabecalho">
+
+        <article class="link">
+
+        <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p> 
+          
+        </article>
+
+         <article class="abas">
+
+          
+            <a class="tagA_segundo_cabecalho"  href="/home/variedades">
+                   <p class="mercado"><strong>Variedades</strong>  </p> 
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/home/pet">
+                    <p class="pet"><strong>Espaço pet</strong> </p>
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/home/farmacia">
+              <p class="farmacia"><strong>Farmácia </strong> </p>
+            </a>
+
+              <p class="oferta"><strong>Ofertas </strong> </p>
+
+         </article>
+     
+
+      </section>
+
+  
+  </header>
+
+ <section class="body_menu_hamburguer" ></section>
+  <div class="menu_hamburguer" id="menu_hamburguer">
+    
+    <ul>
+        <li class="lista_label_hambuerguer">
+          Variedades
+           <ul >
+            <a href="/variedades.html"> <li>Eletrônicos</li></a>
+            <a href="/variedades.html"> <li>Móveis</li></a>
+            <a href="/variedades.html"><li>Roupas</li></a>
+           </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Espaço pet
+            <ul >
+              <a href="pet.html"> <li>Gatos</li></a>
+              <a href="pet.html"><li>Cachorros</li></a>
+              <a href="pet.html"><li>Diversos</li></a> 
+            </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Farmácia
+            <ul >
+              <a href="farmacia.html"><li>Remédios</li></a>
+              <a href="farmacia.html"><li>Beleza</li></a>
+              <a href="farmacia.html"><li>Diversos</li></a>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
+
+          <!-- Inicio Primeira Section ---------------------------------------------------------------------------->   
+
+    <section class="Articos_Compras">
+            <!-- Inicio Primeiro Artico  de Imagens---------------------------------------------------------------------------->  
+        
+          <article class="Primeiro_Artico_Compras">
+              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
+              </div>
+
+              <div class="Segundo_Bloco">
+                  <img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
+                  <img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
+                  <img src="/img/<%=// produtoDetalhe3.image %>" alt="img variedades">
+              </div>
+          </article>
+
+            <!-- fim Primeiro Artico de imagens---------------------------------------------------------------------------->      
+
+          <!-- Inicio Artico texto ------------------------------------------------------------------------->
+
+          <article class="Segundo_Artico_Compras">
+            <div class="Text">
+              <h3>Descrição do produto :</h3>
+              <p><%= //produtoDetalhe3.texto %></p>
+
+            </div>
+
+          </article>
+
+  <!--fim Artico Texto----------------------------------------->      
+
+  <!-- Inicio Artico Aside ------------------------------------------------------------------------->
+
+          <article class="Terceiro_Artico_Compras">
+            <div>
+              <i class="fa-solid fa-basket-shopping"></i>
+              <h3><%= //produtoDetalhe3.description %></h3>
+              <p>R$ <%=// produtoDetalhe3.price %></p>
+              <button type="submit">Comprar</button>
+
+            </div>
+
+    
+
+          </article>
+
+        <!--fim Artico Aside----------------------------------------->      
+        
+  
+ </section> 
+
+ <section class="rodapé_compras">
+
+</section>
+
+
+
+   
+
+ 
+
+
+  
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,133 @@
+.Articos_Compras{
+  /* background-color: aqua;*/
+   width: 100%;
+   display: flex;
+   margin-top: 1%;
+   margin-right: -10%;
+   
+ }
+ 
+ 
+ .Primeiro_Bloco_Superior{
+ 
+   width: 75%;
+   margin-left: 15%;
+  /*background-color: rgb(47, 6, 18);*/
+   
+ 
+ }
+ 
+ .Primeiro_Bloco_Superior img{
+   width: 100%;
+   height: 350px;
+   border-radius: 10px;
+    
+ }
+ 
+ .Segundo_Bloco{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 2%;
+   margin-left: 15%;
+   width: 75%;
+  
+  /* background-color: rgb(48, 165, 42);*/
+  
+ }
+ 
+ .Segundo_Bloco img{
+   width: 35%;
+   padding: 2%;
+   border-radius: 15px;
+   
+ 
+ }
+ 
+ .Primeiro_Artico_Compras{
+ width: 50%;
+ background-color: rgb(227, 131, 131);
+ padding-top: 2%;
+ padding-bottom: 2%;
+ padding-left: -15%;
+ padding-right: 2%;
+ margin-left: 1%;
+ text-align: center;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+ 
+ 
+ }
+ 
+ .Segundo_Artico_Compras{
+   width: 30%;
+   background-color: rgb(227, 131, 131);
+   padding-top: 5%;
+   font-family: Arial;
+ }
+ 
+ .Segundo_Artico_Compras p{
+   text-align: center;
+   padding-right: 20%;
+   
+ }
+ 
+ .Segundo_Artico_Compras h3{
+   text-align: center;
+   padding-right: 20%;
+   padding-bottom: 5%;
+   
+ }
+ 
+ .Terceiro_Artico_Compras{
+   width: 25%;
+   background-color: rgb(229, 165, 165);
+   padding-top: 5%;
+   margin-right: 1%;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px; 
+   text-align: center;
+   font-family: Arial;
+  
+ }
+ 
+ .Terceiro_Artico_Compras h3{
+   padding-bottom: 10%;
+  
+ }
+ 
+ .Terceiro_Artico_Compras p {
+   padding-bottom: 10%;
+   font-size: 200%;
+ }
+ 
+ .Terceiro_Artico_Compras button {
+   padding: 3%;
+   padding-top: 4%;
+   padding-bottom: 4%;
+   width: 60%;
+   border-radius: 10px;
+   border: none;
+   background-color: green;
+   color: whitesmoke;
+   cursor: pointer;
+   font-weight: 700;
+   transition: 400ms;
+ }
+ 
+ .Terceiro_Artico_Compras i {
+   padding-bottom: 10%;
+   font-size: 300%;
+   color: rgb(164, 35, 35)
+ }
+ 
+ 
+ .Terceiro_Artico_Compras button:hover {
+   background-color: rgb(2, 59, 2);
+ 
+ }
+ 
+ .rodapé_compras{
+   background-color: rgb(250, 248, 251);
+   height: 7vh;
+ }
+ 

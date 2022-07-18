@@ -18,7 +18,7 @@ header{
   align-items:center ; /*alinha os elementos no centro   */
   justify-content:space-around;
   background-color: rgb(213, 33, 33);
-  
+
 }
 
 .article_form1,
@@ -44,12 +44,13 @@ header{
 }
 
 .caixa_texto{
+ /* background-color: aquamarine;*/
   width: 90%;
   font-size: 100%;
   height: 36px;
   border-radius: 7px;
   border: none;
-
+  padding-left: 2%;
 }
 
 .botao{
@@ -63,7 +64,7 @@ header{
   font-size: 100%;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  
+
 }
 .botao:hover{
   background-color: red;
@@ -195,19 +196,25 @@ header{
    
 }
 
+.link i{
+  font-size: 110%;
+}
+
 .abas{
-  /* background-color: rgb(64, 182, 182);*/
   display: flex;
   width:80%;
   justify-content: space-around;
   padding-top: 10px;
   color: whitesmoke;
+  
    
 }
 
 /* Altera a configuração padrão dos links  */
+/* link que ainda não foi visitado */
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
+  color: rgb(235, 236, 230);
 
 }
 
@@ -248,38 +255,72 @@ header{
 
 @media (max-width:795px){
 
-  .oferta{
-    display: none;
-  }
+
+.oferta{
+  display: none;
+}
+
+.texto_nav{
+  display: none;
+}
+
+.text_botao2 ,
+.text_botao3 {
+  display: none;
+}
+
+
+#bota3_i{
+ 
+  padding-left: 30%;
+  padding-right: 30%;
   
-  .texto_nav{
-    display: none;
-  }
-  
-  .text_botao2 ,
-  .text_botao3 {
-    display: none;
-  }
-  
-  
-  #bota3_i{
-   
-    padding-left: 30%;
-    padding-right: 30%;
-    
-  }
-  
-  #bota2_i{
-    padding-left: 50%;
-    padding-right: 50%;
-    padding-top:15%;
-    padding-bottom: 15%;
-  
-  }
+}
+
+#bota2_i{
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top:15%;
+  padding-bottom: 15%;
+
+}
+
+.imagem_logo  {
+  width: 25%;
+ 
+}
+.link i{
+  font-size: 150%;
+}
+
+
+.article_form1{
+  width: 40%;
+
+}
+
+.botao{
+  width: 15%;
+  height: 35px;
+}
+
+
+}
+
+@media (max-width:795px) and (min-width:587px){
 
   .imagem_logo  {
-    width: 25%;
-   
-  }
+    width: 20%;
+    margin-right: 10%;
   
   }
+  
+  .imagem_logo_img{
+    width: 80%;
+  }
+ 
+  .link i{
+    font-size: 150%;
+  }
+
+}
