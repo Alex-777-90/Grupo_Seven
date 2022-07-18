@@ -10,6 +10,7 @@ const methodOverride = require("method-override");// const pra habilitar os meto
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 const RotaPaginas = require("./src/routes/routerPaginas");
+const RotaProdutos = require("./src/routes/routerProdutos");
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 
@@ -27,6 +28,8 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
 app.use("/home",RotaPaginas);
+app.use("/",RotaProdutos);
+
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
 

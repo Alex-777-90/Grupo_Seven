@@ -1,8 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-const allProdutosPath = path.join(__dirname, '../database/allProdutos.json'); //pega os dados do JSON
-const allProducts = JSON.parse(fs.readFileSync(allProdutosPath, 'utf-8')); // transforma o JSON e uma array 
+const  todosProdutos = require("../models/produto");
 
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -12,6 +8,8 @@ const controlePaginas = {
  
   // farmacia inicio -------------------------------------------------------------------------------------////////
   farmacia:(req,res) =>{
+
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
     let productsFarmacia = allProducts.filter(function(value){
 
@@ -29,11 +27,13 @@ const controlePaginas = {
 
     return res.render("farmacia",{productsFarmacia , productsFarmacia2, toThousand});
   },
-  // farmacia fim ----------------------------------------------------------------------------------------////////
+  // farmacia fim -----------------------------------------------------------------------------------------////////
 
 
   // pet inicio ------------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
+      
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
     let productsPet = allProducts.filter(function(value){
 
@@ -57,6 +57,8 @@ const controlePaginas = {
 // variedades inicio -----------------------------------------------------------------------------------////////
   variedades:(req,res) =>{
 
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+
     let productsVariedades = allProducts.filter(function(value){
 
       return value.sector == "variedades" && value.item <= 3
@@ -78,14 +80,20 @@ const controlePaginas = {
 
 
   home:(req,res) =>{
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+
     return res.render("home");
   },
 
   formulario:(req,res) =>{
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+
     return res.render("formulario");
   },
 
   dadosForm:(req,res)=>{
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+    
     console.log(req.body);
   }
 

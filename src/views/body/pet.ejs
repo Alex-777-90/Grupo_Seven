@@ -187,7 +187,10 @@
             <div class="elementoUm_article_div" >
                 <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
                 <p><%= element1.description %></p>
-                <P> R$ <%= toThousand(element1.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+                <P> R$ <%= toThousand(element1.price) %> </P>
+                <a target="_blank" href="/area_compras3/<%= element1.item %> "> 
+                  <button type="submit">Comprar</button></a>
+                <button type="submit">Carrinho</button>
             </div>
 
 
@@ -207,7 +210,10 @@
           <div class="elementoDois_article_div" >
               <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
               <p><%= element2.description %></p>
-              <P>R$ <%= toThousand(element2.price) %> </P><button type="submit">Comprar</button><button type="submit">Carrinho</button>
+              <P>R$ <%= toThousand(element2.price) %> </P>
+              <a target="_blank" href="/area_compras3/<%= element2.item %> ">
+                <button type="submit">Comprar</button></a>
+              <button type="submit">Carrinho</button>
           </div>
 
       <% }) %>
