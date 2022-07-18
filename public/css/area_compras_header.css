@@ -255,10 +255,6 @@ header{
 
 @media (max-width:795px){
 
-header{
-  position: fixed;
-  top:0vh;
-}
 
 .oferta{
   display: none;
@@ -328,4 +324,3 @@ header{
   }
 
 }
-

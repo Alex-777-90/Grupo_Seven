@@ -5,10 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const express = require("express");
 const app = express();
+const methodOverride = require("method-override");// const pra habilitar os metodos put e delete
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 const RotaPaginas = require("./src/routes/routerPaginas");
+const RotaProdutos = require("./src/routes/routerProdutos");
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
@@ -23,11 +25,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
 app.use("/home",RotaPaginas);
-
+app.use("/",RotaProdutos);
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
