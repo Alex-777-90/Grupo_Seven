@@ -50,6 +50,7 @@
   color: white;
   border: 0.7px solid white;
   font-weight: bold;
+  margin-top: 4%;
 }
 
 .elementoUm_article_div  button:hover{
@@ -57,6 +58,16 @@
   color: rgb(59, 92, 79);
   border: 0.7px solid rgb(59, 92, 79);
 
+}
+
+#button_comprar{
+  background-color: rgb(86, 92, 94);
+}
+
+#button_comprar:hover{
+  background-color: white;
+  color: rgb(59, 92, 79);
+  border: 0.7px solid rgb(59, 92, 79);
 }
 
 
@@ -109,13 +120,14 @@
 
 .elementoDois_article_div  button{
   padding: 2%;
-  background-color: rgb(86, 92, 94);
+  background-color: rgb(59, 92, 79);
   border: none;
   border-radius: 5px;
   cursor: grabbing;
   color: white;
   border: 0.7px solid white;
   font-weight: bold;
+  margin-top: 4%;
 }
 
 .elementoDois_article_div  button:hover{
@@ -124,6 +136,7 @@
   border: 0.7px solid rgb(59, 92, 79);
 
 }
+
 
 .elementoDois_article_div img{
   width: 100%;
