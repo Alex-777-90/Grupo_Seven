@@ -147,9 +147,20 @@ main{
   background-color: #ffffff;
   padding-bottom: 2%;
   width: 30%;
+  box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+  border-radius: 10px;
+  transition: background-color 1000ms;
+  transition-delay:all 100000s;
+  background-color: rgb(247, 243, 180);
+}
+.card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .card:hover{
   box-shadow: 0px 1px 20px #a81e1e ;
+  background-color: rgb(247, 180, 185);
+  border:solid 2px rgb(238, 9, 9);
 }
 .descricao{
   margin: 4.5% 0%;

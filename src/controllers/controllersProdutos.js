@@ -34,10 +34,18 @@ const controleProdutos = {
   // pet inicio ------------------------------------------------------------------------------------------////////
   detalhesPet:(req,res) =>{
     
+    const allProducts = todosProdutos.findAll()
+    let item = req.params.item;
 
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
+      
+      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
+    
+    })
 
-    return res.render("area_compras_pet" );
+    return res.render("area_compras_pet" ,{produtoDetalhe} );
   },
+
 // pet fim -------------------------------------------------------------------------------------------////////
 
 }

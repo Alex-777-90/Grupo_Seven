@@ -31,7 +31,20 @@ const controlePaginas = {
 // farmacia fim -----------------------------------------------------------------------------------------////////
 
   pet:(req,res) =>{
-    return res.render("pet");
+    let productsPet = allProducts.filter(function(value){
+
+      return value.sector == "pet" && value.item <= 3 
+         
+    });
+  
+  
+    let productsPet2 = allProducts.filter(function(value){
+  
+      return value.sector == "pet" && value.item >= 4
+  
+    });
+  
+    return res.render("pet",{productsPet , productsPet2, toThousand});
  },
 
  variedades:(req,res) =>{
