@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const  todosProdutos = require("../models/produto");
+const {validationResult} = require("express-validator");
 
 const allProdutosPath = path.join(__dirname, '../database/allProdutos.json'); //pega os dados do JSON
 const allProducts = JSON.parse(fs.readFileSync(allProdutosPath, 'utf-8')); // transforma o JSON e uma array 
@@ -58,11 +60,25 @@ const controlePaginas = {
  },
 
  formulario:(req,res) =>{
+  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
-   return res.render("formulario");
- }
+  return res.render("formulario");
+},
+
+validaFormulario:(req,res)=>{
+  const errors = validationResult(req);
+
+  if(!errors.isEmpty()){ // se errors for diferente de vazio 
+    //console.log(errors.mapped());
+    return res.render("formulario", {errors:errors.mapped() ,old:req.body});
+   }
+
+  //console.log(req.body);
+}
 
 };
 
 module.exports = controlePaginas;
+
+
 
