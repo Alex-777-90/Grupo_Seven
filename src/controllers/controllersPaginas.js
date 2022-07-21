@@ -1,4 +1,5 @@
 const  todosProdutos = require("../models/produto");
+const {validationResult} = require("express-validator");
 
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -91,10 +92,15 @@ const controlePaginas = {
     return res.render("formulario");
   },
 
-  dadosForm:(req,res)=>{
-    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-    
-    console.log(req.body);
+  validaFormulario:(req,res)=>{
+    const errors = validationResult(req);
+
+    if(!errors.isEmpty()){ // se errors for diferente de vazio 
+      //console.log(errors.mapped());
+      return res.render("formulario", {errors:errors.mapped() ,old:req.body});
+     }
+
+    //console.log(req.body);
   }
 
 };

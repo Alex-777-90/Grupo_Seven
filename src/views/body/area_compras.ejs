@@ -148,9 +148,9 @@
           <!-- Inicio Artico texto ------------------------------------------------------------------------->
 
           <article class="Segundo_Artico_Compras">
-            <div class="Text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti 
-              quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint 
-              natus asperiores.</p>
+            <div class="Text">
+              <h3>Descrição do produto :</h3>
+              <p><%= produtoDetalhe.texto %></p>
 
             </div>
 
@@ -162,6 +162,7 @@
 
           <article class="Terceiro_Artico_Compras">
             <div>
+              <i class="fa-solid fa-basket-shopping"></i>
               <h3><%= produtoDetalhe.description %></h3>
               <p>R$ <%= produtoDetalhe.price %></p>
               <button type="submit">Comprar</button>
@@ -181,17 +182,9 @@
 
 </section>
 
-
-
-   
-
- 
-
-
-  
-
-
+<script src="/js/menu_hamburguer.js"></script>
 </body>
 
 
 </html>
+
