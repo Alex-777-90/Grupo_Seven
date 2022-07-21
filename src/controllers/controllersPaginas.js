@@ -93,11 +93,17 @@ const controlePaginas = {
   },
 
   validaFormulario:(req,res)=>{
-    const errors = validationResult(req);
+    const {errors} = validationResult(req);
 
-    if(!errors.isEmpty()){ // se errors for diferente de vazio 
+    if (errors.length) {
+			const formattedErrors = {}
+			errors.forEach(error => {
+				formattedErrors[error.param] = error.msg;
+			});
+
+   // if(!errors.isEmpty()){ // se errors for diferente de vazio 
       //console.log(errors.mapped());
-      return res.render("formulario", {errors:errors.mapped() ,old:req.body});
+      return res.render("formulario", {errors:formattedErrors ,old:req.body});
      }
 
     //console.log(req.body);
