@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="/css/formulario_header.css">
     <link rel="stylesheet" href="/css/formulario.css">
-    <link rel="stylesheet" href="/css/header.css">
+    
   
    
 </head>
@@ -91,31 +91,19 @@
       </div>
 
 
-      <% if (typeof errors !=="undefined") {%> 
-        <ul>
-          <% for(let error in errors) { %> 
-
-            <li>
-              <b><%= error %> :</b>
-              <%= errors[error].msg %> 
-            </li>
-
-          <% } %> 
-        </ul>
-        <% } %> 
-
-
     <form action="/home/formulario" method="post" id ="form" class="form">
 
-
+ 
+      
           <div class="form-control">
 
             <label for="username">Nome de usuário</label>
             <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..."/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
-        
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.username %></p>
+            <% } %> 
           </div>
 
       
@@ -125,8 +113,9 @@
             <input type="text" name="email" id="email" placeholder="Digite seu email.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
-
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.email %></p>
+            <% } %> 
           </div>
 
 
@@ -136,8 +125,10 @@
             <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
-            
+           <!-- <small>Mensagem de erro</small>-->
+           <% if (typeof errors !=="undefined") {%> 
+           <p><%= errors.cpf %></p>
+           <% } %> 
           </div>
 
           <div class="form-control">
@@ -146,7 +137,9 @@
             <input type="text" name="telefone" id="telefone" placeholder="Digite seu número.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.telefone %></p>
+            <% } %> 
             
           </div>
           
@@ -156,7 +149,9 @@
             <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.password %></p>
+            <% } %> 
           </div>
 
 
@@ -165,13 +160,15 @@
             <input type="password"  name="passwordConfirmation"id="password-confirmation" placeholder="Digite sua senha novamente..."/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.passwordConfirmation %></p>
+            <% } %> 
           </div>
           
           <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
 
           <button type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
-      
+       
    
     </form>
 
@@ -193,8 +190,10 @@
 
 
 </body>
-<!--<script src="/js/formulario.js"></script>-->
+
+
 <script src="/js/login.js"></script>
 
 </html>
+
 

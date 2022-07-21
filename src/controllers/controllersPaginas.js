@@ -32,6 +32,8 @@ const controlePaginas = {
 },
 // farmacia fim -----------------------------------------------------------------------------------------////////
 
+
+// pet inicio -------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
     let productsPet = allProducts.filter(function(value){
 
@@ -48,17 +50,25 @@ const controlePaginas = {
   
     return res.render("pet",{productsPet , productsPet2, toThousand});
  },
+ // pet fim -----------------------------------------------------------------------------------------////////
 
+
+  // variedades inicio -----------------------------------------------------------------------------------------////////
  variedades:(req,res) =>{
 
    return res.render("variedades");
  },
+  // variedades fim -----------------------------------------------------------------------------------------////////
+
 
  home:(req,res) =>{
 
    return res.render("home");
  },
 
+
+
+// formulario inicio -----------------------------------------------------------------------------------------////////
  formulario:(req,res) =>{
   const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
@@ -66,15 +76,23 @@ const controlePaginas = {
 },
 
 validaFormulario:(req,res)=>{
-  const errors = validationResult(req);
 
-  if(!errors.isEmpty()){ // se errors for diferente de vazio 
-    //console.log(errors.mapped());
-    return res.render("formulario", {errors:errors.mapped() ,old:req.body});
-   }
+  const {errors} = validationResult(req);
+
+    if (errors.length) {
+			const formattedErrors = {}
+			errors.forEach(error => {
+				formattedErrors[error.param] = error.msg;
+			});
+
+   // if(!errors.isEmpty()){ // se errors for diferente de vazio 
+      //console.log(errors.mapped());
+      return res.render("formulario", {errors:formattedErrors ,old:req.body});
+     }
 
   //console.log(req.body);
 }
+// formulario fim -----------------------------------------------------------------------------------------////////
 
 };
 

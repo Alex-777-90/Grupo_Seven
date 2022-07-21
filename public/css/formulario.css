@@ -93,6 +93,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .container {
@@ -102,6 +103,7 @@ main {
   width: 400px;
   max-width: 100%;
   overflow: hidden;
+  
 }
 
 .header {
@@ -146,6 +148,13 @@ main {
   bottom: 0;
   left: 0;
   visibility: hidden;
+}
+
+
+.form-control p {
+  color: #db1701;
+  font-weight: 600;
+  padding-top: 3%;
 }
 
 .form button {

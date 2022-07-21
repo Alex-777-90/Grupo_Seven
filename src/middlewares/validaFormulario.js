@@ -3,13 +3,13 @@ const {body} = require("express-validator");// pega o body para conseguir fazer 
 const validations = [
 
   body("username")
-  .notEmpty().withMessage("O nome deve ser preenchido").bail()
+  .notEmpty().withMessage("O nome deve ser preenchido")
   .isString().withMessage("Só é permitido letras"),
   
   
   body("email")
   .notEmpty().withMessage("O e-mail deve ser preenchido")
-  .isEmail(),
+  .isEmail().withMessage("O e-mail deve ser preenchido"),
   
   
   body("cpf")
@@ -20,11 +20,11 @@ const validations = [
   
   body("telefone")
   .notEmpty().withMessage("O telefone deve ser preenchido")
-  .isMobilePhone(),
+  .isMobilePhone().withMessage("O telefone deve ser preenchido"),
   
   body("password")
   .notEmpty().withMessage("A senha deve ser preenchido")
-  .isLength({min:6,max:15}).withMessage("A senha deve conter no minimo 6 caracteres e no máximo 15 caracteres"),
+  .isLength({min:6,max:15}).withMessage("Senha entre 6 caracteres e  15 caracteres"),
   
   body("passwordConfirmation")
   .notEmpty().withMessage("A senha deve ser confirmada")
