@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/body_pet.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/menu_hamburguer.css">
+  
 
 </head>
 
@@ -181,72 +182,45 @@
 
 
     <section class="container">
+      <% productsPet.forEach(element2 => { %>
+       
+
 
       <div class="card">
-        <img id="bolsaPet" alt="" src="/img/bolsaPet.jpg" complete="complete">
+        <img id="bolsaPet" alt="" src="/img/<%= element2.image %> " complete="complete">
         <div class="descricao">
-          <p>Bolsa pet</p>
-          <P>R$ 140,00</P>
+          <p><%= element2.description %> </p>
+          <P>R$ <%= toThousand(element2.price)  %> </P>
         </div>
-        <button class="comprar">Comprar</button>
+        <a target="_blank" href="/area_compras_pet/<%= element2.item %> ">
+          <button class="comprar">Comprar</button></a>
         <button class="carrinho">Carrinho</button>
       </div>
-      <div class="card">
-        <div class="box-banner">
-          <img id="caminhaPet" alt="" src="/img/caminhaPet.webp" complete="complete">
-          <div class="descricao">
-            <p>Caminha pet</p>
-            <P>R$ 190,00</P>
-          </div>
-          <button class="comprar">Comprar</button>
-          <button class="carrinho">Carrinho</button>
-        </div>
+      
       </div>
-      <div class="card">
-        <div class="box-banner">
-          <img src="/img/casinhaPet.jpg" complete="complete">
-          <div class="descricao">
-            <p>Casinha pet</p>
-            <P>R$ 200,00</P>
-          </div>
-          <button class="comprar">Comprar</button>
-          <button class="carrinho">Carrinho</button>
-        </div>
-      </div>
-      </div>
-      </div>
+
+      <% }) %>
 
     </section>
 
-    <section class="container">
-      <div class="card">
-        <img id="" alt="" src="/img/tigela_gato.webp" complete="complete">
-        <div class="descricao">
-          <p>Tigela para gato</p>
-          <P>R$ 20,00</P>
-        </div>
 
-        <button class="comprar">Comprar</button>
-        <button class="carrinho">Carrinho</button>
-      </div>
+    
+    <section class="container">
+      <% productsPet2.forEach(element => { %>
+       
+      
       <div class="card">
-        <img id="" alt="" src="/img/racao-gato.jpg" complete="complete">
+        <img id="" alt="" src="/img/<%= element.image %> " complete="complete">
         <div class="descricao">
-          <p>Ração para Gato</p>
-          <P>R$ 50,00</P>
+          <p><%= element.description  %> </p>
+          <P>R$ <%= element.price  %> </P>
         </div>
-        <button class="comprar">Comprar</button>
+        <a target="_blank" href="/area_compras_pet/<%= element.item %> ">
+        <button class="comprar">Comprar</button></a>
         <button class="carrinho">Carrinho</button>
       </div>
-      <div class="card">
-        <img id="" alt="" src="/img/racao-premier-caes-adultos.webp" complete="complete">
-        <div class="descricao">
-          <p>Ração premium</p>
-          <P>R$ 80,00</P>
-        </div>
-        <button class="comprar">Comprar</button>
-        <button class="carrinho">Carrinho</button>
-      </div>
+
+      <% }) %>
 
 
     </section>

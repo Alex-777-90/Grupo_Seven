@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
-  <title><%= //produtoDetalhe3.description %></title>
+  <title><%= produtoDetalhe.description %></title>
   <link rel="stylesheet" href="/css/menu_hamburguer.css">
   <link rel="stylesheet" href="/css/area_compras_header.css">
   <link rel="stylesheet" href="/css/area_compras.css">
@@ -133,13 +133,13 @@
             <!-- Inicio Primeiro Artico  de Imagens---------------------------------------------------------------------------->  
         
           <article class="Primeiro_Artico_Compras">
-              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
+              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
               </div>
 
               <div class="Segundo_Bloco">
-                  <img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
-                  <img src="/img/<%= //produtoDetalhe3.image %>" alt="img variedades">
-                  <img src="/img/<%=// produtoDetalhe3.image %>" alt="img variedades">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
               </div>
           </article>
 
@@ -150,7 +150,7 @@
           <article class="Segundo_Artico_Compras">
             <div class="Text">
               <h3>Descrição do produto :</h3>
-              <p><%= //produtoDetalhe3.texto %></p>
+              <p><%= produtoDetalhe.texto %></p>
 
             </div>
 
@@ -163,8 +163,8 @@
           <article class="Terceiro_Artico_Compras">
             <div>
               <i class="fa-solid fa-basket-shopping"></i>
-              <h3><%= //produtoDetalhe3.description %></h3>
-              <p>R$ <%=// produtoDetalhe3.price %></p>
+              <h3><%= produtoDetalhe.description %></h3>
+              <p>R$ <%= produtoDetalhe.price %></p>
               <button type="submit">Comprar</button>
 
             </div>

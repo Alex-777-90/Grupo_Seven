@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="/css/formulario_header.css">
     <link rel="stylesheet" href="/css/formulario.css">
-
+    
+  
    
 </head>
 
@@ -25,13 +26,13 @@
 
       <div class="imagem_logo4">
           <a href="/home">
-              <img class="imagem_logo_img4" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"   >
+              <img class="imagem_logo_img4" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"  >
           </a>
       </div>
 
       <form class="form_primeiro_cabecalho4" action="#" method="post">
 
-        <a class="botao4" id="button_entry"  href="#login">  <i class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
+        <a class="botao4" id="button_entry"  href="#login">  <i  class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
        <!--a tag "i" estou utilizando o icone do fontawesome.com -->
        <br>
        <section class="body_login" ></section>
@@ -45,8 +46,7 @@
        </div>
   
      </form>
-            
-     
+          
 
       </section>
 
@@ -83,89 +83,100 @@
   </header>
 
    <main>
+      
 
-    <div class="container">
+  <div class="container">
       <div class="header">
         <h2>Crie uma conta </h2>
       </div>
 
-    <form action="" id ="form" class="form">
+
+    <form action="/home/formulario" method="post" id ="form" class="form">
+
+ 
+      
+          <div class="form-control">
+
+            <label for="username">Nome de usuário</label>
+            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..."/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.username %></p>
+            <% } %> 
+          </div>
+
+      
+          <div class="form-control">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email.." />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.email %></p>
+            <% } %> 
+          </div>
 
 
-        <div class="form-control">
+          <div class="form-control">
 
-          <label for="username">Nome de usuário</label>
-          <input type="text" id="username" placeholder="Digite seu nome de usuário..."/>
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF.." />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+           <!-- <small>Mensagem de erro</small>-->
+           <% if (typeof errors !=="undefined") {%> 
+           <p><%= errors.cpf %></p>
+           <% } %> 
+          </div>
+
+          <div class="form-control">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" placeholder="Digite seu número.." />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.telefone %></p>
+            <% } %> 
+            
+          </div>
+          
+          <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
+          <div class="form-control">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.password %></p>
+            <% } %> 
+          </div>
+
+
+          <div class="form-control">
+            <label for="password-confirmation">Confirmação de senha</label>
+            <input type="password"  name="passwordConfirmation"id="password-confirmation" placeholder="Digite sua senha novamente..."/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <% if (typeof errors !=="undefined") {%> 
+            <p><%= errors.passwordConfirmation %></p>
+            <% } %> 
+          </div>
+          
+          <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
+
+          <button type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
        
-          
-
-        </div>
-
-    
-        <div class="form-control">
-
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Digite seu email.." />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-
-        </div>
-
-
-        <div class="form-control">
-
-          <label for="cpf">CPF</label>
-          <input type="text" id="cpf" placeholder="Digite seu CPF.." />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-          
-        </div>
-
-        <div class="form-control">
-
-          <label for="telefone">Telefone</label>
-          <input type="text" id="telefone" placeholder="Digite seu número.." size="20" minlength="9" maxlength="14" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-          
-        </div>
-        
-        <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
-        <div class="form-control">
-          <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="Digite sua senha..."/>
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
-
-
-        <div class="form-control">
-          <label for="password-confirmation">Confirmação de senha</label>
-          <input type="password"  id="password-confirmation" placeholder="Digite sua senha novamente..."/>
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
-
-        <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
-
-
-        <button type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
-
+   
     </form>
 
   </div>
     
 
 
-  </main>
+ </main>
 
 
 
@@ -180,8 +191,9 @@
 
 </body>
 
-<script src="/js/formulario.js"></script>
+
 <script src="/js/login.js"></script>
 
 </html>
+
 
