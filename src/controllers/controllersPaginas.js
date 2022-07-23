@@ -33,10 +33,6 @@ const controlePaginas = {
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
 
-<<<<<<< HEAD
-// variedades inicio -----------------------------------------------------------------------------------////////
-
-=======
 // pet inicio -------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
     let productsPet = allProducts.filter(function(value){
@@ -58,7 +54,6 @@ const controlePaginas = {
 
 
   // variedades inicio -----------------------------------------------------------------------------------------////////
->>>>>>> b25c213fcf4e99b704bf24a1f8230c43fbff885a
  variedades:(req,res) =>{
 
   let productsVariedades = allProducts.filter(function(value){

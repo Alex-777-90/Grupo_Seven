@@ -28,8 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
-app.use("/home",RotaPaginas);
-app.use("/",RotaProdutos);
+app.use("/",RotaPaginas);
+app.use("/produtos",RotaProdutos);
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///

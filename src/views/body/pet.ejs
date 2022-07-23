@@ -22,7 +22,7 @@
     <section class="primeiro_cabecalho">
       
       <article class="imagem_logo">
-          <a href="/home">
+          <a href="./">
               <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
           </a>
       </article>
@@ -41,7 +41,7 @@
        
           <form class="form_primeiro_cabecalho2" action="#" method="post">
             
-            <a class="botao2"  href="/home/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+            <a class="botao2"  href="/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
               <!--a tag "i" estou utilizando o icone do fontawesome.com -->
     
           </form>
@@ -72,13 +72,13 @@
 
       <article class="abas">
 
-        <a class="tagA_segundo_cabecalho" href="/home/variedades">
+        <a class="tagA_segundo_cabecalho" href="/variedades">
           <p class="mercado"><strong> Variedades</strong> </p>
         </a>
 
         <p class="pet" id="pag_pet"><strong>Espaço pet </strong> </p>
 
-        <a class="tagA_segundo_cabecalho" href="/home/farmacia">
+        <a class="tagA_segundo_cabecalho" href="/farmacia">
           <p class="farmacia"><strong>Farmácia </strong> </p>
         </a>
 
@@ -192,7 +192,7 @@
           <p><%= element2.description %> </p>
           <P>R$ <%= toThousand(element2.price)  %> </P>
         </div>
-        <a target="_blank" href="/area_compras_pet/<%= element2.item %> ">
+        <a target="_blank" href="/produtos/area_compras_pet/<%= element2.item %> ">
           <button class="comprar">Comprar</button></a>
         <button class="carrinho">Carrinho</button>
       </div>
@@ -215,7 +215,7 @@
           <p><%= element.description  %> </p>
           <P>R$ <%= element.price  %> </P>
         </div>
-        <a target="_blank" href="/area_compras_pet/<%= element.item %> ">
+        <a target="_blank" href="/produtos/area_compras_pet/<%= element.item %> ">
         <button class="comprar">Comprar</button></a>
         <button class="carrinho">Carrinho</button>
       </div>
