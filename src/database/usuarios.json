@@ -1,0 +1,20 @@
+[
+ {
+  "username": "Alex Lima",
+  "email": "alxnvn@yahoo.com.br",
+  "cpf": "36036058888",
+  "telefone": "966471637",
+  "password": "",
+  "passwordConfirmation": "",
+  "id": 1
+ },
+ {
+  "username": "ffffff",
+  "email": "alxnvn@yahoo.com.br",
+  "cpf": "36036058888",
+  "telefone": "966471637",
+  "password": "7777777777",
+  "passwordConfirmation": "777777777",
+  "id": 2
+ }
+]
