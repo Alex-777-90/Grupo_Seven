@@ -86,7 +86,10 @@ const controlePaginas = {
     return res.render("home");
   },
 
+ login:(req,res) => {
 
+  return res.render("landingPageLogin");
+ }
 
 };
 
