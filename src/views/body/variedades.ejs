@@ -22,7 +22,7 @@
     <section class="primeiro_cabecalho">
       
         <article class="imagem_logo">
-            <a href="/home">
+            <a href="./">
                 <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
             </a>
         </article>
@@ -41,7 +41,7 @@
          
             <form class="form_primeiro_cabecalho2" action="#" method="post">
               
-              <a class="botao2"  href="/home/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+              <a class="botao2"  href="/formulario">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
                 <!--a tag "i" estou utilizando o icone do fontawesome.com -->
       
             </form>
@@ -73,11 +73,11 @@
 
            <p class="mercado" id ="pag_mercado"><strong>Variedades</strong> </p> 
            
-          <a class="tagA_segundo_cabecalho"  href="/home/pet">
+          <a class="tagA_segundo_cabecalho"  href="/pet">
                <p class="pet"><strong>Espaço pet</strong> </p>
           </a>
 
-          <a class="tagA_segundo_cabecalho"  href="/home/farmacia">
+          <a class="tagA_segundo_cabecalho"  href="/farmacia">
                <p class="farmacia"><strong>Farmácia </strong> </p>
           </a>
 
@@ -190,7 +190,7 @@
                 <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
                 <p> <%= element1.description %> </p>
                 <P> R$ <%= toThousand(element1.price) %> </P>
-                <a target="_blank" href="/area_compras2/<%= element1.item %> "> 
+                <a target="_blank" href="/produtos/area_compras2/<%= element1.item %> "> 
                 <button type="submit">Comprar</button></a>
                 <button type="submit">Carrinho</button>
             </div>
@@ -211,7 +211,7 @@
               <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
               <p><%= element2.description %></p>
               <P>R$ <%= toThousand(element2.price) %></P>
-              <a target="_blank" href="/area_compras2/<%= element2.item %> ">
+              <a target="_blank" href="/produtos/area_compras2/<%= element2.item %> ">
               <button type="submit">Comprar</button></a>
               <button type="submit">Carrinho</button>
           </div>
