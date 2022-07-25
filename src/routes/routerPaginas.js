@@ -13,6 +13,9 @@ router.get("/login",controlePaginas.login);
 
 
 // inicio formulario-----------------------------------------------------------------------------------------/////
+router.get("/formularioEmpresas",controleUsuarios.formularioEmpresa);
+router.post("/formularioEmpresas",validations,controleUsuarios.armazenarEmpresa);
+
 router.get("/formulario",controleUsuarios.formulario);
 router.post("/formulario", validations ,controleUsuarios.armazenar);
 // fim  formulario------------------------------------------------------------------------------------------/////

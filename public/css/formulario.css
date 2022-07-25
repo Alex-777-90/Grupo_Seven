@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,8 @@
 /* inicio Block Login----------------------------------------------------------------------------------------------------- */
 .header{
   position: relative;
+  font-family: 'arial', sans-serif;
+  color: rgb(222, 20, 20);
 }
 
 .body_login{
