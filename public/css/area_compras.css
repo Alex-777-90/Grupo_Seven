@@ -21,6 +21,7 @@
    width: 100%;
    height: 350px;
    border-radius: 10px;
+  
     
  }
  
@@ -39,9 +40,10 @@
    width: 35%;
    padding: 2%;
    border-radius: 15px;
-   
+  
  
  }
+ 
  
  .Primeiro_Artico_Compras{
  width: 50%;
@@ -54,6 +56,7 @@
  text-align: center;
  border-top-left-radius: 5px;
  border-bottom-left-radius: 5px;
+ 
  
  
  }
@@ -131,3 +134,60 @@
    height: 7vh;
  }
  
+ @media (max-width:767px) and (min-width:195px) {
+ 
+   .Articos_Compras{
+     flex-direction: column;
+     align-items: center;
+ 
+   }
+ 
+   .Primeiro_Artico_Compras{
+     width: 100%;
+     padding-top: 4%;
+     padding-left: 0%;
+     padding-right: 7%;
+     margin-left: 0%;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+     
+   }
+ 
+   .Segundo_Artico_Compras{
+     width: 100%;
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-bottom: 3%;
+     margin-left: 0%;
+     text-align: center;
+     
+   }
+ 
+   .Segundo_Artico_Compras p{
+     padding-right: 0%;
+     
+   }
+   
+   .Segundo_Artico_Compras h3{
+     padding-right: 0%;
+     padding-bottom: 2%;
+     
+   }
+ 
+   .Terceiro_Artico_Compras{
+     width: 100%;
+     padding-left: 0%;
+     padding-right: 0%;
+     margin-left: 0%;
+     margin-right: 0%;
+     border-top-right-radius: 0px;
+     border-bottom-right-radius: 0px; 
+     
+   }
+ 
+   .Terceiro_Artico_Compras button {
+     margin-bottom: 20%;
+     font-size: 150%;
+   }
+ 
+ }
