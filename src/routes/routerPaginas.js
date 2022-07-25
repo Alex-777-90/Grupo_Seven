@@ -3,6 +3,7 @@ var router = express.Router();
 var controlePaginas = require("../controllers/controllersPaginas");
 var controleUsuarios = require("../controllers/controllersUsuarios");
 const validations = require("../middlewares/validaFormulario");
+const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 
 
 router.get("/farmacia",controlePaginas.farmacia);
@@ -14,10 +15,11 @@ router.get("/login",controlePaginas.login);
 
 // inicio formulario-----------------------------------------------------------------------------------------/////
 router.get("/formularioEmpresas",controleUsuarios.formularioEmpresa);
-router.post("/formularioEmpresas",validations,controleUsuarios.armazenarEmpresa);
+router.post("/formularioEmpresas",validationsEmpresa,controleUsuarios.armazenarEmpresa);
 
 router.get("/formulario",controleUsuarios.formulario);
 router.post("/formulario", validations ,controleUsuarios.armazenar);
 // fim  formulario------------------------------------------------------------------------------------------/////
 
 module.exports = router;
+

@@ -1,6 +1,6 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
-const allUsers = require("../models/usuariosModels")
+
 
 
 const controleUsuarios = {

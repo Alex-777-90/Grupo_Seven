@@ -1,6 +1,6 @@
 const {body} = require("express-validator");// pega o body para conseguir fazer a validação com express-validator 
 
-const validations = [
+const validationsEmpresa = [
 
   body("username")
   .notEmpty().withMessage("O nome deve ser preenchido")
@@ -12,11 +12,12 @@ const validations = [
   .isEmail().withMessage("O e-mail deve ser preenchido"),
   
   
-  body("cpf")
-  .notEmpty().withMessage("O CPF deve ser preenchido")
-  .isNumeric().withMessage("Só é permitido números")
-  .isLength({min:11,max:11}).withMessage("O CPF deve conter 11 números"),
 
+  body("CNPJ")
+  .notEmpty().withMessage("O CNPJ deve ser preenchido")
+  .isNumeric().withMessage("Só é permitido números")
+  .isLength({min:14,max:14}).withMessage("O CNPJ deve conter 14 números"),
+  
   
   body("telefone")
   .notEmpty().withMessage("O telefone deve ser preenchido")
@@ -32,4 +33,4 @@ const validations = [
   
   ]
 
-  module.exports = validations;
+  module.exports = validationsEmpresa;
