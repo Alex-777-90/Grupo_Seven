@@ -26,6 +26,34 @@ const allUsers = {
    fs.writeFileSync(usuariosPath, JSON.stringify(usuarios, null, ' '));
    return usuarios;
 
+  },
+
+  atualiza(receivedcpf,receivedcpfEdit) {
+     let cpfEdit = this.findAllUsers(); // pega a array toda
+     let cpfEditBeingUpdated = cpfEdit.find(item => item.cpf == receivedcpf); // pega o cpf e compara com o passado no parametro
+    
+    // pego os dados que estão no body , com os novos dados digitados pelo usuario ------////
+    cpfEditBeingUpdated.username = receivedcpfEdit.username;
+    cpfEditBeingUpdated.email    = receivedcpfEdit.email;
+    cpfEditBeingUpdated.cpf      = receivedcpfEdit.cpf;
+    cpfEditBeingUpdated.telefone = receivedcpfEdit.telefone
+    cpfEditBeingUpdated.password = receivedcpfEdit.password
+    cpfEditBeingUpdated.passwordConfirmation = receivedcpfEdit.passwordConfirmation
+   
+    // pego os dados que estão no body , com os novos dados digitados pelo usuario ------////
+
+
+    fs.writeFileSync(usuariosPath, JSON.stringify(cpfEdit, null, ' ')); // salva os dados na array 
+   
+  },
+
+  delete(receivedcpf){
+    let cpfEdit = this.findAllUsers(); // pega a array toda
+    let reduceUsers = cpfEdit.filter(item => item.cpf != receivedcpf);
+
+    fs.writeFileSync(usuariosPath, JSON.stringify(reduceUsers, null, ' ')); // salva os dados na array 
   }
+ 
+ 
 }
 module.exports = allUsers;
