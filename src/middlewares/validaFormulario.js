@@ -15,8 +15,8 @@ const validations = [
   body("cpf")
   .notEmpty().withMessage("O CPF deve ser preenchido")
   .isNumeric().withMessage("Só é permitido números")
-  .isLength({min:10,max:11}).withMessage("O CPF deve conter 10 números"),
-  
+  .isLength({min:11,max:11}).withMessage("O CPF deve conter 11 números"),
+
   
   body("telefone")
   .notEmpty().withMessage("O telefone deve ser preenchido")

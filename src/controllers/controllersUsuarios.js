@@ -1,6 +1,5 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
-const allUsers = require("../models/usuariosModels")
 
 
 const controleUsuarios = {
@@ -9,7 +8,6 @@ const controleUsuarios = {
 
     return res.render("formulario");
   },
-
 
   armazenar:(req,res) => {
 
@@ -33,12 +31,33 @@ const controleUsuarios = {
     res.redirect("/")
   },
 
-  atualiza:(req,res) =>{
 
+  formularioEdit:(req,res) =>{
+    let usuarios = todosUsuarios.findAllUsers()
+    let {cpf} = req.params
+    let cpfEdit = usuarios.find(usuario => usuario.cpf == cpf)
+    return res.render("formularioEdit", {cpfEdit});
+  },
+
+  formularioUpdate:(req,res) =>{
     
+    let {cpf} = req.params; // pega o dado da url 
+
+    todosUsuarios.atualiza(cpf,req.body);
+
+    res.redirect("/");
+  
+  },
+  
+  formularioDelete:(req,res) =>{
+
+    let {cpf} = req.params; // pega o dado da url 
+    
+    todosUsuarios.delete(cpf);
+
+    res.redirect("/");
   }
-
-
+  
 }
 module.exports = controleUsuarios;
 

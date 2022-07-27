@@ -7,6 +7,33 @@
   "password": "",
   "passwordConfirmation": "",
   "id": 1
+ },
+ {
+  "username": "Virgil van Dijk ",
+  "email": "alxnvn@yahoo.com.br",
+  "cpf": "22222222222",
+  "telefone": "966471637",
+  "password": "4444444444444",
+  "passwordConfirmation": "44444444444444",
+  "id": 2
+ },
+ {
+  "username": "Steven Gerrard",
+  "email": "alxnvn@yahoo.com.br",
+  "cpf": "78877887977",
+  "telefone": "966471637",
+  "password": "3333333333333",
+  "passwordConfirmation": "3333333333333",
+  "id": 3
+ },
+ {
+  "username": "Rafael Nadal",
+  "email": "alxnvn@yahoo.com.br",
+  "cpf": "11111111111",
+  "telefone": "966471637",
+  "password": "6666666",
+  "passwordConfirmation": "6666666",
+  "id": 5
  }
 
 ]

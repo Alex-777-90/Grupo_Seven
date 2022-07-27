@@ -6,6 +6,7 @@ var logger = require('morgan');
 const express = require("express");
 const app = express();
 const methodOverride = require("method-override");// const pra habilitar os metodos put e delete
+const session = require("express-session");
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
@@ -17,6 +18,12 @@ const RotaProdutos = require("./src/routes/routerProdutos");
 // view engine setup
 app.set('views', path.join(__dirname, './src/views/body'));
 app.set("view engine","ejs"); // informa ao servidor que será utilizado o ejs.
+
+app.use(session({
+  secret:"seguranca dos dados  grupo seven",
+  resave:true,
+  saveUninitialized:true
+}))
 
 app.use(logger('dev'));
 app.use(express.json());// ajuda a processar o dados vindo de form pelo method post e tranformar o arguivo em json 
