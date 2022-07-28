@@ -87,89 +87,79 @@
 
   <div class="container">
       <div class="header">
-        <h2>Crie uma conta para sua empresa</h2>
+        <h2>Editar sua conta empresa </h2>
       </div>
 
 
-    <form action="/formularioEmpresas" method="post" id ="form" class="form">
+    <form action="/formularioEmpresasEdit/<%= CNPJEdit.CNPJ %>?_method=PUT " method="POST" id ="form" class="form">
 
- 
-      
+
           <div class="form-control">
 
             <label for="username">Nome da empresa</label>
-            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..." />
+            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..." value="<%= CNPJEdit.username %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.username %></p>
-            <% } %> 
           </div>
 
       
           <div class="form-control">
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Digite seu email.." />
+            <input type="text" name="email" id="email" placeholder="Digite seu email.." value="<%= CNPJEdit.email %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.email %></p>
-            <% } %> 
+    
           </div>
 
 
           <div class="form-control">
 
-            <label for="cpf">CNPJ</label>
-            <input type="text" name="CNPJ" id="CNPJ" placeholder="Digite seu CNPJ.." />
+            <label for="CNPJ">CNPJ</label>
+            <input type="text" name="CNPJ" id="CNPJ" placeholder="Digite seu CNPJ.." value="<%= CNPJEdit.CNPJ %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
            <!-- <small>Mensagem de erro</small>-->
-           <% if (typeof errors !=="undefined") {%> 
-           <p><%= errors.CNPJ %></p>
-           <% } %> 
+          
           </div>
 
           <div class="form-control">
 
             <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" placeholder="Digite seu número.." />
+            <input type="text" name="telefone" id="telefone" placeholder="Digite seu número.." value="<%= CNPJEdit.telefone %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.telefone %></p>
-            <% } %> 
+         
             
           </div>
           
           <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
           <div class="form-control">
             <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha..." value="<%= CNPJEdit.password %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.password %></p>
-            <% } %> 
+            
           </div>
 
 
           <div class="form-control">
             <label for="password-confirmation">Confirmação de senha</label>
-            <input type="password"  name="passwordConfirmation"id="password-confirmation" placeholder="Digite sua senha novamente..."/>
+            <input type="password"  name="passwordConfirmation"id="password-confirmation" placeholder="Digite sua senha novamente..." value="<%= CNPJEdit.passwordConfirmation %>"/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
-            <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.passwordConfirmation %></p>
-            <% } %> 
+            
           </div>
           
           <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
 
-          <button type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
-       
-   
+          <button type="submit"> <strong> Confirmar alteração  </strong></button>  <!-- botão de  confirmação do cadastro -->    
+         
+						
+    </form>
+         
+    <form action="/formularioEmpresasEdit/<%= CNPJEdit.CNPJ %>?_method=DELETE" method="POST" >
+      <button type="submit" class="action-button delete">Apagar dados</button>
     </form>
 
   </div>

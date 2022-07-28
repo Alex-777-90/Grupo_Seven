@@ -134,3 +134,25 @@ footer img{
 }
 
 }
+
+@media (max-width:3000px) and (min-width:1407px){
+   
+  .lista_footer1 li ,
+  .lista_footer2 li {
+    font-size: 120% ;
+  }
+
+  #icone_footer_img{
+    font-size:340%;
+  }
+  
+  #icone_footer_img:hover{
+    font-size: 500%;
+  }
+
+  .label_footer{
+    font-size: 130% ;
+  }
+
+
+}

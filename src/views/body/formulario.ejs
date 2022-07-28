@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="/css/formulario_header.css">
     <link rel="stylesheet" href="/css/formulario.css">
-    <link rel="stylesheet" href="/css/footer.css">
     
   
    
@@ -99,7 +98,7 @@
           <div class="form-control">
 
             <label for="username">Nome de usuário</label>
-            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..."/>
+            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
@@ -181,7 +180,13 @@
 
 
 
-  <%- include("../partials/footer") %> 
+
+ <footer>
+
+
+
+
+ </footer>
 
 
 </body>
@@ -190,5 +195,4 @@
 <script src="/js/login.js"></script>
 
 </html>
-
 

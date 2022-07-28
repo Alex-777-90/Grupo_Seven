@@ -323,6 +323,28 @@ header{
     font-size: 150%;
   }
 
+}
+
+ @media (max-width:3000px) and (min-width:1407px){
+  
+
+  .imagem_logo_img{
+    width: 100%;
+  }
+
+
+   .segunda_cabecalho{
+    width: 100%;
+    height: 50px;
+   
+    
+   }
+
+   .primeiro_cabecalho{
+    width: 100%;
+    height: 105px;
+   
+   }
 
 
 }
