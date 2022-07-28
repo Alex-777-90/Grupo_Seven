@@ -187,3 +187,35 @@
     }
 
   }
+
+  @media (max-width:3000px) and (min-width:1407px){
+
+    /* inicio primeiro block de imagens-------------------------------------------------------------------------------------------- */
+.elementoUm_article_div  p {
+  margin-left: 5%;
+  font-size: 150%;
+
+}
+
+.elementoUm_article_div  button{
+  font-size: 150%;
+
+}
+
+/*--fim primeiro block de imagens------------------------------------------------------------------------------------*/
+
+/* inicio segundo block de imagens-------------------------------------------------------------------------------------------- */
+
+.elementoDois_article_div  p {
+  font-size: 150%;
+
+}
+
+.elementoDois_article_div  button{
+  font-size: 150%;
+
+}
+
+
+
+  }

@@ -102,10 +102,50 @@
   width: 70%;
 
 }
-
-
-
   
 }
 
+
+@media (max-width:3000px) and (min-width:1407px){
+  
+  .main_login{
+    height: 800px;
+  }
+
+  .block_form1 ,
+.block_form2 {
+  height: 470px;
+}
+
+.block_form1 h3,
+.block_form2 h3 {
+  font-size: 150%;
+}
+
+.block_form1 div label,
+.block_form2 div label {
+ margin-left: -72%;
+ font-size: 120%;
+
+}
+
+.block_form1 div input,
+.block_form2 div input {
+  height: 40px;
+}
+
+.block_form1  button,
+.block_form2  button{
+  height: 40px;
+  font-size: 120%;
+  
+}
+
+.block_form1 p,
+.block_form2 p{
+  font-size: 120%;
+}
+
+
+}
 

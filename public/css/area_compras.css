@@ -192,3 +192,41 @@ border-bottom-left-radius: 5px;
   }
 
 }
+
+@media (max-width:3000px) and (min-width:1407px){
+
+   
+  .Primeiro_Bloco_Superior img{
+    width: 100%;
+    height: 550px;
+   
+  }
+  
+  .Segundo_Artico_Compras p{
+   font-size: 150%;
+   
+ }
+ 
+ .Segundo_Artico_Compras h3{
+   font-size: 150%;
+   
+ }
+ 
+ .Terceiro_Artico_Compras button {
+   font-size: 150%;
+ }
+
+ .Terceiro_Artico_Compras h3{
+   font-size: 150%;
+  
+ }
+ 
+ .Terceiro_Artico_Compras p {
+   font-size: 200%;
+ }
+
+ .Terceiro_Artico_Compras i {
+   font-size: 500%;
+ }
+
+}
