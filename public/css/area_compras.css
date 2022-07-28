@@ -129,28 +129,30 @@
  
  }
  
- .rodapé_compras{
-   background-color: rgb(250, 248, 251);
-   height: 7vh;
- }
- 
+
  @media (max-width:767px) and (min-width:195px) {
  
    .Articos_Compras{
      flex-direction: column;
      align-items: center;
- 
+
    }
  
    .Primeiro_Artico_Compras{
      width: 100%;
      padding-top: 4%;
      padding-left: 0%;
-     padding-right: 7%;
+     padding-right: 6%;
      margin-left: 0%;
+     margin-right: 0%;
      border-top-left-radius: 0px;
      border-bottom-left-radius: 0px;
      
+   }
+
+   .Primeiro_Bloco_Superior img{
+    width: 100%;
+    
    }
  
    .Segundo_Artico_Compras{
@@ -190,4 +192,42 @@
      font-size: 150%;
    }
  
+ }
+
+ @media (max-width:3000px) and (min-width:1407px){
+
+   
+   .Primeiro_Bloco_Superior img{
+     width: 100%;
+     height: 550px;
+    
+   }
+   
+   .Segundo_Artico_Compras p{
+    font-size: 150%;
+    
+  }
+  
+  .Segundo_Artico_Compras h3{
+    font-size: 150%;
+    
+  }
+  
+  .Terceiro_Artico_Compras button {
+    font-size: 150%;
+  }
+
+  .Terceiro_Artico_Compras h3{
+    font-size: 150%;
+   
+  }
+  
+  .Terceiro_Artico_Compras p {
+    font-size: 200%;
+  }
+
+  .Terceiro_Artico_Compras i {
+    font-size: 500%;
+  }
+
  }
