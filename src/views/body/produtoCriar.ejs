@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Grupo Seven</title>
+		<script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/body_pet.css">
+		<link rel="stylesheet" href="/css/footer.css">
+		<link rel="stylesheet" href="/css/menu_hamburguer.css">
+		
+	
+	</head>
+<body>
+	<!-- Header -->
+	<%- include('../partials/header') %>
+	<!-- /Header -->
+
+	<div class="container criacao">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="produtos-title">Formulário do produto</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="/produtos/criar" method="POST" enctype="multipart/form-data">
+					<div class="col-12 col-md-6">
+						<label for="name" class="form-label">Nome do produto:</label>
+						<input type="text" id="name" name="allProdutos" placeholder="Ex: Ração para gatos" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="price" class="form-label">Preço do produto:</label>
+						<input type="text" id="price" name="price" placeholder="Ex: 1478" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+							<label for="category" class="form-label">Setor:</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categotia do produto">
+           <datalist id="datalistOptions">
+                  <option value="Variedades">
+                  <option value="Pet">
+                  <option value="Farmácia">
+                  <option value="Ofertas">
+           </datalist>
+						</select>
+					</div>
+					<div class="col-12">
+						<label for="description" class="form-label">Descrição:</label>
+						<textarea name="description" id="description" class="form-input"></textarea>
+					</div>
+					<div class="col-12">
+						<label class="form-label" for="image">Imagem do produto:</label>
+						<input class="form-input" type="file" name="image" id="image">
+					</div>
+					<div class="col-12">
+						<button type="submit" class="buy-now-button">Salvar produto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

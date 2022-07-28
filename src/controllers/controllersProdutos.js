@@ -51,9 +51,12 @@ const controleProdutos = {
 
     return res.render("area_compras_pet" ,{produtoDetalhe} );
   },
-
 // pet fim -------------------------------------------------------------------------------------------////////
 
+formulario:(req,res) =>{
+  
+  return res.render("produtoCriar");
+},
 }
 
 module.exports = controleProdutos;
