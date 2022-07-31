@@ -14,9 +14,25 @@ const allUsers = {
     return JSON.parse(fs.appendFileSync(usuariosPath, "utf-8")); // transforma o JSON e uma array e cria um novo dado na array usuarios
   },
 
+
+  procuraCPF(receivedcpf){
+   
+    let procuraUsuario = allUsers.findAllUsers();
+    let procuraCPF = procuraUsuario.find(item => item.cpf == receivedcpf); // pega o cpf e compara com o passado no parametro
+    return procuraCPF
+
+  },
+
+  procuraNoBody (campo,valor){
+    let procuraUsuario = allUsers.findAllUsers();
+    let procuraCampo = procuraUsuario.find(item => item[campo] == valor); // compara o que recebi no campo com o que esta na array
+    return procuraCampo
+
+  },
+
   armazena(dates){
     
-  let usuarios = allUsers.findAllUsers()
+  let usuarios = allUsers.findAllUsers();
    const users  = {
     ...dates,
     id: usuarios.length + 1
@@ -56,4 +72,7 @@ const allUsers = {
  
  
 }
+
+//console.log(allUsers.procuraNoBody("email","alxnvn@yahoo.com"));
+
 module.exports = allUsers;
