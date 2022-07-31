@@ -109,7 +109,7 @@ const controleUsuarios = {
        res.cookie("emailUsuario",req.body.email2,{maxAge:(1000 * 60) * 20})
      }
 
-       return res.redirect("/PaginaCliente");
+       return res.redirect("/usuarios/PaginaCliente");
      }
      return res.render("landingPageLogin",{errors:{ email2:"email ou senha não encontrados "}})
   

@@ -8,7 +8,7 @@ const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
-
+router.get("/login",validaLoginCliente,controlePaginas.login);
 router.get("/farmacia",controlePaginas.farmacia);
 router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
@@ -26,21 +26,6 @@ router.post("/formularioEmpresas",validationsEmpresa,controleUsuariosEmpresas.ar
 router.get("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioEditEmpresas);
 router.put("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioUpdateEmpresas);
 router.delete("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioDeleteEmpresas);
-
-//-------------------------------------------------------------------------------------------------------------/////
-router.get("/PaginaCliente",controleUsuarios.PaginaCliente);
-
-router.get("/login",validaLoginCliente,controlePaginas.login);
-router.post("/login",controleUsuarios.loginValidation);
-router.get("/logout",controleUsuarios.logout);
-
-
-router.get("/formulario",controleUsuarios.formulario);
-router.post("/formulario", validations ,controleUsuarios.armazenar);
-
-router.get("/formularioEdit/:cpf2" ,controleUsuarios.formularioEdit);
-router.put("/formularioEdit/:cpf2" ,controleUsuarios.formularioUpdate);
-router.delete("/formularioEdit/:cpf2" ,controleUsuarios.formularioDelete);
 
 // fim  formulario------------------------------------------------------------------------------------------/////
 

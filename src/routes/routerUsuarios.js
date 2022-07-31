@@ -8,11 +8,8 @@ const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
-
-
 router.get("/PaginaCliente",controleUsuarios.PaginaCliente);
 
-router.get("/login",validaLoginCliente,controlePaginas.login);
 router.post("/login",controleUsuarios.loginValidation);
 router.get("/logout",controleUsuarios.logout);
 
@@ -23,3 +20,5 @@ router.post("/formulario", validations ,controleUsuarios.armazenar);
 router.get("/formularioEdit/:cpf2" ,controleUsuarios.formularioEdit);
 router.put("/formularioEdit/:cpf2" ,controleUsuarios.formularioUpdate);
 router.delete("/formularioEdit/:cpf2" ,controleUsuarios.formularioDelete);
+
+module.exports = router;
