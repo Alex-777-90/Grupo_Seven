@@ -11,5 +11,14 @@ router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
 
 // inicio detalhes do produto por id ------------------------------------------------------------///////
 
+//formulario de criaçao de produtos
+router.get("/criarProduto",controleProdutos.inserirProduto);
+///////////   URL            CONTROLLER       FUNCAO CALLBACK(VIEW)
+//edição de produtos
+router.get("/editProdutos",controleProdutos.editProdutos);                        
+router.post("/criarProduto",controleProdutos.adicionarProduto);
+router.put("/criarProduto",controleProdutos.atualizarProduto);
+router.delete("/criarProduto",controleProdutos.deletarProduto);
+
 
 module.exports = router;

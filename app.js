@@ -40,7 +40,6 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
 app.use("/",RotaPaginas);
 app.use("/produtos",RotaProdutos);
-app.use("/criar",RotaProdutos);
 app.use("/usuarios",RotaUsuarios);
 
 

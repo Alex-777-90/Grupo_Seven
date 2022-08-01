@@ -52,9 +52,23 @@ const controleProdutos = {
     return res.render("area_compras_pet" ,{produtoDetalhe} );
   },
 // pet fim -------------------------------------------------------------------------------------------////////
+
 inserirProduto:(req, res) =>{
-  res.render("produtoCriar")
-}
+  res.render("produtoCriar");
+},
+ adicionarProduto:(req, res) =>{
+
+ },
+editProdutos:(req, res) =>{
+  res.render("editarProdutos");
+},
+ atualizarProduto:(req, res) =>{
+
+ },
+ deletarProduto:(req, res) =>{
+
+ },
+
 }
 
 
