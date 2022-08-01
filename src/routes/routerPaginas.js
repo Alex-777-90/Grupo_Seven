@@ -34,8 +34,11 @@ router.delete("/formularioEdit/:cpf" ,controleUsuarios.formularioDelete);
 // fim  formulario------------------------------------------------------------------------------------------/////
 
 //formulario de criaçao de produtos
-router.get("/criarProduto",controleProdutos.formulario);
+// router.get("/criarProduto",controleProdutos.formulario);
 // router.post("/criarProduto",controleProdutos);
+
+
+// router.get("/descricao",controleProdutos.formulario);
 
 module.exports = router;
 
