@@ -75,6 +75,10 @@
   margin-top: 3%;
 }
 
+.p_validation{
+  color: #f71212;
+}
+
 
 @media (max-width:1500px) and (min-width:1076px) {
   .main_login{

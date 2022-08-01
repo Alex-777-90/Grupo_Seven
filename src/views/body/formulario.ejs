@@ -25,7 +25,7 @@
     <section class="primeiro_cabecalho">
 
       <div class="imagem_logo4">
-          <a href="./">
+          <a href="/">
               <img class="imagem_logo_img4" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"  >
           </a>
       </div>
@@ -91,18 +91,18 @@
       </div>
 
 
-    <form action="/formulario" method="post" id ="form" class="form">
+    <form action="/usuarios/formulario" method="post" id ="form" class="form">
 
  
       
           <div class="form-control">
 
             <label for="username">Nome de usuário</label>
-            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário..." />
+            <input type="text" name="username2" id="username2" placeholder="Digite seu nome de usuário..." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.username %></p>
+            <p><%= errors.username2 %></p>
             <% } %> 
           </div>
 
@@ -110,11 +110,11 @@
           <div class="form-control">
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Digite seu email.." />
+            <input type="text" name="email2" id="email2" placeholder="Digite seu email.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.email %></p>
+            <p><%= errors.email2 %></p>
             <% } %> 
           </div>
 
@@ -122,23 +122,23 @@
           <div class="form-control">
 
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF.." />
+            <input type="text" name="cpf2" id="cpf2" placeholder="Digite seu CPF.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
            <!-- <small>Mensagem de erro</small>-->
            <% if (typeof errors !=="undefined") {%> 
-           <p><%= errors.cpf %></p>
+           <p><%= errors.cpf2 %></p>
            <% } %> 
           </div>
 
           <div class="form-control">
 
             <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" placeholder="Digite seu número.." />
+            <input type="text" name="telefone2" id="telefone2" placeholder="Digite seu número.." />
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.telefone %></p>
+            <p><%= errors.telefone2 %></p>
             <% } %> 
             
           </div>
@@ -146,22 +146,22 @@
           <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
           <div class="form-control">
             <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
+            <input type="password" name="password2" id="password2" placeholder="Digite sua senha..."/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.password %></p>
+            <p><%= errors.password2 %></p>
             <% } %> 
           </div>
 
 
           <div class="form-control">
             <label for="password-confirmation">Confirmação de senha</label>
-            <input type="password"  name="passwordConfirmation"id="password-confirmation" placeholder="Digite sua senha novamente..."/>
+            <input type="password"  name="passwordConfirmation2"id="password-confirmation2" placeholder="Digite sua senha novamente..."/>
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <% if (typeof errors !=="undefined") {%> 
-            <p><%= errors.passwordConfirmation %></p>
+            <p><%= errors.passwordConfirmation2 %></p>
             <% } %> 
           </div>
           
@@ -195,4 +195,3 @@
 <script src="/js/login.js"></script>
 
 </html>
-

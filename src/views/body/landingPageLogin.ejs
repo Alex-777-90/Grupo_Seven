@@ -140,7 +140,7 @@
             
             <section class="block_form1">
              
-                  <form  action="">
+                  <form  action="/loginEmpresa" method="post">
 
                     <h3>Empresas</h3>
                       <div class="form-control">
@@ -152,7 +152,10 @@
                         <label for="password">Senha</label><br>
                         <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
                       </div>
-                     
+                
+                      <input type="checkbox" name="lembrar_usuario" id="">
+                      <label for="lembrar_usuario">manter logado</label>
+
                       <a href=""><p class="p_senha">Esqueceu sua senha? </p></a>
 
                       <button type="submit"> <strong> Entrar </strong></button>
@@ -166,28 +169,41 @@
             <section class="block_form2">
                
 
-                    <form action="">
+                    <form action="/usuarios/login" method="post">
                           
                       <h3>Clientes</h3>
+                      <% if (typeof errors !=="undefined") {%> 
+                        <p class="p_validation"><%= errors.email2 %></p>
+                      <% } %> 
                           <div class="form-control">
                             <label class="label_form" for="email">Email</label><br>
                             <input type="text" name="email2" id="email2" placeholder="Digite seu email.." />
+                     
                           </div>
 
                           <div class="form-control"><br>
                             <label for="password">Senha</label> <br>
                             <input type="password" name="password2" id="password2" placeholder="Digite sua senha..."/>
+                            <% if (typeof errors !=="undefined") {%> 
+                              <p class="p_validation"><%= errors.password2 %></p>
+                            <% } %> 
                           </div>
+                          </div>
+
+                    
+                          <input type="checkbox" name="lembrar_usuario2" id="">
+                          <label for="lembrar_usuario2">manter logado</label>
 
                            <a href=""><p class="p_senha">Esqueceu sua senha? </p></a>
 
                           <button type="submit"> <strong> Entrar </strong></button>
 
-                          <p> Ainda não tem Cadastro ? </p><a href="/formulario">Clique aqui</a>
+                          <p> Ainda não tem Cadastro ? </p><a href="/usuarios/formulario">Clique aqui</a>
 
                     </form>
 
             </section>
+
 
         
   </main>

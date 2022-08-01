@@ -7,5 +7,14 @@
   "password": "7777777",
   "passwordConfirmation": "7777777",
   "id": 1
+ },
+ {
+  "username": "Everton",
+  "email": "alxnvn@yahoo.com.be",
+  "CNPJ": "00346019000194",
+  "telefone": "11966471637",
+  "password": "6666666",
+  "passwordConfirmation": "6666666",
+  "id": 2
  }
 ]

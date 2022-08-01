@@ -7,11 +7,13 @@ const express = require("express");
 const app = express();
 const methodOverride = require("method-override");// const pra habilitar os metodos put e delete
 const session = require("express-session");
+//const validaLoginClienteCookies = require("./src/middlewares/validaLoginClienteCookies");
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 const RotaPaginas = require("./src/routes/routerPaginas");
 const RotaProdutos = require("./src/routes/routerProdutos");
+const RotaUsuarios = require("./src/routes/routerUsuarios");
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 
@@ -21,14 +23,15 @@ app.set("view engine","ejs"); // informa ao servidor que será utilizado o ejs.
 
 app.use(session({
   secret:"seguranca dos dados  grupo seven",
-  resave:true,
-  saveUninitialized:true
+  resave:false,
+  saveUninitialized:false
 }))
 
 app.use(logger('dev'));
 app.use(express.json());// ajuda a processar o dados vindo de form pelo method post e tranformar o arguivo em json 
 app.use(express.urlencoded({ extended: false })); // ajuda a processar o dados vindo de form pelo method post
 app.use(cookieParser());
+//app.use(validaLoginClienteCookies);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
@@ -36,6 +39,7 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
 app.use("/",RotaPaginas);
 app.use("/produtos",RotaProdutos);
+app.use("/usuarios",RotaUsuarios);
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///
