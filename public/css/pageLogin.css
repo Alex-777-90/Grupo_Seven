@@ -17,7 +17,7 @@
 .block_form2 {
   background-color: rgba(245, 245, 245, 0.849);
   width: 37%;
-  height: 350px;
+  height: 370px;
   margin-top: 10%;
   margin-bottom: 10%;
   border-radius: 5px;
@@ -75,6 +75,9 @@
   margin-top: 3%;
 }
 
+.p_validation{
+  color: #f71212;
+}
 
 @media (max-width:1500px) and (min-width:1076px) {
   .main_login{
@@ -114,9 +117,9 @@
     height: 800px;
   }
 
-  .block_form1 ,
+.block_form1 ,
 .block_form2 {
-  height: 470px;
+  height: 490px;
 }
 
 .block_form1 h3,
