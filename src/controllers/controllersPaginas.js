@@ -33,32 +33,8 @@ const controlePaginas = {
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
 
-<<<<<<< HEAD
 // variedades inicio -----------------------------------------------------------------------------------////////
 
-=======
-// pet inicio -------------------------------------------------------------------------------------////////
-  pet:(req,res) =>{
-    let productsPet = allProducts.filter(function(value){
-
-      return value.sector == "pet" && value.item <= 3 
-         
-    });
-  
-  
-    let productsPet2 = allProducts.filter(function(value){
-  
-      return value.sector == "pet" && value.item >= 4
-  
-    });
-  
-    return res.render("pet",{productsPet , productsPet2, toThousand});
- },
- // pet fim -----------------------------------------------------------------------------------------////////
-
-
-  // variedades inicio -----------------------------------------------------------------------------------------////////
->>>>>>> b25c213fcf4e99b704bf24a1f8230c43fbff885a
  variedades:(req,res) =>{
 
   let productsVariedades = allProducts.filter(function(value){
