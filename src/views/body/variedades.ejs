@@ -17,80 +17,7 @@
 
 <body>
   
-  <header>
-
-    <section class="primeiro_cabecalho">
-      
-      <article class="imagem_logo">
-          <a href="./">
-              <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
-          </a>
-      </article>
-   
-      <article class="article_form1">
-          <form class="form_primeiro_cabecalho" action="#" method="post">
-              
-              <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
-              <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-            
-          </form>
-      </article>
-      
-      <div class="all_button">
-      <article class="article_form2">
-       
-          <form class="form_primeiro_cabecalho2" action="#" method="post">
-            
-            <a class="botao2"  href="/login">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
-              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-    
-          </form>
-          <p class="text_botao2">Cadastro</p>
-
-      </article>
-       
-      <article class="article_form3">
-          <form class="form_primeiro_cabecalho3" action="#" method="post">
-
-              <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
-              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
-
-          </form>
-          <p class="text_botao3" >Carrinho</p>
-      </article> 
-    </div>  
-                
-  </section>
-
-
-    <section class="segunda_cabecalho">
-
-      <article class="link">
-        <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p> 
-      </article>
-
-       <article class="abas">
-
-           <p class="mercado" id ="pag_mercado"><strong>Variedades</strong> </p> 
-           
-          <a class="tagA_segundo_cabecalho"  href="/pet">
-               <p class="pet"><strong>Espaço pet</strong> </p>
-          </a>
-
-          <a class="tagA_segundo_cabecalho"  href="/farmacia">
-               <p class="farmacia"><strong>Farmácia </strong> </p>
-          </a>
-
-            <p class="oferta"><strong>Ofertas </strong> </p>
-
-       </article>
-
-
-
-    </section>
-
-
-  </header>
+  <%- include("../partials/header) %>
   
   <section class="body_menu_hamburguer" ></section>
   <div class="menu_hamburguer" id="menu_hamburguer">
@@ -187,97 +114,66 @@
 
             <!--corpo com imagens e detalhes com texto etc...-->
             <section class="products">
+              
+              
               <div class="products1">
                   <!--corpo com imagens e detalhes com texto etc...-->
-                  <div>
-                    <img id="imgsize" src="/img/batata.PNG" alt="">
-                    <ul class="description">
-                      <li>Nome do produto</li>
-                      <li>Preço</li>
-                      <li>Pré descrição do produto</li>
-                    </ul>
-                    <button type="submit" >Comprar</button>
-                    <button type="submit" id="buttonCarrinho">Carrinho</button>
+                  <% productsVariedades.array.forEach(element => { %>
+                    
+                    <div>
+                      <img id="imgsize" src="/img/<%= element1.image %>" alt="">
+                    
+                      <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
+                      <p><%= element1.description %> </p>
+                      <P> R$ <%= toThousand(element1.price) %> </P>
+                      <a target="_blank" href="/produtos/area_compras_farmacia/<%= element1.item %> ">
+                        <button id="button_comprar" type="submit">Comprar</button></a>
+                      <button type="submit">Carrinho</button>
                   </div>
-                  <div>
-                    <img id="imgsize" src="/img/biscoitorecheado.jpg" alt="">
-                    <ul class="description">
-                      <li>Nome do produto</li>
-                      <li>Preço</li>
-                      <li>Pré descrição do produto</li>
-                    </ul>
-                    <button type="submit" >Comprar</button>
-                    <button type="submit" id="buttonCarrinho">Carrinho</button>
-                  </div>
-                  <div>
-                    <img id="imgsize" src="/img/snackgato.PNG" alt="">
-                    <ul class="description">
-                      <li>Nome do produto</li>
-                      <li>Preço</li>
-                      <li>Pré descrição do produto</li>
-                    </ul>
-                    <button type="submit" >Comprar</button>
-                    <button type="submit" id="buttonCarrinho">Carrinho</button>
-                  </div>
-              </div>
-    
-              <div class="products2">
-                <div>
-                  <img id="imgsize" src="/img/bomar.PNG" alt="">
-                  <ul class="description">
-                    <li>Nome do produto</li>
-                    <li>Preço</li>
-                    <li>Pré descrição do produto</li>
-                  </ul>
-                  <button type="submit" >Comprar</button>
-                  <button type="submit" id="buttonCarrinho">Carrinho</button>
+        
+                <% }) %>
+        
+              </section>
+        
+         
+        <!-- fim primeiro block de imagens---------------------------------------------------------------------------->
+        
+        <!-- inicio segundo block de imagens---------------------------------------------------------------------------->
+        
+            <section class="elementoDois_article" >
+        
+              <% productsFarmacia2.forEach(element2 => { %>
+               
+                <div class="elementoDois_article_div" >
+                    <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
+                    <p><%= element2.description %></p>
+                    <P>R$ <%= toThousand(element2.price) %></P>
+                    <a  target="_blank" href="/produtos/area_compras_farmacia/<%= element2.item %>">
+                      <button id="button_comprar" type="submit">Comprar</button></a>
+                    <button type="submit">Carrinho</button>
                 </div>
-    
-                <div>
-                  <img id="imgsize" src="/img/desinfetante.PNG" alt="">
-                  <ul class="description">
-                    <li>Nome do produto</li>
-                    <li>Preço</li>
-                    <li>Pré descrição do produto</li>
-                  </ul>
-                  <button type="submit" >Comprar</button>
-                  <button type="submit" id="buttonCarrinho">Carrinho</button>
-                </div>
-    
-                <div>
-                  <img id="imgsize" src="/img/oleo.PNG" alt="">
-                  <ul class="description">
-                    <li>Nome do produto</li>
-                    <li>Preço</li>
-                    <li>Pré descrição do produto</li>
-                  </ul>
-                  <button type="submit" >Comprar</button>
-                  <button type="submit" id="buttonCarrinho">Carrinho</button>
-                </div>
-              </div>
-                
-            </section> 
-
-        </section>
-
-
-
-</main>
-
-
-<%- include("../partials/footer") %> 
-
- 
- <script src="/js/variedades.js"></script>
- <script src="/js/menu_hamburguer.js"></script>
- 
-   <!--<div class="whatsapp">
-  <p>Duvidas ?</p>
-  <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
-  </div>-->
-
-
-</body>
-
-
-</html>
+        
+              <% }) %>
+        
+            </section>
+        
+        <!-- fim segundo block de imagens---------------------------------------------------------------------------->
+        
+        </main>
+        
+        <%- include("../partials/footer") %>
+        
+           <!--<div class="whatsapp">
+          <p>Duvidas ?</p>
+          <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
+          </div>-->
+        
+        <script src="/js/farmacia.js"></script>
+        <script src="/js/menu_hamburguer.js"></script>
+        
+        </body>
+        
+        
+        </html>
+        
+        
