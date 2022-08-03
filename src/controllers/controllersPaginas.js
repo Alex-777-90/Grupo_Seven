@@ -1,11 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-
 const  todosProdutos = require("../models/produto");
+const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
-
-const allProdutosPath = path.join(__dirname, '../database/allProdutos.json'); //pega os dados do JSON
-const allProducts = JSON.parse(fs.readFileSync(allProdutosPath, 'utf-8')); // transforma o JSON e uma array 
+const bcrypt = require("bcryptjs");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
@@ -13,6 +9,8 @@ const controlePaginas = {
  
  // farmacia inicio -------------------------------------------------------------------------------------////////
  farmacia:(req,res) =>{
+
+  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
   let productsFarmacia = allProducts.filter(function(value){
 
@@ -33,9 +31,38 @@ const controlePaginas = {
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
 
+<<<<<<< HEAD
 // variedades inicio -----------------------------------------------------------------------------------////////
 
+=======
+// pet inicio -------------------------------------------------------------------------------------////////
+  pet:(req,res) =>{
+   
+    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+
+    let productsPet = allProducts.filter(function(value){
+
+      return value.sector == "pet" && value.item <= 3 
+         
+    });
+  
+  
+    let productsPet2 = allProducts.filter(function(value){
+  
+      return value.sector == "pet" && value.item >= 4
+  
+    });
+  
+    return res.render("pet",{productsPet , productsPet2, toThousand});
+ },
+ // pet fim -----------------------------------------------------------------------------------------////////
+
+
+  // variedades inicio -----------------------------------------------------------------------------------------////////
+>>>>>>> Douglas
  variedades:(req,res) =>{
+
+  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
   let productsVariedades = allProducts.filter(function(value){
 
@@ -52,40 +79,19 @@ const controlePaginas = {
   // variedades fim -----------------------------------------------------------------------------------------////////
 
 
-// variedades fim --------------------------------------------------------------------------------------////////
-
  home:(req,res) =>{
 
+
+  
    return res.render("home");
  },
 
+ login:(req,res) => {
+  //console.log(req.cookies.teste);
+  return res.render("landingPageLogin");
+ },
 
-
-// formulario inicio -----------------------------------------------------------------------------------------////////
- formulario:(req,res) =>{
-  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-
-  return res.render("formulario");
-},
-
-validaFormulario:(req,res)=>{
-
-  const {errors} = validationResult(req);
-
-    if (errors.length) {
-			const formattedErrors = {}
-			errors.forEach(error => {
-				formattedErrors[error.param] = error.msg;
-			});
-
-   // if(!errors.isEmpty()){ // se errors for diferente de vazio 
-      //console.log(errors.mapped());
-      return res.render("formulario", {errors:formattedErrors ,old:req.body});
-     }
-
-  //console.log(req.body);
-}
-// formulario fim -----------------------------------------------------------------------------------------////////
+ 
 
 };
 

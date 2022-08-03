@@ -50,6 +50,7 @@ header{
   height: 36px;
   border-radius: 7px;
   border: none;
+  padding-left: 2%;
 
 }
 
@@ -301,6 +302,30 @@ header{
   width: 20%;
   
 }
+
+
+}
+
+@media (max-width:3000px) and (min-width:1407px){
+ 
+
+  .imagem_logo_img{
+    width: 100%;
+  }
+
+
+   .segunda_cabecalho{
+    width: 100%;
+    height: 50px;
+   
+    
+   }
+
+   .primeiro_cabecalho{
+    width: 100%;
+    height: 105px;
+   
+   }
 
 
 }

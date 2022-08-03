@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.main_login{
+  margin-top: 1%;
+  margin-bottom: -15px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(159, 158, 158, 0.2), rgba(144, 143, 143, 0.2)),url("/img/supermercado.gif")no-repeat;
+  background-size: cover;
+}
+
+.block_form1 ,
+.block_form2 {
+  background-color: rgba(245, 245, 245, 0.849);
+  width: 37%;
+  height: 370px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+
+}
+
+.block_form1 h3,
+.block_form2 h3 {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.block_form1 div label,
+.block_form2 div label {
+ margin-left: -65%;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+
+}
+
+.block_form1 div input,
+.block_form2 div input {
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  padding-left: 2%;
+  border-color: white;
+  
+}
+
+.block_form1  button,
+.block_form2  button{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f54b4b;
+  color:whitesmoke;
+  transition: all 400ms;
+}
+
+.block_form1  button:hover,
+.block_form2  button:hover{
+  background-color: #f71212;
+
+}
+
+.p_senha{
+  margin-top: 3%;
+}
+
+.p_validation{
+  color: #f71212;
+}
+
+@media (max-width:1500px) and (min-width:1076px) {
+  .main_login{
+    background-size: 100%;
+    margin-bottom: 2%;
+
+  }
+
+}
+
+@media (max-width:767px) and (min-width:195px) {
+
+  .main_login{
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    background-size: 1370px;
+    margin-bottom: 2%;
+
+  }
+
+.block_form1 ,
+.block_form2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 70%;
+
+}
+
+ 
+}
+
+
+@media (max-width:3000px) and (min-width:1407px){
+  
+  .main_login{
+    height: 800px;
+  }
+
+.block_form1 ,
+.block_form2 {
+  height: 490px;
+}
+
+.block_form1 h3,
+.block_form2 h3 {
+  font-size: 150%;
+}
+
+.block_form1 div label,
+.block_form2 div label {
+ margin-left: -72%;
+ font-size: 120%;
+
+}
+
+.block_form1 div input,
+.block_form2 div input {
+  height: 40px;
+}
+
+.block_form1  button,
+.block_form2  button{
+  height: 40px;
+  font-size: 120%;
+  
+}
+
+.block_form1 p,
+.block_form2 p{
+  font-size: 120%;
+}
+
+
+}
+
+

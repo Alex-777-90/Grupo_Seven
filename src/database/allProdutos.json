@@ -204,7 +204,74 @@
      "sector":"variedades",
      "item":6,
      "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":19,
+     "description":"Bata palito",
+     "price":19.99,
+     "image":"batata.PNG" ,
+     "sector":"variedades",
+     "item":1,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":20,
+     "description":"Biscoito recheado",
+     "price":4.99,
+     "image":"biscoitorecheado.jpg" ,
+     "sector":"variedades",
+     "item":2,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":21,
+     "description":"Snack para gato",
+     "price":2.99,
+     "image":"snackgato.PNG" ,
+     "sector":"variedades",
+     "item":3,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":22,
+     "description":"Purificador de Ar",
+     "price":22.99,
+     "image":"bomar.PNG" ,
+     "sector":"variedades",
+     "item":4,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":23,
+     "description":"Desinfetante",
+     "price":5.99,
+     "image":"desinfetante.PNG" ,
+     "sector":"variedades",
+     "item":5,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":24,
+     "description":"Óleo industrial",
+     "price":15.99,
+     "image":"oleo.PNG" ,
+     "sector":"variedades",
+     "item":5,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
    }
+
    
 
   ]

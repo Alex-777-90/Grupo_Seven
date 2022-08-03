@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Seven / Login</title>
+    <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
+    <!--esse script é gerado pelo fontawesome.com que gera icones -->
+
+    <link rel="stylesheet" href="/css/formulario_header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/body_home.css">
+    <link rel="stylesheet" href="/css/body_home_carrossel.css">
+    <link rel="stylesheet" href="/css/menu_hamburguer.css">
+    <link rel="stylesheet" href="/css/pageLogin.css">
+    
+
+</head>
+
+<body>
+  
+  <header>
+
+    <section class="primeiro_cabecalho">
+      
+      <article class="imagem_logo">
+          <a href="./">
+              <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
+          </a>
+      </article>
+   
+      <article class="article_form1">
+          <form class="form_primeiro_cabecalho" action="#" method="post">
+              
+              <input class="caixa_texto" type="text" name="search" id="search" placeholder="Procure aqui"required >
+              <button class="botao" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            
+          </form>
+      </article>
+      
+      <div class="all_button">
+      <article class="article_form2">
+       
+          <form class="form_primeiro_cabecalho2" action="#" method="post">
+            
+            <a class="botao2"  href="/login">  <i id="bota2_i" class="fa-solid fa-user"></i></a>
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+    
+          </form>
+          <p class="text_botao2">Cadastro</p>
+
+      </article>
+       
+      <article class="article_form3">
+          <form class="form_primeiro_cabecalho3" action="#" method="post">
+
+              <a class="botao3" type="submit"> <i id="bota3_i"  class="fa-solid fa-cart-arrow-down"></i> </a> 
+              <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+
+          </form>
+          <p class="text_botao3" >Carrinho</p>
+      </article> 
+    </div>  
+                
+  </section>
+
+
+
+      <section class="segunda_cabecalho">
+
+        <article class="link">
+
+        <a id="button_menu"> <i class="fa-solid fa-list"></i></a> <p class="texto_nav"> Navegue aqui</p> 
+          
+        </article>
+
+         <article class="abas">
+
+          
+            <a class="tagA_segundo_cabecalho"  href="/variedades">
+                   <p class="mercado"><strong>Variedades</strong>  </p> 
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/pet">
+                    <p class="pet"><strong>Espaço pet</strong> </p>
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/farmacia">
+              <p class="farmacia"><strong>Farmácia </strong> </p>
+            </a>
+
+              <p class="oferta"><strong>Ofertas </strong> </p>
+
+         </article>
+     
+
+      </section>
+
+  
+  </header>
+
+ <section class="body_menu_hamburguer" ></section>
+  <div class="menu_hamburguer" id="menu_hamburguer">
+    
+    <ul>
+        <li class="lista_label_hambuerguer">
+          Variedades
+           <ul >
+            <a href="/variedades.html"> <li>Eletrônicos</li></a>
+            <a href="/variedades.html"> <li>Móveis</li></a>
+            <a href="/variedades.html"><li>Roupas</li></a>
+           </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Espaço pet
+            <ul >
+              <a href="pet.html"> <li>Gatos</li></a>
+              <a href="pet.html"><li>Cachorros</li></a>
+              <a href="pet.html"><li>Diversos</li></a> 
+            </ul>
+        </li>
+
+        <li class="lista_label_hambuerguer" >Farmácia
+            <ul >
+              <a href="farmacia.html"><li>Remédios</li></a>
+              <a href="farmacia.html"><li>Beleza</li></a>
+              <a href="farmacia.html"><li>Diversos</li></a>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
+ 
+  
+  <main class="main_login">
+      
+            
+            <section class="block_form1">
+             
+                  <form  action="/loginEmpresa" method="post">
+
+                    <h3>Empresas</h3>
+                      <div class="form-control">
+                        <label class="label_form" for="email">Email</label><br>
+                        <input type="text" name="email" id="email" placeholder="Digite seu email.." />
+                      </div>
+
+                      <div class="form-control"><br>
+                        <label for="password">Senha</label><br>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha..."/>
+                      </div>
+                
+                      <input type="checkbox" name="lembrar_usuario" id="">
+                      <label for="lembrar_usuario">manter logado</label>
+
+                      <a href=""><p class="p_senha">Esqueceu sua senha? </p></a>
+
+                      <button type="submit"> <strong> Entrar </strong></button>
+
+                      <p> Ainda não tem Cadastro ? </p><a href="/formularioEmpresas">Clique aqui</a>
+
+                  </form>
+
+            </section>
+
+            <section class="block_form2">
+               
+
+                    <form action="/usuarios/login" method="post">
+                          
+                      <h3>Clientes</h3>
+                      <% if (typeof errors !=="undefined") {%> 
+                        <p class="p_validation"><%= errors.email2 %></p>
+                      <% } %> 
+                          <div class="form-control">
+                            <label class="label_form" for="email">Email</label><br>
+                            <input type="text" name="email2" id="email2" placeholder="Digite seu email.." />
+                     
+                          </div>
+
+                          <div class="form-control"><br>
+                            <label for="password">Senha</label> <br>
+                            <input type="password" name="password2" id="password2" placeholder="Digite sua senha..."/>
+                            <% if (typeof errors !=="undefined") {%> 
+                              <p class="p_validation"><%= errors.password2 %></p>
+                            <% } %> 
+                          </div>
+                          </div>
+
+                    
+                          <input type="checkbox" name="lembrar_usuario2" id="">
+                          <label for="lembrar_usuario2">manter logado</label>
+
+                           <a href=""><p class="p_senha">Esqueceu sua senha? </p></a>
+
+                          <button type="submit"> <strong> Entrar </strong></button>
+
+                          <p> Ainda não tem Cadastro ? </p><a href="/usuarios/formulario">Clique aqui</a>
+
+                    </form>
+
+            </section>
+
+        
+  </main>
+
+  
+  <%- include("../partials/footer") %> 
+ 
+
+     <!--<div class="whatsapp">
+    <p>Duvidas ?</p>
+    <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
+    </div>-->
+
+<script src="/js/home.js"></script>
+<script src="/js/menu_hamburguer.js"></script>
+</body>
+
+
+</html>

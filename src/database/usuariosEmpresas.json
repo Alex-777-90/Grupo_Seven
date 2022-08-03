@@ -1,0 +1,20 @@
+[
+ {
+  "username": "Liverpool",
+  "email": "alxnvn@gmail.com",
+  "CNPJ": "00346019000196",
+  "telefone": "11966471637",
+  "password": "7777777",
+  "passwordConfirmation": "7777777",
+  "id": 1
+ },
+ {
+  "username": "Everton",
+  "email": "alxnvn@gmail.com",
+  "CNPJ": "00346019000194",
+  "telefone": "11966471637",
+  "password": "111111",
+  "passwordConfirmation": "111111",
+  "id": 2
+ }
+]
