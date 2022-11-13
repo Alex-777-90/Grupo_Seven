@@ -7,28 +7,13 @@ const validations = require("../middlewares/validaFormulario");
 const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
+const validaLoginEmpresa = require("../middlewares/validaLoginEmpresa");
 
-router.get("/login",validaLoginCliente,controlePaginas.login);
+router.get("/login",validaLoginCliente,validaLoginEmpresa,controlePaginas.login);
 router.get("/farmacia",controlePaginas.farmacia);
 router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
-
-
-//router.post("/loginEmpresa",controlePaginas.loginValidation);
-
-
-
-// inicio formulario-----------------------------------------------------------------------------------------/////
-router.get("/formularioEmpresas",controleUsuariosEmpresas.formularioEmpresa);
-router.post("/formularioEmpresas",validationsEmpresa,controleUsuariosEmpresas.armazenarEmpresa);
-
-router.get("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioEditEmpresas);
-router.put("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioUpdateEmpresas);
-router.delete("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioDeleteEmpresas);
-
-// fim  formulario------------------------------------------------------------------------------------------/////
-
 
 
 module.exports = router;

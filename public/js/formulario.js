@@ -6,8 +6,8 @@ const cpf = document.getElementById("cpf");
 const telefone = document.getElementById("telefone");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("click", () => {
+
 
   checkInputs();
 });

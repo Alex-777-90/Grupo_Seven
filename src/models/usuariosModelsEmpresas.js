@@ -14,6 +14,22 @@ const allUsers = {
     return JSON.parse(fs.appendFileSync(usuariosPath, "utf-8")); // transforma o JSON e uma array e cria um novo dado na array usuarios
   },
 
+  procuraCPF(receivedCNPJ){
+   
+    let procuraUsuario = allUsers.findAllUsers();
+    let procuraCNPJ = procuraUsuario.find(item => item.CNPJ == receivedCNPJ); // pega o CNPJ e compara com o passado no parametro
+    return procuraCNPJ
+
+  },
+
+  procuraNoBody (campo,valor){
+    let procuraUsuario = allUsers.findAllUsers();
+    let procuraCampo = procuraUsuario.find(item => item[campo] == valor); // compara o que recebi no campo com o que esta na array
+    return procuraCampo
+
+  },
+
+
   armazena(dates){
     
   let usuarios = allUsers.findAllUsers()

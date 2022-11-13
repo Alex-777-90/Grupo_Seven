@@ -14,6 +14,7 @@ const session = require("express-session");
 const RotaPaginas = require("./src/routes/routerPaginas");
 const RotaProdutos = require("./src/routes/routerProdutos");
 const RotaUsuarios = require("./src/routes/routerUsuarios");
+const RotaEmpresas = require("./src/routes/routerEmpresas");
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 
@@ -40,6 +41,7 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 app.use("/",RotaPaginas);
 app.use("/produtos",RotaProdutos);
 app.use("/usuarios",RotaUsuarios);
+app.use("/empresas",RotaEmpresas);
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///

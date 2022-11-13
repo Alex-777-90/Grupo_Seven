@@ -7,7 +7,7 @@
 /* -----------------------------------------------------------------------------------*/
 header{
   width: 100%;
-  background-color: aquamarine;
+ 
 }
 
 /*  Primeiro parte do header   */
@@ -24,7 +24,7 @@ header{
 .article_form1,
 .imagem_logo ,
 .all_button {
-  /*background-color: blueviolet;*/
+
 
 }
 
@@ -44,7 +44,7 @@ header{
 }
 
 .caixa_texto{
- /* background-color: aquamarine;*/
+
   width: 90%;
   font-size: 90%;
   height: 36px;

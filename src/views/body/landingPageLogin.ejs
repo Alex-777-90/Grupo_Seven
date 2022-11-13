@@ -26,7 +26,7 @@
     <section class="primeiro_cabecalho">
       
       <article class="imagem_logo">
-          <a href="./">
+          <a href="/">
               <img class="imagem_logo_img" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa" >
           </a>
       </article>
@@ -140,9 +140,12 @@
             
             <section class="block_form1">
              
-                  <form  action="/loginEmpresa" method="post">
+                  <form  action="/empresas/loginEmpresa" method="post">
 
                     <h3>Empresas</h3>
+                    <% if (typeof errors !=="undefined") {%> 
+                      <p class="p_validation"><%= errors.email %></p>
+                    <% } %> 
                       <div class="form-control">
                         <label class="label_form" for="email">Email</label><br>
                         <input type="text" name="email" id="email" placeholder="Digite seu email.." />
@@ -160,7 +163,7 @@
 
                       <button type="submit"> <strong> Entrar </strong></button>
 
-                      <p> Ainda não tem Cadastro ? </p><a href="/formularioEmpresas">Clique aqui</a>
+                      <p> Ainda não tem Cadastro ? </p><a href="/empresas/formularioEmpresas">Clique aqui</a>
 
                   </form>
 

@@ -12,13 +12,13 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: aqua; */
+
   width: 100%;
 
 }
 
 footer section article{
-/* background-color: blueviolet;*/
+
 }
 
 .imagem_logo2{
@@ -32,7 +32,7 @@ footer img{
 }
 
 .icones_footer{
-  /* background-color: rgb(201, 155, 15); */
+
   width: 20%;
   padding-top: 2%;
   padding-bottom: 2%;
