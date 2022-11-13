@@ -1,0 +1,29 @@
+[
+ {
+  "username": "Manchester United",
+  "email": "alxnvn@yahoo.com.bm",
+  "CNPJ": "00346019000197",
+  "telefone": "11966471637",
+  "password": "$2a$10$G7e1QWYKt7KoPsNbzoj7OO5gAiTvWgMgPvo2sTks1hn7f5OZtOnmS",
+  "passwordConfirmation": "4444444",
+  "id": 1
+ },
+ {
+  "username": "Liverpool",
+  "email": "alxnvn@gmail.com",
+  "CNPJ": "00346019000196",
+  "telefone": "11966471637",
+  "password": "$2a$10$YCaybMdVS3/3.qPSBMvLc.KxY9lWJOkrlQArI5ClwWu/2b74upKVK",
+  "passwordConfirmation": "7777777",
+  "id": 2
+ },
+ {
+  "username": "Everton",
+  "email": "alxnvn@yahoo.com.be",
+  "CNPJ": "00346019000194",
+  "telefone": "11966471637",
+  "password": "$2a$10$OJbNQT5OHqjr61ecuYHcFOqEvkP7krVoFclVUArK7IbpBo4a74x9y",
+  "passwordConfirmation": "6666666",
+  "id": 3
+ }
+]

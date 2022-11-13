@@ -1,0 +1,30 @@
+[
+ {
+  "username2": "Alex Lima",
+  "email2": "alxnvn@yahoo.com.br",
+  "cpf2": "36036058888",
+  "telefone2": "966471637",
+  "password2": "$2a$10$HFceAa9uDm8gJf92Xa1e6udw1e1l4qtDEVzus2.9u.lINI9EqM4VO",
+  "passwordConfirmation2": "7777777",
+  "id": 1
+ },
+ {
+  "username2": "Rafael Nadal",
+  "email2": "alxnvn@gmail.com",
+  "cpf2": "36036058889",
+  "telefone2": "966471637",
+  "password2": "$2a$10$dYNWXDgjBt/HuUJ/Yvp3Pek/pICYo19y3Tff/rn8n/3Zsb3HcoJXa",
+  "passwordConfirmation2": "5555555",
+  "id": 2
+ },
+ {
+  "username2": "Roger Federer",
+  "email2": "alxnvn@yahoo.com.bc",
+  "cpf2": "36036058887",
+  "telefone2": "966471637",
+  "password2": "$2a$10$vTsDANwIzwYCKa7lDZWf8eeLE/FerTK9odBCZ0n93lqrQ7ybVP/g2",
+  "passwordConfirmation2": "4444444",
+  "id": 3
+ }
+
+]

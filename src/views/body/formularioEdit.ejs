@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_cadastro</title>
+    <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
+    <!--esse script é gerado pelo fontawesome.com que gera icones -->
+
+    <link rel="stylesheet" href="/css/formulario_header.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    
+  
+   
+</head>
+
+<body>
+  
+ 
+  <header>
+
+    <section class="primeiro_cabecalho">
+
+      <div class="imagem_logo4">
+          <a href="/">
+              <img class="imagem_logo_img4" src="/img/Grupo Seven 2.PNG" alt="Logo da empresa"  >
+          </a>
+      </div>
+
+      <form class="form_primeiro_cabecalho4" action="#" method="post">
+
+        <a class="botao4" id="button_entry"  href="#login">  <i  class="fa-solid fa-right-to-bracket"></i></a> <p class="text_botao4">Entrar</p>
+       <!--a tag "i" estou utilizando o icone do fontawesome.com -->
+       <br>
+       <section class="body_login" ></section>
+       <div class="login">
+         <h2>Login</h2>
+         <form class="form_login"action="">
+          <input type="email" name="email_login" id="email_login" placeholder="E-mail"/>
+          <input type="password" id="username_login" placeholder="Senha"/>
+          <button class ="botao_login" type="submit"> <strong> Entrar </strong></button>
+         </form>
+       </div>
+  
+     </form>
+          
+
+      </section>
+
+
+      <section class="segunda_cabecalho">
+
+        <article class="link">
+          <i class="fa-solid fa-list"></i> <p class="texto_nav"> Navegue aqui</p> 
+        </article>
+
+         <article class="abas">
+
+          
+            <a class="tagA_segundo_cabecalho"  href="/variedades">
+                   <p class="mercado"><strong>Variedades</strong>  </p> 
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/pet">
+                    <p class="pet"><strong>Espaço pet</strong> </p>
+            </a>
+
+            <a class="tagA_segundo_cabecalho"  href="/farmacia">
+              <p class="farmacia"><strong>Farmácia </strong> </p>
+            </a>
+
+              <p class="oferta"><strong>Ofertas </strong> </p>
+
+         </article>
+
+
+      </section>
+
+
+  </header>
+
+   <main>
+      
+
+  <div class="container">
+      <div class="header">
+        <h2>Editar sua  conta </h2>
+      </div>
+
+
+    <form action="/usuarios/formularioEdit/<%= cpfEdit.cpf2 %>?_method=PUT " method="POST" id ="form" class="form">
+
+
+          <div class="form-control">
+
+            <label for="username">Nome de usuário</label>
+            <input type="text" name="username2" id="username2" placeholder="Digite seu nome de usuário..." value="<%= cpfEdit.username2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+
+      
+          <div class="form-control">
+
+            <label for="email">Email</label>
+            <input type="text" name="email2" id="email2" placeholder="Digite seu email.." value="<%= cpfEdit.email2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+    
+          </div>
+
+
+          <div class="form-control">
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf2" id="cpf2" placeholder="Digite seu CPF.." value="<%= cpfEdit.cpf2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+           <!-- <small>Mensagem de erro</small>-->
+          
+          </div>
+
+          <div class="form-control">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone2" id="telefone2" placeholder="Digite seu número.." value="<%= cpfEdit.telefone2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+         
+            
+          </div>
+          
+          <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
+          <div class="form-control">
+            <label for="password">Senha</label>
+            <input type="password" name="password2" id="password2" placeholder="Digite sua senha..." value="<%= cpfEdit.password2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            
+          </div>
+
+
+          <div class="form-control">
+            <label for="password-confirmation">Confirmação de senha</label>
+            <input type="password"  name="passwordConfirmation2"id="password-confirmation2" placeholder="Digite sua senha novamente..." value="<%= cpfEdit.passwordConfirmation2 %>"/>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            
+          </div>
+          
+          <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
+
+          <button type="submit"> <strong> Confirmar alteração  </strong></button>  <!-- botão de  confirmação do cadastro -->    
+         
+						
+    </form>
+         
+    <form action="/usuarios/formularioEdit/<%= cpfEdit.cpf2 %>?_method=DELETE" method="POST" >
+      <button type="submit" class="action-button delete">Apagar dados</button>
+    </form>
+
+  </div>
+    
+
+
+ </main>
+
+
+
+
+ <footer>
+
+
+
+
+ </footer>
+
+
+</body>
+
+
+<script src="/js/login.js"></script>
+
+</html>
+

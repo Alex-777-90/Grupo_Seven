@@ -1,0 +1,210 @@
+[
+
+  {
+   "id":1,
+   "description":"Dipirona 500mg ,240 comprimidos",
+   "price":17.99,
+   "image":"imagem_farmacia1.jpg" ,
+   "sector":"farmacia",
+   "item":1,
+   "texto":"Para que serve: Este medicamento é indicado como analgésico (para dor) e antitérmico (para febre). Modo de usar: Dipirona monoidratada comprimidos 500 mg: adultos e adolescentes acima de 15 anos: 1 a 2 comprimidos até 4 vezes ao dia. Siga corretamente o modo de usar."
+  
+  },
+  
+  {
+  
+    "id":2,
+    "description":"Paracetamol 750mg,20 comprimidos",
+    "price":19.79,
+    "image":"imagem_farmacia2.jpg" ,
+    "sector":"farmacia",
+    "item":2,
+    "texto":"Paracetamol é um medicamento indicado para o tratamento de febre e também colabora com auxílio temporário a dores leves e moderadas. Pode ser utilizado na redução de dores relacionadas à resfriados, como dor de cabeça e dor de garganta."
+  
+  },
+  
+  {
+  
+    "id":3,
+    "description":"Novanoite 320mg , 10 comprimidos",
+    "price":25.99,
+    "image":"imagem_farmacia3.jpg" ,
+    "sector":"farmacia",
+    "item":3,
+    "texto":"NOVANOITE (Passiflora Incarnata L. 320mg) Indicação: tratamento da ansiedade leve, como estados de irritabilidade, agitação nervosa, tratamento de insônia e desordens da ansiedade. MS 1.8326.0481."
+  },
+
+  {
+
+    "id":4,
+    "description":"Imecap hair max , 30 cápsulas",
+    "price":79.99,
+    "image":"imagem_farmacia4.jpg" ,
+    "sector":"farmacia",
+    "item":4,
+    "texto":"Imecap Hair Max possui a formula mais completa do mercado de nutraceuticos para o tratamento da queda capilar. Além da Biotina (vit. B7), Piridoxina (vit. B6), Selênio, Cromo e Zinco, contém colágeno hidrolisado e a presença de dois aminoácidos responsáveis pela formação da queratina do cabelo, que são a L-cistina e a Cisteína. Isso possibilita mais força, brilho, resistência e vitalidade aos fios.alem de fortalecer as unhas."
+    
+
+  },
+  
+  {
+  
+    "id":5,
+    "description":"Natucor preto",
+    "price":16.99,
+    "image":"imagem_farmacia5.jpg" ,
+    "sector":"farmacia",
+    "item":5,
+    "texto":"A Tintura Em Pó Natucor Embeleze é uma coloração natural que proporciona uma coloração maravilhosa aos cabelos sem danificá-los, deixa as cores da natureza em seus cabelos. AÇÃO/ATIVOS: Natucor utiliza nutrientes de ervas, flores e frutas da flora mundial, principalmente da Amazônia para proporcionar cores incríveis e duradouras aos fios capilares, cores radiantes, brilho intenso, hidratação profunda e uniformidade aos cabelos."
+
+  },
+  
+  {
+  
+    "id":6,
+    "description":"Tio Nacho engrossador",
+    "price":19.99,
+    "image":"imagem_farmacia6.jpg" ,
+    "sector":"farmacia",
+    "item":6,
+    "texto":"Tio Nacho Engrossador Antiqueda é um shampoo que foi especialmente desenvolvido para quem possui os cabelos finos, quebradiços ou sem volume. Com uma fórmula exclusiva que combina a Geleia Real com um composto de ingredientes de origem natural, aumenta a espessura dos cabelos e tem ação antiqueda, para um cabelo mais forte, com menos quebras, mais volumoso e saudável."
+
+  },
+
+  {
+    "id":7,
+    "description":"Bolsa pet",
+    "price":140.99,
+    "image":"bolsaPet.jpg" ,
+    "sector":"pet",
+    "item":1,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":8,
+     "description":"Caminha pet",
+     "price":190.99,
+     "image":"caminhaPet.webp" ,
+     "sector":"pet",
+     "item":2,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+   
+   {
+   
+     "id":9,
+     "description":"Casinha pet",
+     "price":198.99,
+     "image":"casinhaPet.jpg" ,
+     "sector":"pet",
+     "item":3,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   },
+
+   {
+    "id":10,
+    "description":"Tigela para gato",
+    "price":17.99,
+    "image":"tigela_gato.webp" ,
+    "sector":"pet",
+    "item":4,
+    "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":11,
+     "description":"Ração para Gato",
+     "price":49.79,
+     "image":"racao-gato.jpg" ,
+     "sector":"pet",
+     "item":5,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+   
+   },
+   
+   {
+   
+     "id":12,
+     "description":"Ração premium",
+     "price":75.99,
+     "image":"racao-premier-caes-adultos.webp",
+     "sector":"pet",
+     "item":6,
+     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."
+
+   },
+
+   {
+    "id":13,
+    "description":"Galaxy S20 ,Samsung 128GB",
+    "price":1.799,
+    "image":"imagem_variedades1.png" ,
+    "sector":"variedades",
+    "item":1,
+    "texto":"Galaxy S20 conta com um conjunto de câmera tripla na traseira,câmera frontal de 10MP ,processador Octa-Core em conjunto dos 8GB de memória RAM no padrão LDDDR5 e conta com uma  tela de 6,2 com resolução Quad HD+, AMOLED Dinâmico 2x, certificação HDR10+ e taxa de atualização de 120Hz,Com 128GB de armazenamento interno além de permitir expansão até 1TB através do cartão MicroSD."
+   
+   },
+   
+   {
+   
+     "id":14,
+     "description":"Aspirador Xiaomi mi robot Vacuum",
+     "price":2.918,
+     "image":"imagem_variedades3.png" ,
+     "sector":"variedades",
+     "item":2,
+     "texto":"O robô aspirador Xiaomi MOP é totalmente preparado para longas jornadas de limpeza. Com potência de sucção de 2500pa e uma bateria de 2600mAh, você cobre uma área de 120m2 sem esforços. Quando a bateria estiver com baixo nível, o MOP recarrega automaticamente e retorna a limpeza do ponto atual. Para valorizar ainda mais o seu conforto e praticidade, o Robô Aspirador MOP Xiaomi é compatível com Google Assistant e Alexa e você controla tudo via app Mi Home."
+   
+   },
+   
+   {
+   
+     "id":15,
+     "description":"Headphone Sony WH-1000XM4",
+     "price":1.799,
+     "image":"imagem_variedades5.png" ,
+     "sector":"variedades",
+     "item":3,
+     "texto":"O Sony WH-1000XM4 é o fone de ouvido top de linha da fabricante japonesa. Ele traz diversas melhorias mesmo em relação ao já consagrado, XM3. Este fone de ouvido tem cancelamento de ruído ativo mais uma nova tecnologia, chamada 360 Reality Audio. Ela oferece uma qualidade sonora muito acima da média, de modo que melhora a noção espacial dos sons, com diversos canais. Seu acabamento é super premium, já que agora é estilo fosco, meio emborrachado. "
+   },
+
+   {
+    "id":16,
+    "description":"Camisa Liverpool II 21/22",
+    "price":299.99,
+    "image":"imagem_variedades6png.jpg" ,
+    "sector":"variedades",
+    "item":4,
+    "texto":" Camisa Liverpool 21/22 é perfeita para o torcedor demonstrar seu favoritismo nos treinos, dias de jogos ou mesmo em ocasiões casuais. No tecido o diferencial da tecnologia Dri-Fit garante uma sensação de corpo seco e confortável,  De ótimo acabamento, a Camisa do Liverpool apresenta estampa personalizada, escudo bordado e elemento que conecta a história do clube a seus torcedores. Manto para identificar a paixão pelo clube e reforçar seu lema You'll Never Walk Alone , ou seja, Você Nunca Caminhará Sozinho."
+   
+   },
+   
+   {
+   
+     "id":17,
+     "description":"Tênis Adidas Response SR",
+     "price":399.99,
+     "image":"imagem_variedades4.png" ,
+     "sector":"variedades",
+     "item":5,
+     "texto":"A Adidas deu origem ao tênis da linha Response SR, criado para atletas que buscam intensificar suas corridas com o conforto necessário. Apresenta cabedal em têxtil respirável, traz tecnologia na entressola e seu solado de borracha é antiderrapante."
+   
+   },
+   
+   {
+   
+     "id":18,
+     "description":"Mochila Hang Loose",
+     "price":159.99,
+     "image":"imagem_variedades2.png" ,
+     "sector":"variedades",
+     "item":6,
+     "texto":"Puxadores e logo em camurça; Etiquetas personalizadas; Forro listrado; Bolso frontal; Alças ergonômicas e reguláveis; ; Mochila autêntica, resistente e original. Perfil do produto: Clássico – Ocasião: Dia á Dia – Diferencial: Compartimento para Notebook de até 15  – Material: Poliéster – Composição: poliéster 600D/900D - Estilo da Peça: Lisa Estampada – Compartimento: Divisórias internas – Fechamento: Zíper – Alça: Ajustável - Dimensões Aproximadas: Medição (A*L*P): 44x30x14 cm - Peso do Produto: 0,390g – Capacidade: 18,5L"
+   }
+   
+
+  ]
